@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fjalla+One&family=Poppins:wght@600&display=swap');
+
+body {
+    /* background-color: red; */
+}
+
+nav {
+    border-bottom: 2px solid #2222;
+}
+
+nav ul li {
+    margin: 0 42px 0 42px;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 300;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+nav ul.espace {
+    background-color: #35b5ff;
+    
+}
+
+nav ul.espace2 {
+    background-color: #ff9248;
+    
+}
+
+nav ul li.don a {
+    color: #fff;
+
+}
+
+nav a .logo {
+    height: 50px;
+    width: 80px;
+
+
+}
+
