@@ -1,36 +1,13 @@
-<div class="fixed-top">
-
-    <div class="navbarpetit p-2">
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">PORTAIL ACTION MEPHI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <!-- <a class="nav-link active" aria-current="portail" href="/">S'inscrire à la newsletter</a> -->
-                        <a class="nav-link" href="inscrire-newsletter">S'inscrire à la newsletter</a>
-                        <a class="nav-link" href="presse">Presse</a>
-                        <a class="nav-link" href="contact">Contact</a>
-                        <a class="nav-link" href="faq">FAQ</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-        <a class="" href="/"><img class="logo" src="assets/images/amlogo.jpg" alt="Action Mephi"></a>
+.navbarpetit
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img class="logo" src="assets/images/amlogo.jpg" alt="Action Mephi"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-            <ul class="navbar-nav  mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0 pt-1">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
                 </li>
@@ -73,23 +50,22 @@
                 </li>
             </ul>
 
-            <ul class="navbar-nav  mb-lg-0 espace">
+            <ul class="navbar-nav me-auto mb-lg-0 espace pt-1">
 
 
-                <li class="">
+                <li class="nav-item donateur">
                     <a class="nav-link " href="espace-donateur">
-                        <i class="fas fa-user me-1"></i>ESPACE DONATEUR
+                        ESPACE DONATEUR
                     </a>
                 </li>
             </ul>
 
-            <ul class="navbar-nav  mb-lg-0 espace2">
+            <ul class="navbar-nav me-auto mb-lg-0 espace2 pt-1">
                 <li class="nav-item don">
-                    <a class="nav-link" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR"><i class="fas fa-heart me-1"></i>FAIRE UN DON</a>
+                    <a class="nav-link" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR">FAIRE UN DON</a>
                 </li>
             </ul>
 
         </div>
-
-    </nav>
-</div>
+    </div>
+</nav>

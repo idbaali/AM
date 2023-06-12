@@ -61,15 +61,15 @@ switch ($page) {
         /*------------------------------------------------------------------------*/
 
         /* PORTAIL ACTION MEPHI */
-    case 'portail-action-mephi':
+    case 'portail':
 
-        include 'structures/front/pages/portailactionmephi.php';
+        include 'structures/front/pages/portail.php';
         break;
 
         /* S'INSCRIRE A LA NEWSLETTER */
-    case 's-inscrire-a-la-newsletter':
+    case 'inscrire-newsletter':
 
-        include 'structures/front/pages/sinscrirealanewsletter.php';
+        include 'structures/front/pages/inscrirenewsletter.php';
         break;
 
         /* PRESSE */

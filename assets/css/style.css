@@ -3,38 +3,36 @@
 body {
     /* background-color: red; */
 }
+.navbarpetit{
+    /* background-color: red; */
+}
 
 nav {
-    border-bottom: 1px solid #2222;
+    /* border-bottom: 1px solid #2222; */
+    position: relative;
+    top: -5px;
+    background: #fff;
 
 }
 
 nav ul li {
-    margin: 0 42px 0 42px;
-    /* font-family: 'Caveat', cursive; */
+    margin: 0 38px 0 38px;
+    font-family: 'Caveat', cursive;
     font-family: 'Fjalla One', sans-serif;
-    font-weight: 300;
+    /* font-weight: 300; */
     /* font-family: 'Poppins', sans-serif; */
-  
+    padding: 15px 0 15px 0;
+
 }
 
-nav ul.espace {
+
+nav .espace {
     background-color: #35b5ff;
-    
 }
 
-nav ul.espace2 {
+nav .espace2 {
     background-color: #ff9248;
-    
-}
-
-nav ul li.donateur {
-    padding: 10px 10px 10px 19px;
-    /* margin-right: 2px; */
-}
-
-nav ul li.don {
-    padding: 10px;
+    padding-right: 10px;
 }
 
 nav ul li.don a {
@@ -45,7 +43,11 @@ nav ul li.don a {
 nav a .logo {
     height: 50px;
     width: 80px;
-
-
+}
+.p-home{
+    padding-top: 150px;
 }
 
+.text-info {
+    color: red;
+}
