@@ -1,3 +1,4 @@
+.navbarpetit
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img class="logo" src="assets/images/amlogo.jpg" alt="Action Mephi"></a>
@@ -6,7 +7,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2">
+            <ul class="navbar-nav me-auto mb-lg-0 pt-1">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
                 </li>
@@ -18,7 +19,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="nos-domaines-actions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="nos-domaines-d-actions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         NOS DOMAINES D'ACTIONS
                     </a>
                     <ul class="dropdown-menu">
@@ -32,7 +33,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="s-enganger" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="s-engager" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         S'ENGAGER
                     </a>
                     <ul class="dropdown-menu">
@@ -49,18 +50,18 @@
                 </li>
             </ul>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2 espace">
+            <ul class="navbar-nav me-auto mb-lg-0 espace pt-1">
 
 
-                <li class="nav-item don">
-                    <a class="nav-link" href="espace-donateur">
+                <li class="nav-item donateur">
+                    <a class="nav-link " href="espace-donateur">
                         ESPACE DONATEUR
                     </a>
                 </li>
             </ul>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2 espace2">
-                <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-lg-0 espace2 pt-1">
+                <li class="nav-item don">
                     <a class="nav-link" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR">FAIRE UN DON</a>
                 </li>
             </ul>

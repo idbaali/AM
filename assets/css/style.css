@@ -5,7 +5,8 @@ body {
 }
 
 nav {
-    border-bottom: 2px solid #2222;
+    border-bottom: 1px solid #2222;
+
 }
 
 nav ul li {
@@ -14,6 +15,7 @@ nav ul li {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 300;
     /* font-family: 'Poppins', sans-serif; */
+  
 }
 
 nav ul.espace {
@@ -24,6 +26,15 @@ nav ul.espace {
 nav ul.espace2 {
     background-color: #ff9248;
     
+}
+
+nav ul li.donateur {
+    padding: 10px 10px 10px 19px;
+    /* margin-right: 2px; */
+}
+
+nav ul li.don {
+    padding: 10px;
 }
 
 nav ul li.don a {
