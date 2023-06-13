@@ -16,9 +16,9 @@ switch ($page) {
         break;
 
         /* NOUS DECOUVRIR */
-    case 'nous-decouvrir':
+    case 'nous-Decouvrir':
 
-        include 'structures/front/pages/nousdecouvrir.php';
+        include 'structures/front/pages/nousDecouvrir.php';
         break;
 
         /* EVENEMENTS */
@@ -28,36 +28,36 @@ switch ($page) {
         break;
 
         /* NOS DOMAINS DES ACTIONS */
-    case 'nos-domaines-d-actions':
+    case 'nos-Domaines':
 
-        include 'structures/front/pages/nosdomainesdaction.php';
+        include 'structures/front/pages/nosDomaines.php';
         break;
 
         /* S'ENGAGER */
-    case 's-engager':
+    case 's-Engager':
 
-        include 'structures/front/pages/sengager.php';
+        include 'structures/front/pages/sEngager.php';
         break;
 
         /* ESPACE DENATEUR */
-    case 'espace-donateur':
+    case 'donateur':
 
-        include 'structures/front/pages/espacedonateur.php';
+        include 'structures/front/pages/donateur.php';
         break;
 
         /* FAIRE UN DON */
-    case 'faire-un-don':
+    case 'faire-Don':
 
-        include 'structures/front/pages/faireundon.php';
+        include 'structures/front/pages/faireDon.php';
         break;
 
         /* DEVENIR BENEVOL */
-    case 'devenir-benevol':
+    case 'benevol':
 
-        include 'structures/front/pages/devenirbenevol.php';
+        include 'structures/front/pages/benevol.php';
         break;
 
-
+        
         /*------------------------------------------------------------------------*/
 
         /* PORTAIL ACTION MEPHI */
@@ -67,9 +67,9 @@ switch ($page) {
         break;
 
         /* S'INSCRIRE A LA NEWSLETTER */
-    case 'inscrire-newsletter':
+    case 'newsletter':
 
-        include 'structures/front/pages/inscrirenewsletter.php';
+        include 'structures/front/pages/newsletter.php';
         break;
 
         /* PRESSE */

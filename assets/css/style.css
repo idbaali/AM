@@ -5,6 +5,12 @@ body {
 }
 .navbarpetit{
     /* background-color: red; */
+
+}
+
+.droite {
+    display: flex; 
+    justify-content: right;
 }
 
 nav {

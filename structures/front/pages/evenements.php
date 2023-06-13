@@ -1,1 +1,0 @@
-<h1 class="text-info">Ike</h1>
