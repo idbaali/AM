@@ -1,59 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fjalla+One&family=Poppins:wght@600&display=swap');
 
-body {
-    /* background-color: red; */
-}
-.navbarpetit{
-    /* background-color: red; */
-
-}
-
-.droite {
-    display: flex; 
-    justify-content: right;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav {
-    /* border-bottom: 1px solid #2222; */
-    position: relative;
-    top: -5px;
-    background: #fff;
-
+nav .portail a {
+    background: #dfe6e9;
+    font-size: 13px;
+    margin: -12px;
+    padding: 18px;
+    
 }
 
-nav ul li {
-    margin: 0 38px 0 38px;
-    font-family: 'Caveat', cursive;
-    font-family: 'Fjalla One', sans-serif;
-    /* font-weight: 300; */
-    /* font-family: 'Poppins', sans-serif; */
-    padding: 15px 0 15px 0;
-
-}
-
-
-nav .espace {
+nav .portail :hover {
+    color: #fff;
     background-color: #35b5ff;
+    padding: 18px;
+    margin-bottom: -7px;
+    margin-left: 5px;
+    margin: -12px;
+
 }
 
-nav .espace2 {
+nav .droite small {
+    padding-top: 8px;
+    color: gray;
+}
+
+nav .droite {
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+}
+
+nav .droite a {
+    color: #222;
+}
+
+nav .droite a:hover {
+    color: #35b5ff;
+
+}
+
+/* NAV PRINCIPAL */
+
+nav.nav-principal {
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    background-color: #fff;
+    /* background-color: red; */
+    border-bottom: 1px solid #2222;
+    border-top: 1px solid #2222;
+
+}
+
+nav.nav-principal a .logo {
+    height: 40px;
+    width: 40px;
+}
+
+nav.nav-principal a {
+    text-decoration: none;
+    color: #222;
+
+}
+
+nav.nav-principal ul {
+    list-style: none;
+    float: right;
+    
+}
+
+nav.nav-principal ul li {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 80px;
+}
+
+nav.nav-principal ul li a {
+    color: #222; 
+
+}
+
+nav.nav-principal ul .ligne:hover {
+    
+    border-bottom: 3px solid #35b5ff;
+}
+
+nav.nav-principal ul li .brule:hover {
+    color: #35b5ff;
+    
+}
+
+nav.nav-principal ul li a.active {
+    color: #35b5ff;
+    
+}
+
+nav.nav-principal ul li.item-active {
+    border-bottom: 3px solid #35b5ff;  
+}
+
+nav ul li.donateur {
+    background-color: #35b5ff;
+    padding-left: 20px; 
+    padding-right: 20px;
+    margin-right: -25px; 
+}
+
+nav ul li.donateur a {
+    color: #fff;
+}
+
+nav ul li.don {
     background-color: #ff9248;
-    padding-right: 10px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    margin-right: -10px; 
+    
+   
+    
 }
 
 nav ul li.don a {
-    color: #fff;
-
+    color: #fff; 
 }
 
-nav a .logo {
-    height: 50px;
-    width: 80px;
-}
-.p-home{
-    padding-top: 150px;
+.p-home {
+    margin-top: 130px;
 }
 
-.text-info {
-    color: red;
-}

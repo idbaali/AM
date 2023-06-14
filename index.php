@@ -16,9 +16,9 @@ switch ($page) {
         break;
 
         /* NOUS DECOUVRIR */
-    case 'nous-Decouvrir':
+    case 'nous-decouvrir':
 
-        include 'structures/front/pages/nousDecouvrir.php';
+        include 'structures/front/pages/nous_decouvrir.php';
         break;
 
         /* EVENEMENTS */
@@ -28,25 +28,25 @@ switch ($page) {
         break;
 
         /* NOS DOMAINS DES ACTIONS */
-    case 'nos-Domaines':
+    case 'nos-domaines':
 
-        include 'structures/front/pages/nosDomaines.php';
+        include 'structures/front/pages/nos_domaines.php';
         break;
 
         /* S'ENGAGER */
-    case 's-Engager':
+    case 's-engager':
 
-        include 'structures/front/pages/sEngager.php';
+        include 'structures/front/pages/s_engager.php';
         break;
 
         /* ESPACE DENATEUR */
-    case 'donateur':
+    case 'espace-donateur':
 
-        include 'structures/front/pages/donateur.php';
+        include 'structures/front/pages/espace_donateur.php';
         break;
 
         /* FAIRE UN DON */
-    case 'faire-Don':
+    case 'faire-don':
 
         include 'structures/front/pages/faireDon.php';
         break;
