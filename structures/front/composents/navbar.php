@@ -40,7 +40,7 @@
                     <a class="brule" href="evenements">EVENEMENTS</a>
                 </li>
                 <li class="ligne">
-                    <a class="brule" href="nous-decouvrir">NOS DOMAINES D'ACTIONS</a>
+                    <a class="brule" href="nos-domaines">NOS DOMAINES D'ACTIONS</a>
                 </li>
                 <li class="ligne">
                     <a class="brule" href="s-engager">S'ENGAGER</a>

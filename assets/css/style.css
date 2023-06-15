@@ -9,19 +9,19 @@
 
 nav .portail a {
     background: #dfe6e9;
-    font-size: 13px;
-    margin: -12px;
-    padding: 18px;
+    font-size: 15px;
+    margin: -13px;
+    padding: 15px;
     
 }
 
 nav .portail :hover {
     color: #fff;
     background-color: #35b5ff;
-    padding: 18px;
+    padding: 15px;
     margin-bottom: -7px;
     margin-left: 5px;
-    margin: -12px;
+    margin: -13px;
 
 }
 
