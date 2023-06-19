@@ -9,6 +9,9 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 switch ($page) {
 
+
+        /* MENU PRINCIPAL */
+
         /* HOME */
     case 'home':
 
@@ -51,14 +54,70 @@ switch ($page) {
         include 'structures/front/pages/faireDon.php';
         break;
 
-        /* DEVENIR BENEVOL */
-    case 'benevol':
+        
 
-        include 'structures/front/pages/benevol.php';
+
+        /*------------------------- MENU DEROULANT---------------------------*/
+
+        /* Aide aux enfants handicapées */
+    case 'aide-enfants':
+
+        include 'structures/front/pages/enfants.php';
         break;
 
-        
-        /*------------------------------------------------------------------------*/
+        /* Aide aux personnes adult handicapées */
+    case 'aide-adults':
+
+        include 'structures/front/pages/adults.php';
+        break;
+
+        /* Aide aux orphelins */
+    case 'aide-orphelins':
+
+        include 'structures/front/pages/orphilins.php';
+        break;
+
+        /* Devenir bénévole */
+    case 'devenir-benevole':
+
+        include 'structures/front/pages/dev_benevol.php';
+        break;
+
+        /* Devenir donateur */
+    case 'devenir-donateur':
+
+        include 'structures/front/pages/dev_donateur.php';
+        break;
+
+        /* Devenir membre */
+    case 'devenir-membre':
+
+        include 'structures/front/pages/dev_membre.php';
+        break;
+
+        /* Devenir formateur */
+    case 'devenir-formateur':
+
+        include 'structures/front/pages/dev_formateur.php';
+        break;
+
+        /* Formation de la musique */
+    case 'formation-musique':
+
+        include 'structures/front/pages/formation.php';
+        break;
+
+        /* Faire un stage */
+    case 'faire-stage':
+
+        include 'structures/front/pages/stage.php';
+        break;
+
+
+
+
+
+        /*---------------------------- SOUS MENU OU PETIT NAVBAR --------------------------- */
 
         /* PORTAIL ACTION MEPHI */
     case 'portail':
