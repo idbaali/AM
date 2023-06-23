@@ -2,15 +2,11 @@
 
     <?php
     include 'partials-home/carrousel.php';
-    include 'partials-home/contact.php';
-    include 'partials-home/faq.php';
     include 'partials-home/newsletter.php';
-    include 'partials-home/portail.php';
-    include 'partials-home/presse.php';
 
     ?>
 
-    <!-- <p class="text-dark">
+    <p class="text-dark">
         Cette association a pour but non- lucratif de :
         Venir en aide aux personnes vivant avec un handicap et leurs enfants, aux orphelins, et contre la
         discrimination ici notamment aussi en Afrique.<br>
@@ -18,5 +14,5 @@
         A travers Zoé centre des adorateurs, l'association pourra éduquer et former des jeunes chantres
         (Instruments Musicales) et des adorateurs.
     </p>
-    -->
+   
 </section>

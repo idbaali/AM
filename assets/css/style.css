@@ -26,13 +26,14 @@ nav.navbarpetit {
 
 nav .portail {
     font-size: 14px;
-    
+
 }
+
 nav .portail .farbe {
     color: #222;
     background-color: #ff9248;
-  
-    
+
+
 }
 
 nav .portail .farbe:hover {
@@ -127,6 +128,10 @@ nav.nav-principal ul li .brule:hover {
     color: #35b5ff;
 }
 
+nav.nav-principal ul li a .sucher:hover {
+    color: #35b5ff;
+}
+
 nav.nav-principal ul li a.active {
     color: #35b5ff;
 }
@@ -160,7 +165,7 @@ nav ul li.don {
 }
 
 nav ul li.don:hover {
-    background-color: #ff9248;  
+    background-color: #ff9248;
 }
 
 nav ul li.don a {
@@ -173,11 +178,129 @@ nav ul li.don a {
 
 
 section {
-    padding-top: 80px;
+    padding-top: 150px;
     z-index: 1;
 }
 
 section.p-home .carousel-inner .carousel-item img {
     width: 100%;
-    height: 540px;
+    height: 120vh;
 }
+
+
+/* PAGE CONTANCT */
+
+
+section h1.contact {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section div.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section div.container.container-narrow {
+    max-width: 600px;
+}
+
+
+section div.sujet_espace {
+    margin-bottom: 20px;
+}
+
+section div label.label_form {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section div.container_select {
+    position: relative;
+}
+
+section div.container_select::after {
+    content: '\25BC';
+    font-size: 12px;
+    color: #555;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+section div form
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+section div form input[type="submit"] {
+    background-color: #35b5ff;
+    color: white;
+    border: none;
+    padding: 12px 250px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section div form input[type="submit"]:hover {
+    background-color: #35b5ff
+}
+
+
+
+/* FAQ */
+
+
+section h1.faq {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section main div.faq-item {
+    margin-bottom: 20px;
+}
+
+section main div.faq-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section main div.faq-item dl {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+section main div.faq-item dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section main div.faq-item dl dd {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+section main div ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+section main div ul li {
+    margin-top: 5px;
+}
+

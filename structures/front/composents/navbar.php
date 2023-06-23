@@ -25,7 +25,7 @@
     <!-- MENU PRINCIPAL -->
 
     <nav class="nav-principal">
-        <a class="" href="/"><img class="logo" src="assets/images/amlogo.jpg" alt="Action Mephi"></a>
+        <a class="" href="/"><img class="logo" src="assets/img/alogo.png" alt="Action Mephi"></a>
         <ul>
             <li class="item-active">
                 <a class="active" aria-current="page" href="/">ACCUEIL</a>
@@ -46,7 +46,7 @@
             </li>
 
             <li>
-                <a href=""><i class="fas fa-magnifying-glass grandir"></i></a>
+                <a href=""><i class="fas fa-magnifying-glass grandir sucher"></i></a>
             </li>
 
 
