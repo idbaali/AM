@@ -31,13 +31,13 @@ nav .portail {
 
 nav .portail .farbe {
     color: #222;
-    background-color: #ff9248;
+    background-color: #ddf2fb;
 
 
 }
 
 nav .portail .farbe:hover {
-    background-color: #35b5ff;
+    background-color: #1cabe2;
 }
 
 nav .portail a {
@@ -46,11 +46,7 @@ nav .portail a {
 
 nav .portail a:hover {
     color: #fff;
-}
-
-
-
-
+} 
 
 nav .droite ul {
     list-style: none;
@@ -89,13 +85,15 @@ nav.nav-principal {
     margin: 0px;
     background-color: #fff;
     /* background-color: red; */
-    border-bottom: 1px solid #2222;
     border-top: 1px solid #2222;
+    border-bottom: 1px solid #2222;
 }
 
 nav.nav-principal a .logo {
     height: 80px;
     width: 160px;
+    margin-left: 10px;
+    border-bottom: 1px solid #2222;
 }
 
 nav.nav-principal a {
@@ -120,35 +118,34 @@ nav.nav-principal ul li a {
 }
 
 nav.nav-principal ul .ligne:hover {
-
-    border-bottom: 3px solid #35b5ff;
+    border-bottom: 4px solid #1cabe2;
 }
 
 nav.nav-principal ul li .brule:hover {
-    color: #35b5ff;
+    color: #1cabe2;
 }
 
 nav.nav-principal ul li a .sucher:hover {
-    color: #35b5ff;
+    color: #1cabe2;
 }
 
 nav.nav-principal ul li a.active {
-    color: #35b5ff;
+    color: #1cabe2;
 }
 
 nav.nav-principal ul li.item-active {
-    border-bottom: 3px solid #35b5ff;
+    border-bottom: 4px solid #1cabe2;
 }
 
 nav ul li.donateur {
-    background-color: #35b5ff;
+    background-color: #1cabe2;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: -30px;
 }
 
 nav ul li.donateur:hover {
-    background-color: #35b5ff;
+    background-color: #098dc0;
 
 }
 
@@ -158,14 +155,14 @@ nav ul li.donateur a {
 }
 
 nav ul li.don {
-    background-color: #ff9248;
+    background-color: #ff8d41;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: -5px;
 }
 
 nav ul li.don:hover {
-    background-color: #ff9248;
+    background-color: #ec7a2e;
 }
 
 nav ul li.don a {
@@ -177,15 +174,41 @@ nav ul li.don a {
 /* PAGE HOME */
 
 
-section {
-    padding-top: 150px;
+.p-home {
+    margin-top: 110px;
     z-index: 1;
 }
 
-section.p-home .carousel-inner .carousel-item img {
+.p-home .carousel-inner .carousel-item img {
     width: 100%;
-    height: 120vh;
+    height: 450px;
 }
+
+section {
+    margin: 0 20px 0 20px;
+}
+
+
+/* SECTION NEWSLETTER */
+
+.p-newsletter {
+    background-color: #ddf2fb;
+    height: 250px;
+    width: 100%;
+}
+
+.p-newsletter .row {
+    margin: 0 20px 0 20px;
+    padding-top: 50px;
+    
+}
+
+
+
+
+
+
+  
 
 
 /* PAGE CONTANCT */

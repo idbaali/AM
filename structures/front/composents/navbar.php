@@ -25,7 +25,7 @@
     <!-- MENU PRINCIPAL -->
 
     <nav class="nav-principal">
-        <a class="" href="/"><img class="logo" src="assets/img/alogo.png" alt="Action Mephi"></a>
+        <a class="" href="/"><img class="logo" src="assets/img/amlogo.png" alt="Action Mephi"></a>
         <ul>
             <li class="item-active">
                 <a class="active" aria-current="page" href="/">ACCUEIL</a>
