@@ -162,3 +162,6 @@ switch ($page) {
         break;
         /* 404 NOT FOUND */
 }
+
+include ('structures/front/composents/footer.php');
+

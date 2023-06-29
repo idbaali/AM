@@ -32,6 +32,7 @@ nav .portail {
 nav .portail .farbe {
     color: #222;
     background-color: #ddf2fb;
+    padding: 10px;
 
 
 }
@@ -171,12 +172,13 @@ nav ul li.don a {
 
 
 
+
 /* PAGE HOME */
 
 
 .p-home {
-    margin-top: 110px;
-    z-index: 1;
+    /* margin-top: 0px; */
+    /* z-index: 1; */
 }
 
 .p-home .carousel-inner .carousel-item img {
@@ -184,9 +186,48 @@ nav ul li.don a {
     height: 450px;
 }
 
+section .slogan-am h2 {
+    padding: 100px 0 100px 0;
+    font-size: 35px;
+    font-family: 'Fjalla One';
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+}
+
+section .slogan-am h2 span {
+    font-family: 'Fjalla One';
+    color: #1cabe2;
+  
+}
+
 section {
     margin: 0 20px 0 20px;
 }
+
+
+
+/* ACTUALITE */
+
+
+section .actualite1 a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    background-color: #1cabe2;
+    color: #fff;
+
+}
+
+.p-actualite {
+    background-color: #f7f9fa;
+    height: 600px;
+    width: 100%;
+}
+
+
+
 
 
 /* SECTION NEWSLETTER */
@@ -203,9 +244,24 @@ section {
     
 }
 
+.p-newsletter section ul.r-social li {
+    display: inline-block;
+}
 
+.p-newsletter section ul li i {
+    margin-left: 30px;
+    font-size: 18px;
+    border: 1px solid #1cabe2;
+    padding: 15px 17px 15px 17px;
+    border-radius: 100%;
+    
+}
 
-
+.p-newsletter section ul li i:hover{
+    color: #ec7a2e;
+    border: 1px solid #ff8d41;
+    
+}
 
 
   
@@ -326,4 +382,56 @@ section main div ul {
 section main div ul li {
     margin-top: 5px;
 }
+
+
+/* FOOTER */
+
+footer {
+    padding-top: 50px;
+}
+
+footer .about-am img {
+    height: 80px;
+    width: 160px;
+}
+
+footer div ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+footer .about-am i  {
+    font-size: 20px;
+    color: #1cabe2;
+    margin-right: 10px;
+
+    
+}
+
+footer .about-am i.fa-phone  {
+    transform: rotate(110deg);
+    
+}
+
+footer .soutenir-am i  {
+    font-size: 40px;
+    color: #1cabe2;
+    margin-right: 10px;
+    
+}
+
+footer .row ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 100;
+    line-height: 2;
+}
+
+footer .row ul li a:hover{
+    color: #1cabe2;
+
+}
+
+
 
