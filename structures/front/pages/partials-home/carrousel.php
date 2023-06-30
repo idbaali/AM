@@ -20,8 +20,9 @@
               <p>La visitation de l'association Action Mephi aux handicapés des KENYA à Nairobi.</p>
               <div class="row">
                 <div class="col-6 d-grid gap-2">
-                  <div class="btn btn-info">FAIRE UN DON</div>
+                  <div class="btn btn-info custom-btn">FAIRE UN DON</div>
                 </div>
+
                 <div class="col-6 d-grid gap-2">
                   <div class="btn btn-outline-info">EN SAVOIR PLUS</div>
                 </div>

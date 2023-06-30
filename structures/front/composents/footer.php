@@ -23,6 +23,7 @@
               <i class="fa fa-credit-card"></i>
               <i class="fa fa-cc-mastercard"></i>
             </div>
+            <p class="footaide">Votre aide nous serait précieuse afin de concrétiser les projets à venir.</p>
           </div>
         </div>
 
@@ -32,7 +33,7 @@
             <li><a href="">Qui sommes nous ?</a></li>
             <li><a href="">Notre objetif</a></li>
             <li><a href="">Notre histoire</a></li>
-            <li><a href="">Transparence financière</a></li> 
+            <li><a href="">Transparence financière</a></li>
             <li><a href="">S'engager</a></li>
           </ul>
         </div>
@@ -51,6 +52,31 @@
   </div>
 
 
+    <div class="row footband">
+      <div class="col-1">
+        <p></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">@ACTIONMEPHI</a></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">Mentions légales</a></p>
+      </div>
+      <div class="col-3">
+        <p><a href="">Politique de protection des données personnelles</a></p>
+      </div>
+      <div class="col-1">
+        <p><a href="">Plan du site</a></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">Utilisation des cookies</a></p>
+      </div>
+      <div class="col-1">
+        <p></p>
+      </div>
+     
+    </div>
+ 
 
 
 </footer>
