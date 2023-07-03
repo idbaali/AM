@@ -13,7 +13,7 @@
 }
 
 
-/* PETIT NAV OU AVANT MENU */
+                                /* PETIT NAV OU AVANT MENU */
 
 nav.navbarpetit {
     display: grid;
@@ -77,7 +77,7 @@ nav .droite small {
     margin-right: 5px;
 }
 
-/* NAV OU MENU PRINCIPAL */
+                                /* NAV OU MENU PRINCIPAL */
 
 nav.nav-principal {
     height: 70px;
@@ -148,7 +148,6 @@ nav ul li.donateur:hover {
 
 }
 
-
 nav ul li.donateur a {
     color: #fff;
 }
@@ -171,7 +170,7 @@ nav ul li.don a {
 
 
 
-/* PAGE HOME */
+                                /* PAGE HOME */
 
 
 .p-home {
@@ -181,7 +180,8 @@ nav ul li.don a {
 
 .p-home .carousel-inner .carousel-item img {
     width: 100%;
-    height: 450px;
+    height: 600px;
+   
 }
 
 section .slogan-am h2 {
@@ -211,7 +211,7 @@ section {
 
 
 
-/* ACTUALITE OU START */
+                                /* ACTUALITE OU START */
 
 
 section .actualite1 a {
@@ -241,9 +241,7 @@ section .actualite1 a:hover {
 
 
 
-
-
-/* SECTION NEWSLETTER */
+                                /* SECTION NEWSLETTER */
 
 .p-newsletter {
     background-color: #ddf2fb;
@@ -276,12 +274,7 @@ section .actualite1 a:hover {
 
 
 
-
-
-
-
-
-/* PAGE CONTANCT */
+                                /* PAGE CONTANCT */
 
 
 section h1.contact {
@@ -354,7 +347,7 @@ section div form input[type="submit"]:hover {
 
 
 
-/* FAQ */
+                                /* FAQ */
 
 
 section h1.faq {
@@ -398,7 +391,7 @@ section main div ul li {
 }
 
 
-/* FOOTER */
+                                /* FOOTER */
 
 footer {
     padding-top: 50px;

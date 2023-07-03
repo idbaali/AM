@@ -35,7 +35,7 @@
             </li>
 
             <li class="don">
-                <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
+                <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
             </li>
 
         </ul>
