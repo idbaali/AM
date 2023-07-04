@@ -11,17 +11,19 @@
             <p><i class="fa-sharp fa fa-location-dot"></i>3 Boulevard Anatole france <br> 93330 Saint Dénis <br> France
             </p>
             <p><i class="fa fa-phone"></i>Tel : +33 (0) 6 62 86 32 84</p>
+            <p><i class="fa fa-envelope"></i>Mail : info@actionmephi.fr</p>
           </div>
         </div>
 
         <div class="col-3">
           <div class="soutenir-am">
             <h3>Nous soutenir</h3>
-            <div class="card-am m-l-2">
+            <div class="card-am">
               <i class="fa fa-cc-visa"></i>
               <i class="fa fa-cc-paypal"></i>
               <i class="fa fa-credit-card"></i>
               <i class="fa fa-cc-mastercard"></i>
+              <i class="fa fa-cc-visa"></i>
             </div>
             <p class="footaide">Votre aide nous serait précieuse afin de concrétiser les projets à venir.</p>
           </div>
@@ -52,33 +54,16 @@
   </div>
 
 
-    <div class="row footband">
-      <div class="col-1">
-        <p></p>
-      </div>
-      <div class="col-2">
-        <p><a href="">@ACTIONMEPHI</a></p>
-      </div>
-      <div class="col-2">
-        <p><a href="">Mentions légales</a></p>
-      </div>
-      <div class="col-3">
-        <p><a href="">Politique de protection des données personnelles</a></p>
-      </div>
-      <div class="col-1">
-        <p><a href="">Plan du site</a></p>
-      </div>
-      <div class="col-2">
-        <p><a href="">Utilisation des cookies</a></p>
-      </div>
-      <div class="col-1">
-        <p></p>
-      </div>
-     
-    </div>
- 
-
-
+  <div class="footband">
+    <ul>
+      <li><a href="">Mentions légales</a></li>
+      <li><a href="">@ACTIONMEPHI</a></li>
+      <li><a href="">Politique de protection des données personnelles</a></li>
+      <li><a href="">Plan du site</a></li>
+      <li><a href="">Utilisation des cookies</a></li>
+    </ul>
+  </div>
+    
 </footer>
 
 

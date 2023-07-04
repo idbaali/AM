@@ -1,5 +1,5 @@
 <section class="p-home">
-
+    <h1>PRESSE</h1>
     <p class="text-dark">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo sequi fugit mollitia neque dolorem impedit reiciendis doloribus enim nihil esse tempore quos officiis cumque, deleniti voluptatibus perferendis consectetur maiores! Doloremque?
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit cupiditate. Dolores voluptas accusantium molestiae amet mollitia excepturi nulla debitis nostrum ipsam enim? Dicta, ipsum corporis accusantium laudantium ipsam ea!

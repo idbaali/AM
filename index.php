@@ -54,6 +54,19 @@ switch ($page) {
         include 'structures/front/pages/faireDon.php';
         break;
 
+
+
+        /*---------------------------- PAGES INTERNE --------------------------- */
+
+        /* TOUTES LES ACTUALITES */
+    case 'all_news':
+
+        include 'structures/front/pages/all_news.php';
+        break;
+
+
+
+
         
 
 

@@ -7,7 +7,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/img/kenia3.jpg" class="" alt="...">
+        <img src="assets/img/kenia8.png" class="" alt="...">
         <div class="carousel-caption">
           <div class="row">
             <div class="col-5">

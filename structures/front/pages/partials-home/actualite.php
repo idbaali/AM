@@ -5,20 +5,22 @@
                 <h2>Actualité ACTION MEPHI</h2>
             </div>
             <div class="col-3 actualite1">
-                <a href="actualite"><i class="fa fa-eye me-2"></i>Voir toutes les actualités</a>
+                <a href="all_news"><i class="fa fa-eye me-2"></i>Voir toutes les actualités</a>
             </div>
         </div>
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="row">
+                    <div class="row"> 
                         <div class="col-3">
                             <div class="card">
                                 <img src="../assets/img/cologne.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <hr>
+                                    <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>
                             </div>
                         </div>
@@ -26,8 +28,10 @@
                             <div class="card">
                                 <img src="../assets/img/cologne1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <hr>
+                                    <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>
                             </div>
                         </div>
@@ -35,8 +39,10 @@
                             <div class="card">
                                 <img src="../assets/img/cologne2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <hr>
+                                    <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>
                             </div>
                         </div>
@@ -44,8 +50,10 @@
                             <div class="card">
                                 <img src="../assets/img/cologne3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <hr>
+                                    <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>
                             </div>
                         </div>
