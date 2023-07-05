@@ -64,6 +64,14 @@
     </ul>
   </div>
     
+
+  <script>
+  document.getElementById('button-addon2').addEventListener('click', function() {
+    var texteRecherche = document.getElementById('texteRecherche');
+    texteRecherche.classList.add('texte-blanc');
+  });
+</script>
+
 </footer>
 
 
