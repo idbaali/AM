@@ -12,6 +12,7 @@ switch ($page) {
 
         /* MENU PRINCIPAL */
 
+
         /* HOME */
     case 'home':
 
@@ -64,10 +65,21 @@ switch ($page) {
         include 'structures/front/pages/all_news.php';
         break;
 
+        /* TOUTES LES ACTIONS */
+    case 'all_actions':
 
+        include 'structures/front/pages/all_actions.php';
+        break;
 
+     
+        /* DEVENIR BENEVOLE */
+    case 'dev_benevole':
+
+        include 'structures/front/pages/dev_benevole.php';
+        break;   
 
         
+
 
 
         /*------------------------- MENU DEROULANT---------------------------*/
@@ -90,11 +102,6 @@ switch ($page) {
         include 'structures/front/pages/orphilins.php';
         break;
 
-        /* Devenir bénévole */
-    case 'devenir-benevole':
-
-        include 'structures/front/pages/dev_benevol.php';
-        break;
 
         /* Devenir donateur */
     case 'devenir-donateur':
@@ -176,5 +183,4 @@ switch ($page) {
         /* 404 NOT FOUND */
 }
 
-include ('structures/front/composents/footer.php');
-
+include('structures/front/composents/footer.php');

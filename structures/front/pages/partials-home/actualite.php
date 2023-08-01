@@ -1,10 +1,10 @@
 <div class="p-actualite">
     <section class="">
         <div class="row mb-5 pt-5">
-            <div class="col-9">
+            <div class="col-md-9 col-sm-12 col-xs-12">
                 <h2>Actualité ACTION MEPHI</h2>
             </div>
-            <div class="col-3 actualite1">
+            <div class="col-md-3 col-sm-12 col-xs-12 actualite1">
                 <a href="all_news"><i class="fa fa-eye me-2"></i>Voir toutes les actualités</a>
             </div>
         </div>
@@ -13,7 +13,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row"> 
-                        <div class="col-3">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
                                 <img src="../assets/img/cologne.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
                                 <img src="../assets/img/cologne1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
                                 <img src="../assets/img/cologne2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
                                 <img src="../assets/img/cologne3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">

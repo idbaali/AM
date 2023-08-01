@@ -1,0 +1,84 @@
+
+/* Styles pour les écrans de petite taille */
+@media (max-width: 767px) {
+    /* Styles pour le header */
+    header {
+      /* Ajustez les styles selon vos besoins */
+    }
+    
+    /* Styles pour le menu principal */
+    nav.nav-principal {
+      /* Ajustez les styles selon vos besoins */
+    }
+    nav.nav-principal a .logo {
+      /* Ajustez les styles selon vos besoins */
+    }
+    nav.nav-principal ul {
+      /* Ajustez les styles selon vos besoins */
+    }
+    nav.nav-principal ul li {
+      /* Ajustez les styles selon vos besoins */
+    }
+    nav.nav-principal ul li.item-active {
+      /* Ajustez les styles selon vos besoins */
+    }
+    
+    /* Styles pour le contenu principal */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le footer */
+    footer {
+      /* Ajustez les styles selon vos besoins */
+    }
+    footer .container-fluid {
+      /* Ajustez les styles selon vos besoins */
+    }
+    footer .row {
+      /* Ajustez les styles selon vos besoins */
+    }
+    footer .col-3 {
+      /* Ajustez les styles selon vos besoins */
+    }
+    footer .about-am,
+    footer .soutenir-am,
+    footer ul {
+      /* Ajustez les styles selon vos besoins */
+    }
+    footer .footband ul li {
+      /* Ajustez les styles selon vos besoins */
+    }
+  }
+  
+  /* Styles pour les écrans de taille moyenne */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Styles pour le header */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le menu principal */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le contenu principal */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le footer */
+    /* Ajustez les styles selon vos besoins */
+  }
+  
+  /* Styles pour les écrans de grande taille */
+  @media (min-width: 992px) {
+    /* Styles pour le header */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le menu principal */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le contenu principal */
+    /* Ajustez les styles selon vos besoins */
+    
+    /* Styles pour le footer */
+    /* Ajustez les styles selon vos besoins */
+  }
+  
+  /* Styles communs pour tous les écrans */
+  /* Ajustez les styles selon vos besoins */
+  

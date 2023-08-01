@@ -2,6 +2,9 @@
 
 <nav class="nav-principal">
     <a class="" href="/"><img class="logo" src="assets/img/amlogo.png" alt="Action Mephi"></a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> -->
+    </button>
     <ul>
         <li class="item-active">
             <a class="active" aria-current="page" href="/">ACCUEIL</a>

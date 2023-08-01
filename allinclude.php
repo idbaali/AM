@@ -6,7 +6,7 @@ include ('structures/front/composents/navbar.php');
 
 
 
-<?php
+<?php 
 // include ('structures/front/composents/home.php');
 // include ('structures/front/composents/contact.php');
 // include ('structures/front/composents/devenirbenevol.php');
