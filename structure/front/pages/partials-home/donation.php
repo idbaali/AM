@@ -11,7 +11,7 @@
         <div class="row g-0">
             <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="">
-                    <img src="assets/img/kenia3.jpg" alt="Photo de paris" class="w-100">
+                    <img src="assets/img/kenia5.png" alt="Photo de paris" class="w-100">
                 </div>
             </div>
             <div class="col-md-7 col-sm-12 col-xs-12">

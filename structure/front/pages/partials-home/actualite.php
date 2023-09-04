@@ -12,10 +12,10 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="row"> 
+                    <div class="row">
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
-                                <img src="../assets/img/cologne.jpg" class="card-img-top" alt="...">
+                                <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -26,9 +26,9 @@
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
-                                <img src="../assets/img/cologne1.jpg" class="card-img-top" alt="...">
+                                <img src="../assets/img/cologne1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                <h6 class="card-title text-light">Actualité</h6>
+                                    <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <hr>
                                     <small>Publié le 03/07/2023 à 15:00 | Paris</small>
@@ -37,9 +37,9 @@
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
-                                <img src="../assets/img/cologne2.jpg" class="card-img-top" alt="...">
+                                <img src="../assets/img/cologne4.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                <h6 class="card-title text-light">Actualité</h6>
+                                    <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <hr>
                                     <small>Publié le 03/07/2023 à 15:00 | Paris</small>
@@ -48,33 +48,33 @@
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="card">
-                                <img src="../assets/img/cologne3.jpg" class="card-img-top" alt="...">
+                                <img src="../assets/img/cologne2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                <h6 class="card-title text-light">Actualité</h6>
+                                    <h6 class="card-title text-light">Actualité</h6>
                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <hr>
                                     <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img src="../assets/img/cologne4.jpg" class="dimension" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/img/cologne7.jpg" class="dimension" alt="...">
-                </div>
+                    <img src="../assets/img/cologne7.png" class="dimension" alt="...">
+                </div> -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
 
     </section>

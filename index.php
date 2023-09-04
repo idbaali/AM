@@ -16,31 +16,31 @@ switch ($page) {
         /* HOME */
     case 'home':
 
-        include 'structures/front/pages/home.php';
+        include 'structure/front/pages/home.php';
         break;
 
         /* NOUS DECOUVRIR */
     case 'nous-decouvrir':
 
-        include 'structures/front/pages/nous_decouvrir.php';
+        include 'structure/front/pages/nous_decouvrir.php';
         break;
 
         /* EVENEMENTS */
     case 'evenements':
 
-        include 'structures/front/pages/evenements.php';
+        include 'structure/front/pages/evenements.php';
         break;
 
         /* NOS DOMAINS DES ACTIONS */
     case 'nos-domaines':
 
-        include 'structures/front/pages/nos_domaines.php';
+        include 'structure/front/pages/nos_domaines.php';
         break;
 
         /* S'ENGAGER */
     case 's-engager':
 
-        include 'structures/front/pages/s_engager.php';
+        include 'structure/front/pages/s_engager.php';
         break;
 
         /* ESPACE DENATEUR */
@@ -52,7 +52,7 @@ switch ($page) {
         /* FAIRE UN DON */
     case 'faire-don':
 
-        include 'structures/front/pages/faireDon.php';
+        include 'structure/front/pages/faireDon.php';
         break;
 
 
@@ -62,20 +62,20 @@ switch ($page) {
         /* TOUTES LES ACTUALITES */
     case 'all_news':
 
-        include 'structures/front/pages/all_news.php';
+        include 'structure/front/pages/all_news.php';
         break;
 
         /* TOUTES LES ACTIONS */
     case 'all_actions':
 
-        include 'structures/front/pages/all_actions.php';
+        include 'structure/front/pages/all_actions.php';
         break;
 
      
         /* DEVENIR BENEVOLE */
     case 'dev_benevole':
 
-        include 'structures/front/pages/dev_benevole.php';
+        include 'structure/front/pages/dev_benevole.php';
         break;   
 
         
@@ -87,50 +87,50 @@ switch ($page) {
         /* Aide aux enfants handicapées */
     case 'aide-enfants':
 
-        include 'structures/front/pages/enfants.php';
+        include 'structure/front/pages/enfants.php';
         break;
 
         /* Aide aux personnes adult handicapées */
     case 'aide-adults':
 
-        include 'structures/front/pages/adults.php';
+        include 'structure/front/pages/adults.php';
         break;
 
         /* Aide aux orphelins */
     case 'aide-orphelins':
 
-        include 'structures/front/pages/orphilins.php';
+        include 'structure/front/pages/orphilins.php';
         break;
 
 
         /* Devenir donateur */
     case 'devenir-donateur':
 
-        include 'structures/front/pages/dev_donateur.php';
+        include 'structure/front/pages/dev_donateur.php';
         break;
 
         /* Devenir membre */
     case 'devenir-membre':
 
-        include 'structures/front/pages/dev_membre.php';
+        include 'structure/front/pages/dev_membre.php';
         break;
 
         /* Devenir formateur */
     case 'devenir-formateur':
 
-        include 'structures/front/pages/dev_formateur.php';
+        include 'structure/front/pages/dev_formateur.php';
         break;
 
         /* Formation de la musique */
     case 'formation-musique':
 
-        include 'structures/front/pages/formation.php';
+        include 'structure/front/pages/formation.php';
         break;
 
         /* Faire un stage */
     case 'faire-stage':
 
-        include 'structures/front/pages/stage.php';
+        include 'structure/front/pages/stage.php';
         break;
 
 
@@ -142,33 +142,43 @@ switch ($page) {
         /* PORTAIL ACTION MEPHI */
     case 'portail':
 
-        include 'structures/front/pages/portail.php';
+        include 'structure/front/pages/portail.php';
         break;
 
         /* S'INSCRIRE A LA NEWSLETTER */
     case 'newsletter':
 
-        include 'structures/front/pages/newsletter.php';
+        include 'structure/front/pages/newsletter.php';
         break;
 
         /* PRESSE */
     case 'presse':
 
-        include 'structures/front/pages/presse.php';
+        include 'structure/front/pages/presse.php';
         break;
 
         /* CONTACT */
     case 'contact':
 
-        include 'structures/front/pages/contact.php';
+        include 'structure/front/pages/contact.php';
         break;
 
         /* FAQ */
     case 'faq':
 
-        include 'structures/front/pages/faq.php';
+        include 'structure/front/pages/faq.php';
         break;
 
+
+
+
+/* -------------------TRAITEMANT BACK-END------------------------ */
+
+                /* NEWSLETTER */
+    case 'back-newsletter':
+
+        include 'structure/back/pages/newsletter.php';
+        break;
 
 
 
@@ -178,9 +188,9 @@ switch ($page) {
         /* 404 NOT FOUND */
     default:
         header("HTTP/1.1 404 Not Found");
-        include 'structures/front/pages/page-404.php';
+        include 'structure/front/pages/page-404.php';
         break;
         /* 404 NOT FOUND */
 }
 
-include('structures/front/composents/footer.php');
+include('structure/front/composants/footer.php');

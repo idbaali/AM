@@ -7,7 +7,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/img/kenia8.png" class="d-block w-100" alt="...">
+        <img src="assets/img/Kenia1.png" class="d-block w-100" alt="...">
         <div class="carousel-caption">
           <div class="row">
             <div class="col-5">
@@ -20,7 +20,7 @@
               <p>La visitation de l'association Action Mephi aux handicapés des KENYA à Nairobi.</p>
               <div class="row">
                 <div class="col-6 d-grid gap-2">
-                  <div class="btn btn-info custom-btn">FAIRE UN DON</div>
+                  <div class="btn btn-info custom-btn1">FAIRE UN DON</div>
                 </div>
 
                 <div class="col-6 d-grid gap-2">
@@ -32,17 +32,17 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/kenia1.jpg" class="d-block w-100" alt="...">
+        <img src="assets/img/kenia2.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>A Nairobi KENYA</h5>
-          <p>La visitation de l'association Action Mephi aux handicapés des KENYA à Nairobi.</p>
+          <h5></h5>
+          <p></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/kenia2.jpg" class="d-block w-100" alt="...">
+        <img src="assets/img/kenia3.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>A Nairobi KENYA</h5>
-          <p>La visitation de l'association Action Mephi aux handicapés des KENYA à Nairobi.</p>
+          <h5></h5>
+          <p></p>
         </div>
       </div>
     </div>

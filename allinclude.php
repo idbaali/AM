@@ -1,7 +1,9 @@
 <?php
-include ('structures/front/composents/head.php');
-include ('structures/front/composents/header.php');
-include ('structures/front/composents/navbar.php');
+include ('models/connexion.php');
+include ('models/function.php');
+include ('structure/front/composants/head.php');
+include ('structure/front/composants/header.php');
+include ('structure/front/composants/navbar.php');
 ?>
 
 

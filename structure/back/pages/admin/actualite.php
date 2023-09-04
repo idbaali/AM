@@ -13,10 +13,10 @@
         </div>
         <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class="mb-4">S'inscrire à la newsletter</h5>
-            <form class="d-flex justify-content-center align-items-center">
+            <form class="d-flex justify-content-center align-items-center" action='back-newsletter' method="post">
                 <div class="input-group mb-1">
-                    <input type="text" class="form-control" placeholder="Votre adresse e-mail" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-info" type="button" id="button-addon2">ENVOYER</button>
+                    <input type="text" class="form-control" name="email" placeholder="Votre adresse e-mail" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-info" type="submit" name="btn-newsletter" id="button-addon2">ENVOYER</button>
                 </div>
             </form>
             <p>En cliquant sur ENVOYER, vous acceptez que ACTION MEPHI vous envoie sa newsletter. Vous pourrez à tout moment vous désinscrire en utilisant le lien intégré à chaque newsletter.</p>  
