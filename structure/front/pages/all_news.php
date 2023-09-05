@@ -20,7 +20,7 @@
                     <img src="../assets/img/aachen.jpg" class="w-100" alt="...">
                     <div>
                         <h5>Actualité</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aliquid nulla sequi ea obcaecati ratione eveniet consectetur excepturi iusto porro sapiente dignissimos, repudiandae quis enim deleniti odio? Iure, laborum labore?</p>
+                        <p>Si vous préférez soutenir une association dans ses actions, découvrez les différentes manières de le faire sur cette page.</p>
                     </div>
                 </div>
             </div>

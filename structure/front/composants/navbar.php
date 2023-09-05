@@ -53,11 +53,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nous-decouvrir">NOUS DECOUVRIR</a>
+                <li class="nav-item ligne">
+                    <a class="nav-link brule" href="decouvrir">DECOUVRIR</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,17 +73,17 @@
                 <li class="nav-item ligne">
                     <a class="nav-link brule" href="evenements">EVENEMENTS</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="nos-domaines">NOS DOMAINS D'ACTIONS</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="s-engager">S'ENGAGER</a>
+                <li class="nav-item ligne">
+                    <a class="nav-link brule" href="domaines-actions">DOMAINS DES ACTIONS</a>
+                </li>
+                <li class="nav-item ligne">
+                    <a class="nav-link brule" href="s-engager">S'ENGAGER</a>
                 </li>
             </ul>
 
-            <form class="d-flex me-2 phone-hide">
-                <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
-                <button class="btn btn-outline-info" type="submit">Ok</button>
+            <form class="d-flex me-2 phone-hide brule sucher">
+                <input class="form-control me-2 sucher" type="search" placeholder="Recherche" aria-label="Search">
+                <button class="btn btn-outline-info sucher" type="submit">Ok</button>
             </form>
 
             <div class="donateur d-flex phone-hide">
