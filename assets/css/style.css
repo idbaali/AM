@@ -83,7 +83,12 @@ header {
     margin-right: 5px;
 }
 
+
+
+
 /*-------------------------------------- NAV OU MENU PRINCIPAL */
+
+
 
 nav {
     /* display: grid;
@@ -92,15 +97,24 @@ nav {
     width: 100%;
     top: 0;
     margin: 0px;*/
-    background-color: #fff; 
+    background-color: #fff;
     border-top: 1px solid #2222;
     border-bottom: 1px solid #2222;
 }
 
-nav .logo {
-    height: 40px;
-    width: 150px;
+/* .ml-auto {
+    display: none;
+} */
+
+nav a {
     margin-left: 10px;
+    margin-right: 10px; 
+}
+
+nav .logo {
+    width: 160px;
+    height: 50px;
+    /* margin-left: 10px; */
 }
 
 nav a {
@@ -108,33 +122,44 @@ nav a {
     color: #222;
 }
 
-/* nav {
-    list-style: none;
-    float: right;
-} */
-
 nav .ligne:hover {
     border-bottom: 2px solid #1cabe2;
 }
 
 nav .brule:hover {
     color: #1cabe2;
-} 
+}
 
 nav a.active {
     color: #1cabe2;
     margin-left: 30px;
 }
 
-/* nav .active {
-    border-bottom: 1px solid #1cabe2;
-}  */
+#area {
+    width: 80%;
+    height: 50px;
+}
+
+.bouton-area {
+    width: 10%;
+    height: 50px;
+    background-color: #1cabe2;
+}
+
+nav a .sucher {
+    padding-left: 40px;
+}
+
+nav a .sucher:hover {
+    color: #1cabe2;
+}
 
 nav .donateur {
     background-color: #1cabe2;
+    display: flex;
+    align-items: center;
     padding: 5px;
-    color: #fff;
-    height: 40px;
+    height: 50px;   
 }
 
 nav .donateur:hover {
@@ -146,23 +171,25 @@ nav .donateur a {
     text-decoration: none;
 }
 
-nav .don {
+nav .donPhone {
     background-color: #ff8d41;
-    padding: 5px;
-    padding-right: 10px;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    height: 50px;
     margin-right: -3%;
-
+    
 }
 
-nav .don:hover {
+nav .donPhone:hover {
     background-color: #ec7a2e;
 }
 
-nav .don a {
+nav .donPhone a {
     color: #fff;
     text-decoration: none;
 }
+
 
 
 
@@ -176,6 +203,61 @@ nav .don a {
     height: 100%;
     width: 100%;
 }
+
+/* Le code CSS pour enlever l'espace entre les images du carrousel */
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 100%;
+    transition: transform 0.6s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajustez la marge négative pour rapprocher les images */
+.carousel-item:not(.active) {
+    margin-right: -15px;
+    /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+/* Ajoutez ce code pour centrer le contenu du carrousel */
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent pour le texte */
+}
+
+/* Agrandir le carrousel Bootstrap */
+.carousel {
+    max-width: 100%;
+    /* Largeur maximale du carrousel (par défaut) */
+    margin: 0 auto;
+    /* Centre le carrousel horizontalement */
+    height: 650px;
+    /* Hauteur du carrousel (ajustez cette valeur selon vos besoins) */
+}
+
+.carousel-inner {
+    height: 100%;
+    /* Hauteur du contenu du carrousel (remplit la hauteur du carrousel) */
+}
+
+.carousel-item {
+    text-align: center;
+    /* Centre le contenu des diapositives */
+}
+
 
 
 
@@ -207,7 +289,6 @@ section {
     background-color: #098dc0;
     color: #fff;
 }
-
 
 
 
@@ -626,7 +707,7 @@ footer .footband ul li a:hover {
 /* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
 
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
     /* -------------------------------------HEADER */
     header {
@@ -666,11 +747,11 @@ footer .footband ul li a:hover {
 
     }
 
-     .droite ul small {
+    .droite ul small {
         display: none;
-       
 
-    } 
+
+    }
 
 
 
@@ -678,95 +759,70 @@ footer .footband ul li a:hover {
 
     /*-------------------------------------- NAV OU MENU PRINCIPAL */
 
-   
-    /* nav.nav-principal {
-        height: 65px;
-        width: 100%;
-        top: 0;
-        margin: 0px;
-        background-color: #fff;
-        border-top: 1px solid #2222;
-        border-bottom: 1px solid #2222;
+
+    .home-hidden {
+        display: none;
+    }
+    
+
+    /* Ajoutez ceci à votre CSS pour le menu hamburger sur les petits écrans */
+
+    /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
+    .navbar-toggler {
+        order: -1;
     }
 
-    nav.nav-principal a .logo {
-        height: 65px;
-        width: 160px;
-        margin-left: 10px;
-        border-bottom: 1px solid #2222;
+    .donPhone {
+        order: 2;
+        /* Réorganisez le bouton "Faire un don" à droite */
     }
 
-    nav.nav-principal a {
-        text-decoration: none;
-        color: #222;
+
+    /* Styles pour le logo */
+    .navbar-brand {
+        margin-right: 0;
+        /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
     }
 
-    nav.nav-principal ul {
-        list-style: none;
-        float: right;
 
+    /* Ajoutez un espace entre l'espace donateur et le reste du menu */
+    #espace-donateur {
+        height: 60px;
+        width: 530px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        margin-left: -20px;
+    }
+
+    .espaceDona {
+        display: flex;
+        align-items: center;
+        padding-left: 150px;
+    }
+
+    .bouton-area,
+    #area {
+        margin-bottom: 20px;
+    }
+
+    /* Réduisez l'espace entre les éléments du menu */
+    /* .navbar-nav .nav-item:not(:last-child) {
+        margin-bottom: 5px;
     } */
 
-    /* nav.nav-principal ul li {
-        display: inline-block;
-        margin: 0 20px;
-        line-height: 65px;
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #ccc;
+        /* Ligne sous chaque élément du menu */
     }
 
-    nav.nav-principal ul li a {
-        color: #222;
+    /* Ajoutez de l'espace entre les éléments du menu avec des lignes */
+    .navbar-nav .nav-item:not(:last-child) {
+        margin-bottom: 20px;
     }
 
-    nav.nav-principal ul .ligne:hover {
-        border-bottom: 4px solid #1cabe2;
-    }
 
-    nav.nav-principal ul li .brule:hover {
-        color: #1cabe2;
-    }
 
-    nav.nav-principal ul li a .sucher:hover {
-        color: #1cabe2;
-    }
 
-    nav.nav-principal ul li a.active {
-        color: #1cabe2;
-    }
-
-    nav.nav-principal ul li.item-active {
-        border-bottom: 4px solid #1cabe2;
-    }
-
-    nav ul li.donateur {
-        background-color: #1cabe2;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-right: -30px;
-    }
-
-    nav ul li.donateur:hover {
-        background-color: #098dc0;
-
-    }
-
-    nav ul li.donateur a {
-        color: #fff;
-    }
-
-    nav ul li.don {
-        background-color: #ff8d41;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-right: -5px;
-    }
-
-    nav ul li.don:hover {
-        background-color: #ec7a2e;
-    }
-
-    nav ul li.don a {
-        color: #fff;
-    } */
 
 
 
@@ -777,9 +833,26 @@ footer .footband ul li a:hover {
 
     /*----------- CAROUSEL */
 
-    .p-home .carousel-inner .carousel-item img {
-        height: 600px;
-        width: 100%;
+
+
+    /* Agrandir le carrousel Bootstrap */
+    .carousel {
+        max-width: 100%;
+        /* Largeur maximale du carrousel (par défaut) */
+        margin: 0 auto;
+        /* Centre le carrousel horizontalement */
+        height: 450px;
+        /* Hauteur du carrousel (ajustez cette valeur selon vos besoins) */
+    }
+
+    .carousel-inner {
+        height: 100%;
+        /* Hauteur du contenu du carrousel (remplit la hauteur du carrousel) */
+    }
+
+    .carousel-item {
+        text-align: center;
+        /* Centre le contenu des diapositives */
     }
 
 

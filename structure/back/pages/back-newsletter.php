@@ -1,28 +1,25 @@
 <?php
+// TRAITEMENT DU FORMULAIRE D'INSCRIPTION A LA NWESLETTER
 if (isset($_POST['btn-newsletter'])) {
-    $email = htmlspecialchars(trim($_POST['email']));
-    // Verification si l'imput est vide
-    if(empty($email)){
+    $email = htmlspecialchars(trim($_POST['email'])); 
+    
+    if (!empty($email)) {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            setFlash('Votre e-mail est bien enregistré : ' . $email, 'success');
+            // header('Location:/'); 
+            redirect("/");
+        } else {
+               setFlash('Votre e-mail n\'est pas valide : '.$email , 'danger');
+                // header('Location:/'); 
+                redirect("/");
+        }
+
+    } else {
         setFlash('inserer votre email svp', 'danger');
         // header('Location:/');
-        ?>
-        <script>
-            window.location.href="/";
-        </script>
-        <?php
 
-    }else {
-        setFlash('bravo, votre e-mail est : '.$email , 'success');
-        // header('Location:/'); 
-        ?>
-        <script>
-            window.location.href="/";
-        </script>
-        <?php
+        redirect("/");
     }
-   
-
-    
 }
 
 ?>

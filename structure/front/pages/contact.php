@@ -1,6 +1,6 @@
 <section class="p-home">
 
-	<h1 class="contact">Nous contacter !</h1>
+	<h1 class="contact pt-5">Nous contacter !</h1>
 
 	<div class="container container-narrow">
 		<div id="field_1_7" class="sujet_espace gfield--type-select gfield--width-full big-label gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_1_7">
@@ -33,6 +33,7 @@
 
 			<input type="submit" value="Envoyer">
 		</form>
+
 	</div>
 
 </section>

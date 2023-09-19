@@ -71,14 +71,14 @@ switch ($page) {
         include 'structure/front/pages/all_actions.php';
         break;
 
-     
+
         /* DEVENIR BENEVOLE */
     case 'dev_benevole':
 
         include 'structure/front/pages/dev_benevole.php';
-        break;   
+        break;
 
-        
+
 
 
 
@@ -172,14 +172,25 @@ switch ($page) {
 
 
 
-/* -------------------TRAITEMANT BACK-END------------------------ */
+        /* -------------------TRAITEMANT BACK-END------------------------ */
 
-                /* NEWSLETTER */
+        /* NEWSLETTER */
     case 'back-newsletter':
 
         include 'structure/back/pages/back-newsletter.php';
         break;
 
+        /* ADMIN */
+    case 'admin/admin':
+
+        include 'structure/back/pages/admin/admin.php';
+        break;
+
+        /* LOGIN */
+    case 'login':
+
+        include 'structure/back/pages/admin/login.php';
+        break;
 
 
 

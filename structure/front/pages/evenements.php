@@ -1,3 +1,7 @@
+<?php
+// redirect("/contact");
+?>
+
 <section class="p-home">
 
     <h1>EVENEMENTS</h1>

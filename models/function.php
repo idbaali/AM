@@ -1,14 +1,20 @@
 <?php
-    // FONCTION POUR AFFICHER LES MESSAGES
-     function setFlash($message, $status)
-     {
- 
-         $_SESSION['flash'][] = array(
-             'message' => $message,
-             'status' => $status
-         );
-     }
- 
+// FONCTION POUR AJOUTER OU AFFICHER LES MESSAGES FLASH
+function setFlash($message, $status)
+{
+    $_SESSION['flash'][] = array(
+        'message' => $message,
+        'status' => $status
+    );
+}
 
+function redirect($page)
+{
+?>
+    <script>
+        window.location.href = "<?= $page ?>";
+    </script>
+<?php
+}
 
 ?>
