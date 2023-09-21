@@ -113,22 +113,22 @@ nav .logo {
     /* margin-left: 10px; */
 }
 
-/* nav ul li a:hover {
+nav ul li a:hover {
     color: #1cabe2;
-} */
+}
 
 nav a {
     text-decoration: none;
     color: #222;
 }
 
-/* nav .ligne:hover {
+nav .ligne:hover {
     border-bottom: 2px solid #1cabe2;
-} */
+}
 
-/* nav .brule:hover {
+nav .brule:hover {
     color: #1cabe2;
-} */
+}
 
 /* nav a.active {
     color: #1cabe2;
@@ -772,7 +772,7 @@ footer .footband ul li a:hover {
     /* .home-hidden {
         display: none;
     } */
-    nav .ligne:hover {
+    /* nav .ligne:hover {
         border-bottom: 2px solid #1cabe2;
         display: none;
 
@@ -782,7 +782,7 @@ footer .footband ul li a:hover {
         color: #1cabe2;
         display: none;
 
-    }
+    } */
     
     #area {
         width: 70%;
@@ -1329,4 +1329,15 @@ footer .footband ul li a:hover {
     footer .footband ul li a:hover {
         color: #1cabe2;
     }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    
 }
