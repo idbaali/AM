@@ -1,6 +1,7 @@
 <?php
 include ('models/connexion.php');
 include ('models/function.php');
+include ('models/newsletter.php');
 include ('structure/front/composants/head.php');
 include ('structure/front/composants/header.php');
 include ('structure/front/composants/navbar.php');

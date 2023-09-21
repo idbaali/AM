@@ -9,8 +9,8 @@
       <div class="row align-items-center">
         <div class="col-md-3 col-sm-12 col-xs-12">
           <div class="about-am">
-            <img src="assets/img/amlogo.png" alt="">
-            <p><i class="fa-sharp fa fa-location-dot"></i>35 Boulevard Anatole france <br> 93330 Saint Dénis  FRANCE
+            <img src="../assets/img/amlogo.png" alt="">
+            <p><i class="fa-sharp fa fa-location-dot"></i>35 Boulevard Anatole france <br> 93330 Saint Dénis FRANCE
             </p>
             <p><i class="fa fa-phone"></i>Tel : +33 (0) 6 62 86 32 84</p>
             <p><i class="fa fa-envelope"></i>Mail : info@actionmephi.fr</p>
@@ -27,8 +27,8 @@
               <i class="fa fa-cc-mastercard"></i>
               <i class="fa fa-wallet"></i>
             </div>
-            <p class="footaide">Votre aide nous serait précieuse afin <br> de concrétiser les projets à venir. <br> 
-            Aider les personnes handicapées <br> et leurs enfants insi que les orphelins en Afrique.           
+            <p class="footaide">Votre aide nous serait précieuse afin <br> de concrétiser les projets à venir. <br>
+              Aider les personnes handicapées <br> et leurs enfants insi que les orphelins en Afrique.
             </p>
           </div>
         </div>
@@ -66,6 +66,23 @@
       <li class="col-xs-12"><a href="">Plan du site</a></li>
       <li class="col-xs-12"><a href="">Utilisation des cookies</a></li>
     </ul>
+  </div>
+
+  <!-- PETIT MENU -->
+
+  <div class="navbarpetitPhone d-lg-none">
+
+    <div class="droite">
+      <ul>
+        <li><a class="droite-phone" href="/#newsletter">S'inscrire à la newsletter</a></li>
+        <small>|</small>
+        <li><a class="" href="/presse">Presse</a></li>
+        <small>|</small>
+        <li><a class="" href="/contact">Contact</a></li>
+        <small>|</small>
+        <li><a class="" href="/faq">FAQ</a></li>
+      </ul>
+    </div>
   </div>
 
 </footer>

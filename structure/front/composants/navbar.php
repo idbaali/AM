@@ -50,7 +50,7 @@
     <div class="container-fluid">
 
         <!-- Logo à gauche -->
-        <a class="navbar-brand" href="/"><img class="logo" src="assets/img/amlogo2.png" alt="Action Mephi"></a>
+        <a class="navbar-brand" href="/"><img class="logo" src="../assets/img/amlogo2.png" alt="Action Mephi"></a>
 
         <!-- Bouton du menu hamburger à gauche -->
         <button class="navbar-toggler hamburger" id="menu-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -187,7 +187,7 @@ switch ($page) {
         break;
 
         /* LOGIN */
-    case 'login':
+    case 'admin/login':
 
         include 'structure/back/pages/admin/login.php';
         break;

@@ -89,7 +89,6 @@ header {
 /*-------------------------------------- NAV OU MENU PRINCIPAL */
 
 
-
 nav {
     /* display: grid;
     grid-template-columns: 10% 64% 13% 13%;
@@ -102,9 +101,6 @@ nav {
     border-bottom: 1px solid #2222;
 }
 
-/* .ml-auto {
-    display: none;
-} */
 
 nav a {
     margin-left: 10px;
@@ -117,37 +113,30 @@ nav .logo {
     /* margin-left: 10px; */
 }
 
+/* nav ul li a:hover {
+    color: #1cabe2;
+} */
+
 nav a {
     text-decoration: none;
     color: #222;
 }
 
-nav .ligne:hover {
+/* nav .ligne:hover {
     border-bottom: 2px solid #1cabe2;
-}
+} */
 
-nav .brule:hover {
+/* nav .brule:hover {
     color: #1cabe2;
-}
+} */
 
-nav a.active {
+/* nav a.active {
     color: #1cabe2;
     margin-left: 30px;
-}
-
-#area {
-    width: 80%;
-    height: 50px;
-}
-
-.bouton-area {
-    width: 10%;
-    height: 50px;
-    background-color: #1cabe2;
-}
+} */
 
 nav a .sucher {
-    padding-left: 40px;
+    margin: 20px;
 }
 
 nav a .sucher:hover {
@@ -257,6 +246,8 @@ nav .donPhone a {
     text-align: center;
     /* Centre le contenu des diapositives */
 }
+
+
 
 
 
@@ -616,6 +607,23 @@ section main div ul li {
 }
 
 
+/*------------------------------------------------- ADMIN LOGIN */
+
+section.p-login {
+    margin-top: 180px;
+    margin-bottom: 40px;
+}
+
+section.p-login form {
+    border: 1px solid #000;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+
+
+
+
 
 
 /*------------------------------------------------- FOOTER */
@@ -709,6 +717,7 @@ footer .footband ul li a:hover {
 
 @media screen and (max-width: 576px) {
 
+
     /* -------------------------------------HEADER */
     header {
         position: static;
@@ -758,12 +767,40 @@ footer .footband ul li a:hover {
 
 
     /*-------------------------------------- NAV OU MENU PRINCIPAL */
+  
 
-
-    .home-hidden {
+    /* .home-hidden {
         display: none;
+    } */
+    nav .ligne:hover {
+        border-bottom: 2px solid #1cabe2;
+        display: none;
+
     }
     
+    nav .brule:hover {
+        color: #1cabe2;
+        display: none;
+
+    }
+    
+    #area {
+        width: 70%;
+        height: 50px;
+    }
+    
+    .bouton-area {
+        width: 10%;
+        height: 50px;
+        background-color: #1cabe2;
+    }
+
+    .bouton-area,
+    #area {
+        margin-bottom: 20px;   
+    }
+    
+
 
     /* Ajoutez ceci à votre CSS pour le menu hamburger sur les petits écrans */
 
@@ -800,10 +837,7 @@ footer .footband ul li a:hover {
         padding-left: 150px;
     }
 
-    .bouton-area,
-    #area {
-        margin-bottom: 20px;
-    }
+   
 
     /* Réduisez l'espace entre les éléments du menu */
     /* .navbar-nav .nav-item:not(:last-child) {
