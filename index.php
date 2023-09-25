@@ -22,7 +22,7 @@ switch ($page) {
         /* DECOUVRIR */
     case 'decouvrir':
 
-        include 'structure/front/pages/decouvrir.php';
+        include 'structure/front/pages/nousDecouvrir.php';
         break;
 
         /* EVENEMENTS */
@@ -34,7 +34,7 @@ switch ($page) {
         /* DOMAINS DES ACTIONS */
     case 'domaines-actions':
 
-        include 'structure/front/pages/domaines_actions.php';
+        include 'structure/front/pages/nosDomainesActions.php';
         break;
 
         /* S'ENGAGER */

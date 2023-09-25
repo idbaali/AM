@@ -1,6 +1,6 @@
 <section class="p-home">
 
-    <h1>NOS DOMAINES</h1>
+    <h1>NOS DOMAINES D'ACTIONS</h1>
 
     <p class="text-dark">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo sequi fugit mollitia neque dolorem impedit reiciendis doloribus enim nihil esse tempore quos officiis cumque, deleniti voluptatibus perferendis consectetur maiores! Doloremque?

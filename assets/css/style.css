@@ -32,14 +32,14 @@ header {
 .portail {
     height: 40px;
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
     background-color: #ddf2fb;
     padding-left: 35px;
 
 }
 
 .portail .farbe {
-    color: #222;
+    color: #555;
 }
 
 .portail:hover {
@@ -66,6 +66,7 @@ header {
     font-size: 12px;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .droite a {
@@ -88,32 +89,144 @@ header {
 
 /*-------------------------------------- NAV OU MENU PRINCIPAL */
 
-
-nav {
-    /* display: grid;
-    grid-template-columns: 10% 64% 13% 13%;
-    height: 65px;
+nav.nav-principal {
+    height: 75px;
     width: 100%;
     top: 0;
-    margin: 0px;*/
+    margin: 0px;
     background-color: #fff;
     border-top: 1px solid #2222;
     border-bottom: 1px solid #2222;
 }
 
-
-nav a {
+nav.nav-principal a .logo {
+    height: 75px;
+    width: 155px;
     margin-left: 10px;
-    margin-right: 10px; 
+    border-bottom: 1px solid #2222;
 }
 
-nav .logo {
+nav.nav-principal a {
+    text-decoration: none;
+    color: #555;
+}
+
+nav.nav-principal ul {
+    list-style: none;
+    float: right;
+
+}
+
+nav.nav-principal ul li {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 75px;
+
+}
+
+nav.nav-principal ul li a {
+    color: #555;
+}
+
+nav.nav-principal ul .ligne:hover {
+    border-bottom: 4px solid #1cabe2;
+}
+
+nav.nav-principal ul li .brule:hover {
+    color: #1cabe2;
+}
+
+nav.nav-principal ul li a .sucher:hover {
+    color: #1cabe2;
+}
+
+nav.nav-principal ul li a.active {
+    color: #1cabe2;
+}
+
+nav.nav-principal ul li.item-active {
+    border-bottom: 4px solid #1cabe2;
+}
+
+nav ul li.donateur {
+    /* height: 100%; */
+    background-color: #1cabe2;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: -30px;
+}
+
+nav ul li.donateur:hover {
+    background-color: #098dc0;
+
+}
+
+nav ul li.donateur a {
+    color: #fff;
+}
+
+nav ul li.don {
+    /* height: 100%; */
+    background-color: #ff8d41;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: -5px;
+}
+
+nav ul li.don:hover {
+    background-color: #ec7a2e;
+}
+
+nav ul li.don a {
+    color: #fff;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav {
+    display: grid;
+    grid-template-columns: 10% 64% 13% 13%;
+    height: 65px;
+    width: 100%;
+    top: 0;
+    margin: 0px;
+    background-color: #fff;
+    border-top: 1px solid #2222;
+    border-bottom: 1px solid #2222;
+} */
+
+
+/* nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+/* nav .logo {
     width: 160px;
     height: 50px;
-    /* margin-left: 10px; */
-}
+    margin-left: 10px;
+} */
 
-nav ul li a:hover {
+/* nav ul li a:hover {
     color: #1cabe2;
 }
 
@@ -128,56 +241,53 @@ nav .ligne:hover {
 
 nav .brule:hover {
     color: #1cabe2;
-}
+} */
 
 /* nav a.active {
     color: #1cabe2;
     margin-left: 30px;
 } */
 
-nav a .sucher {
-    margin: 20px;
-}
 
-nav a .sucher:hover {
-    color: #1cabe2;
-}
 
-nav .donateur {
+
+
+.donateur2 {
     background-color: #1cabe2;
     display: flex;
     align-items: center;
     padding: 5px;
-    height: 50px;   
+    height: 50px;
 }
 
-nav .donateur:hover {
+.donateur2:hover {
     background-color: #098dc0;
 }
 
-nav .donateur a {
+.donateur2 a {
     color: #fff;
     text-decoration: none;
 }
 
-nav .donPhone {
+.donPhone2 {
     background-color: #ff8d41;
     display: flex;
     align-items: center;
     padding-right: 15px;
     height: 50px;
     margin-right: -3%;
-    
+
 }
 
-nav .donPhone:hover {
+.donPhone2:hover {
     background-color: #ec7a2e;
 }
 
-nav .donPhone a {
+.donPhone2 a {
     color: #fff;
     text-decoration: none;
 }
+
 
 
 
@@ -192,62 +302,6 @@ nav .donPhone a {
     height: 100%;
     width: 100%;
 }
-
-/* Le code CSS pour enlever l'espace entre les images du carrousel */
-.carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
-
-.carousel-item {
-    width: 100%;
-    transition: transform 0.6s ease;
-    display: flex;
-    align-items: center;
-}
-
-/* Ajustez la marge négative pour rapprocher les images */
-.carousel-item:not(.active) {
-    margin-right: -15px;
-    /* Vous pouvez ajuster cette valeur selon vos besoins */
-}
-
-/* Ajoutez ce code pour centrer le contenu du carrousel */
-.carousel-caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    /* Fond semi-transparent pour le texte */
-}
-
-/* Agrandir le carrousel Bootstrap */
-.carousel {
-    max-width: 100%;
-    /* Largeur maximale du carrousel (par défaut) */
-    margin: 0 auto;
-    /* Centre le carrousel horizontalement */
-    height: 650px;
-    /* Hauteur du carrousel (ajustez cette valeur selon vos besoins) */
-}
-
-.carousel-inner {
-    height: 100%;
-    /* Hauteur du contenu du carrousel (remplit la hauteur du carrousel) */
-}
-
-.carousel-item {
-    text-align: center;
-    /* Centre le contenu des diapositives */
-}
-
-
 
 
 
@@ -339,12 +393,12 @@ section h6 {
     border: 1px solid #fff;
     padding: 15px;
     border-radius: 100%;
-    margin: 30px 0 45px 30px;
+    margin: 30px 0 40px 30px;
 }
 
 .p-action .row .col-md-3 h5 {
     margin-left: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .p-action .row .col-md-3 p {
@@ -360,8 +414,24 @@ section h6 {
     padding: 15px 30px 15px 30px;
     background-color: #fff;
     color: #1cabe2;
-    margin-top: 35px;
     margin-left: 20px;
+}
+
+.p-action .row .col-md-3 .instruction {
+    margin-top: 20px;
+
+}
+
+.p-action .row .col-md-3 .medicament {
+    margin-top: 40px;
+}
+
+.p-action .row .col-md-3 .hebergement {
+    margin-top: 60px;
+}
+
+.p-action .row .col-md-3 .participation {
+    margin-top: 20px;
 }
 
 .p-action .row .col-md-3 a:hover {
@@ -715,7 +785,7 @@ footer .footband ul li a:hover {
 /* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
 
     /* -------------------------------------HEADER */
@@ -737,8 +807,9 @@ footer .footband ul li a:hover {
 
     .portail-phone {
         background-color: #ddf2fb;
-        height: 40px;
-        width: 100%;
+        /* height: 40px; */
+        /* width: 100%; */
+        font-size: 13px;
     }
 
     .portail-phone:hover {
@@ -746,49 +817,233 @@ footer .footband ul li a:hover {
 
     }
 
-
     .droite ul {
+        display: none;
+    }
+
+    .navbarpetitPhone ul {
         list-style: none;
         display: none;
         display: flex;
         flex-direction: column;
-
-
     }
 
     .droite ul small {
         display: none;
-
-
     }
+
+    .navbarpetitPhone {
+        height: 500px;
+        width: 100%;
+        background-color: #ddf2fb;
+        /* margin-left: -25px; */
+    }
+
+
 
 
 
 
 
     /*-------------------------------------- NAV OU MENU PRINCIPAL */
-  
 
-    /* .home-hidden {
-        display: none;
-    } */
-    /* nav .ligne:hover {
-        border-bottom: 2px solid #1cabe2;
-        display: none;
+
+    nav.nav-principal {
+        height: 70px;
+        width: 100%;
+        top: 0;
+        margin: 0px;
+        background-color: #fff;
+        border-top: 1px solid #2222;
+        border-bottom: 1px solid #2222;
+    }
+
+    nav.nav-principal a .logo {
+        height: 70px;
+        width: 155px;
+        margin-left: 10px;
+        border-bottom: 1px solid #2222;
+    }
+
+    nav.nav-principal a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    nav.nav-principal ul {
+        list-style: none;
+        float: right;
 
     }
-    
-    nav .brule:hover {
-        color: #1cabe2;
-        display: none;
 
+    nav.nav-principal ul li {
+        display: inline-block;
+        margin: 0 20px;
+        line-height: 65px;
+
+    }
+
+    nav.nav-principal ul li a {
+        color: #555;
+    }
+
+    nav.nav-principal ul .ligne:hover {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    nav.nav-principal ul li .brule:hover {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li a .sucher:hover {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li a.active {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li.item-active {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    nav ul li.donateur {
+        /* height: 100%; */
+        background-color: #1cabe2;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-right: -30px;
+    }
+
+    nav ul li.donateur:hover {
+        background-color: #098dc0;
+
+    }
+
+    nav ul li.donateur a {
+        color: #fff;
+    }
+
+    nav ul li.don {
+        /* height: 100%; */
+        background-color: #ff8d41;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-right: -5px;
+    }
+
+    nav ul li.don:hover {
+        background-color: #ec7a2e;
+    }
+
+    nav ul li.don a {
+        color: #fff;
+    }
+
+
+
+    /* OBLIGATOIRE */
+
+    /*     
+    nav.nav-principal {
+        display: flex;
+    }
+ 
+    .custom-btn {
+        width: 20%;
+        height: 100%;
+        margin-left: 40%;
+        background-color: #ec7a2e;
+        color: #fff;
+    }
+
+    #popupForm {
+        display: none;
+    }
+
+    .area-bouton {
+        position: fixed;
+        top: 10%;
+        left: 15%;
+        width: 100%;
+    }
+
+    #area {
+        width: 60%;
+        height: 50px;
+    }
+
+    .bouton-area {
+        width: 10%;
+        height: 50px;
+        background-color: #1cabe2;
+    }
+
+    nav ul li.donateur {
+        position: fixed;
+        top: 0;
+        right: 0;
+        text-align: center;
+        background-color: #1cabe2;
+        width: 100%;
+
+    }
+
+    nav ul li.donateur:hover {
+        background-color: #098dc0;
+
+    }
+
+    nav ul li.donateur a {
+        color: #fff;
+    }
+
+    nav ul li.don a {
+        display: none;
     } */
-    
+    /* ------------------------------------------------------------------------------------------------------------ */
+
+    /* Ajoutez ceci à votre CSS pour le menu hamburger sur les petits écrans */
+    /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
+    /* .navbar-toggler {
+        order: -1;
+    } */
+
+    /* Réorganisez le bouton "Faire un don" à droite */
+    /* .donPhone2 {
+        order: 2;
+    } */
+
+    /* Styles pour le logo */
+    /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
+    /* .navbar-brand {
+        margin-right: 0;
+    } */
+
+
+
+    .donPhone1 {
+        height: 65px;
+        width: 150px;
+        background-color: #ff8d41;
+        display: flex;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .donPhone1:hover {
+        background-color: #ec7a2e;
+    }
+
+    .donPhone1 {
+        color: #fff;
+    }
+
     #area {
         width: 70%;
         height: 50px;
     }
-    
+
     .bouton-area {
         width: 10%;
         height: 50px;
@@ -797,66 +1052,109 @@ footer .footband ul li a:hover {
 
     .bouton-area,
     #area {
-        margin-bottom: 20px;   
-    }
-    
-
-
-    /* Ajoutez ceci à votre CSS pour le menu hamburger sur les petits écrans */
-
-    /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
-    .navbar-toggler {
-        order: -1;
+        margin-bottom: 20px;
     }
 
-    .donPhone {
-        order: 2;
-        /* Réorganisez le bouton "Faire un don" à droite */
-    }
-
-
-    /* Styles pour le logo */
-    .navbar-brand {
-        margin-right: 0;
-        /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
-    }
-
-
-    /* Ajoutez un espace entre l'espace donateur et le reste du menu */
-    #espace-donateur {
-        height: 60px;
-        width: 530px;
-        margin-top: 0px;
-        margin-bottom: 30px;
-        margin-left: -20px;
-    }
-
-    .espaceDona {
+    .donateur {
+        background-color: #1cabe2;
         display: flex;
         align-items: center;
-        padding-left: 150px;
+        padding: 5px;
+        height: 50px;
     }
 
-   
+    .donateur:hover {
+        background-color: #098dc0;
+    }
+
+    .donateur a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .donPhone2 {
+        background-color: #ff8d41;
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        height: 50px;
+        margin-right: -3%;
+    }
+
+    .donPhone2:hover {
+        background-color: #ec7a2e;
+    }
+
+    .donPhone2 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav .menuPhone {
+        display: block;
+        font-size: 30px;
+        color: #555;
+        position: relative;
+        left: 0px;
+        cursor: pointer;
+    }
+
+    .menuphone-2 {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: #fff;
+        top: 0;
+    }
+
+    .gerade {
+        padding-left: 40px;
+    }
+
+    .close-x {
+        font-size: 30px;
+        color: #222;
+        position: relative;
+        cursor: pointer;
+        margin-top: 5px;
+        padding-left: 50px;
+    }
+
 
     /* Réduisez l'espace entre les éléments du menu */
     /* .navbar-nav .nav-item:not(:last-child) {
         margin-bottom: 5px;
     } */
 
-    .navbar-nav .nav-item {
+    /* Ligne sous chaque élément du menu */
+    /* .navbar-nav .nav-item {
         border-bottom: 1px solid #ccc;
-        /* Ligne sous chaque élément du menu */
-    }
+    } */
 
     /* Ajoutez de l'espace entre les éléments du menu avec des lignes */
-    .navbar-nav .nav-item:not(:last-child) {
+    /* .navbar-nav .nav-item:not(:last-child) {
         margin-bottom: 20px;
-    }
+    } */
 
 
+    /* Ajoutez ceci à votre CSS pour le menu hamburger sur les petits écrans */
+    /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
+    /* .navbar-toggler {
+        order: -1;
+    } */
 
+    /* Réorganisez le bouton "Faire un don" à droite */
+    /* .donPhone2 {
+        order: 2;
+    } */
 
+    /* Styles pour le logo */
+    /* Réduisez la marge à droite du logo pour le rapprocher du menu hamburger */
+    /* .navbar-brand {
+        margin-right: 0;
+    } */
 
 
 
@@ -869,25 +1167,6 @@ footer .footband ul li a:hover {
 
 
 
-    /* Agrandir le carrousel Bootstrap */
-    .carousel {
-        max-width: 100%;
-        /* Largeur maximale du carrousel (par défaut) */
-        margin: 0 auto;
-        /* Centre le carrousel horizontalement */
-        height: 450px;
-        /* Hauteur du carrousel (ajustez cette valeur selon vos besoins) */
-    }
-
-    .carousel-inner {
-        height: 100%;
-        /* Hauteur du contenu du carrousel (remplit la hauteur du carrousel) */
-    }
-
-    .carousel-item {
-        text-align: center;
-        /* Centre le contenu des diapositives */
-    }
 
 
 
@@ -895,7 +1174,7 @@ footer .footband ul li a:hover {
 
     section .slogan-am h2 {
         padding: 100px 0 100px 0;
-        font-size: 35px;
+        font-size: 27px;
         font-family: 'Fjalla One';
         font-weight: 700;
         line-height: 1.5;
@@ -1307,18 +1586,23 @@ footer .footband ul li a:hover {
 
     footer .footband {
         background-color: rgb(78, 72, 72);
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
     }
 
     footer .footband ul {
         list-style: none;
+        padding: 20px;
+
     }
 
     footer .footband ul li {
-        display: inline-block;
-        margin-right: 30px;
-        padding: 18px 0 18px 0;
+        /* display: inline-block; */
+        /* margin-right: 30px; */
+        /* padding: 10px 0 10px 0; */
+        display: flex;
+        text-align: center;
+        flex-direction: column;
     }
 
     footer .footband ul li a {
@@ -1337,7 +1621,4 @@ footer .footband ul li a:hover {
 
 
 
-@media screen and (max-width: 768px) {
-
-    
-}
+@media screen and (min-width: 993px) {}
