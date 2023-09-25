@@ -22,17 +22,17 @@ header {
 
 .navbarpetit {
     display: grid;
-    grid-template-columns: 15% 60% 25%;
-    height: 40px;
+    grid-template-columns: 12% 63% 25%;
+    height: 35px;
     width: 100%;
-    line-height: 40px;
+    line-height: 35px;
     background-color: #fff;
 }
 
 .portail {
-    height: 40px;
+    height: 35px;
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
     background-color: #ddf2fb;
     padding-left: 35px;
 
@@ -90,7 +90,7 @@ header {
 /*-------------------------------------- NAV OU MENU PRINCIPAL */
 
 nav.nav-principal {
-    height: 75px;
+    height: 70px;
     width: 100%;
     top: 0;
     margin: 0px;
@@ -100,7 +100,7 @@ nav.nav-principal {
 }
 
 nav.nav-principal a .logo {
-    height: 75px;
+    height: 70px;
     width: 155px;
     margin-left: 10px;
     border-bottom: 1px solid #2222;
@@ -120,7 +120,7 @@ nav.nav-principal ul {
 nav.nav-principal ul li {
     display: inline-block;
     margin: 0 20px;
-    line-height: 75px;
+    line-height: 70px;
 
 }
 
@@ -147,6 +147,87 @@ nav.nav-principal ul li a.active {
 nav.nav-principal ul li.item-active {
     border-bottom: 4px solid #1cabe2;
 }
+
+
+
+/* MENU PHONE 2 */
+
+.menuPhone {
+    display: none;
+}
+
+ul li .ligne {
+    line-height: 70px;
+    margin: 0 20px;
+}
+
+ul li a {
+    color: #555;
+    text-decoration: none;
+
+}
+
+ul .ligne:hover {
+    border-bottom: 4px solid #1cabe2;
+}
+
+ul li .brule:hover {
+    color: #1cabe2;
+}
+
+ul li a .sucher:hover {
+    color: #1cabe2;
+}
+
+ul li a.active {
+    color: #1cabe2;
+}
+
+ul li.item-active {
+    border-bottom: 4px solid #1cabe2;
+}
+
+.donateur2 {
+    background-color: #1cabe2;
+    /* display: flex; */
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+}
+
+.donateur2:hover {
+    background-color: #098dc0;
+}
+
+.donateur2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.donPhone2 {
+    background-color: #ff8d41;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    height: 50px;
+    margin-right: -3%;
+}
+
+.donPhone2:hover {
+    background-color: #ec7a2e;
+}
+
+.donPhone2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 
 nav ul li.donateur {
     /* height: 100%; */
@@ -182,6 +263,25 @@ nav ul li.don a {
 }
 
 
+
+/* FAIRE UN DON RESPONSIVE */
+nav li.donPhone1 {
+    /* height: 100%; */
+    background-color: #ff8d41;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: -5px;
+
+}
+
+nav li.donPhone1 a {
+    color: #fff;
+
+}
+
+.donPhone1:hover {
+    background-color: #ec7a2e;
+}
 
 /* ------------------------------------------------------------------- */
 
@@ -788,6 +888,9 @@ footer .footband ul li a:hover {
 @media screen and (max-width: 768px) {
 
 
+
+
+
     /* -------------------------------------HEADER */
     header {
         position: static;
@@ -846,6 +949,51 @@ footer .footband ul li a:hover {
 
 
     /*-------------------------------------- NAV OU MENU PRINCIPAL */
+    .nav-principal {
+        display: flex;
+    }
+
+    #popupForm {
+        display: none;
+    }
+
+    /* MENU HAMBURGER */
+    nav .menuHamburger {
+        display: block;
+        font-size: 30px;
+        color: #555;
+        position: relative;
+        /* left: 0px; */
+        cursor: pointer;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    /* CLOSED BOUTTON */
+    ul .close-x {
+        font-size: 35px;
+        color: #555;
+        position: relative;
+        cursor: pointer;
+        margin-top: 40px;
+        padding-left: 20px;
+        top: 0px;
+    }
+
+    .menuPhone {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: #fff;
+        top: 0;           
+    }
+   
+    .gerade {
+        padding-left: 40px;
+    }
+
 
 
     nav.nav-principal {
@@ -859,10 +1007,9 @@ footer .footband ul li a:hover {
     }
 
     nav.nav-principal a .logo {
-        height: 70px;
-        width: 155px;
-        margin-left: 10px;
-        border-bottom: 1px solid #2222;
+        height: 100%;
+        width: auto;
+        margin-left: 20px;
     }
 
     nav.nav-principal a {
@@ -1023,12 +1170,12 @@ footer .footband ul li a:hover {
 
 
     .donPhone1 {
-        height: 65px;
-        width: 150px;
         background-color: #ff8d41;
         display: flex;
         text-align: center;
         padding-top: 20px;
+        margin-left: auto;
+
     }
 
     .donPhone1:hover {
@@ -1090,37 +1237,7 @@ footer .footband ul li a:hover {
         text-decoration: none;
     }
 
-    nav .menuPhone {
-        display: block;
-        font-size: 30px;
-        color: #555;
-        position: relative;
-        left: 0px;
-        cursor: pointer;
-    }
-
-    .menuphone-2 {
-        display: none;
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        z-index: 999;
-        background-color: #fff;
-        top: 0;
-    }
-
-    .gerade {
-        padding-left: 40px;
-    }
-
-    .close-x {
-        font-size: 30px;
-        color: #222;
-        position: relative;
-        cursor: pointer;
-        margin-top: 5px;
-        padding-left: 50px;
-    }
+   
 
 
     /* Réduisez l'espace entre les éléments du menu */

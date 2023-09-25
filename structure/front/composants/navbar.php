@@ -1,10 +1,22 @@
 <!-- MENU PRINCIPAL -->
 
 <nav class="nav-principal">
+
+    <!-- MENU HAMBURGER -->
+    <i class="fas fa-bars menuHamburger d-lg-none"></i>
+    
+    <!-- LOGO -->
     <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>
+
+    <!-- FAIRE UN DON RESPONSIVE -->
+    <li class="donPhone1 d-lg-none">
+        <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
+    </li>
+
 
 
     <ul id="popupForm">
+
         <li class="nav-item-active">
             <a class="active" aria-current="page" href="/">ACCUEIL</a>
         </li>
@@ -38,13 +50,8 @@
         </li>
 
 
-        <!-- BOUTON MENU PHONE -->
-        <div class="menuPhone d-lg-none">
-            <i class="fas fa-bars"></i>
-        </div>
-
         <!-- Bouton "Faire un don" à droite, masqué sur les écrans de bureau ""-->
-        <li class="don donPhone carrousel-et-donPhone">
+        <li class="don donPhone">
             <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
         </li>
     </ul>
@@ -52,11 +59,17 @@
 
 
 <!-- MENU PHONE 2-->
+<ul class="navbar-nav me-auto mb-2 mb-lg-0 menuPhone">
 
-
-<ul class="navbar-nav me-auto mb-2 mb-lg-0 menuphone-2 d-lg-none">
+    <!-- POUR FERMER LE MENU -->
     <i class="fas fa-xmark close-x"></i>
 
+    <div class="donateur2 d-flex phone-hide" id="espace-donateur">
+        <a class="espaceDona" href="espace-donateur">
+            <i class="fas fa-circle-user me-2"></i>ESPACE DONATEUR
+        </a>
+    </div>
+    
     <li class="nav-item-active">
         <a class="active" aria-current="page" href="/">ACCUEIL</a>
     </li>
@@ -77,16 +90,9 @@
         <a href=""><input type="text" id="area" placeholder=" Votre recherche"><button class="fas fa-magnifying-glass grandir bouton-area"></button></a>
     </li>
 
-
-    <div class="donateur2 d-flex phone-hide" id="espace-donateur">
-        <a class="espaceDona" href="espace-donateur">
-            <i class="fas fa-circle-user me-2"></i>ESPACE DONATEUR
-        </a>
-    </div>
-
-    <div class="donPhone2 carrousel-et-donPhone">
+    <!-- <div class="donPhone2">
         <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
-    </div>
+    </div> -->
 
 
     <!-- PETIT MENU -->

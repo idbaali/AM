@@ -204,4 +204,4 @@ switch ($page) {
         /* 404 NOT FOUND */
 }
 
-include('structure/front/composants/footer.php');
+include ('structure/front/composants/footer.php');

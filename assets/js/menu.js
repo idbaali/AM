@@ -1,18 +1,24 @@
 // MENU PORTABLE
-let phoneMenu = document.querySelector("nav .menuPhone");
-let phoneMenu2 = document.querySelector(".menuphone-2");
-let closeX = document.querySelector(".close-x");
+let hamburgerBootton = document.querySelector("nav .menuHamburger");
+let phoneMenu2 = document.querySelector(".menuPhone");
+let closeBoutton = document.querySelector(".close-x");
 // let phoneNavPetit = document.querySelector(".navbarpetitPhone");
 
 
-phoneMenu.addEventListener("click", () => {
+hamburgerBootton.addEventListener("click", () => {
     phoneMenu2.style.display = "block";
 });
 
 
-closeX.addEventListener("click", () => {
+closeBoutton.addEventListener("click", () => {
    phoneMenu2.style.display = "none";
 });
+
+
+
+
+
+
 
 
 
