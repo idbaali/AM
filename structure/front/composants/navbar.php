@@ -9,7 +9,7 @@
     <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>
 
     <!-- FAIRE UN DON RESPONSIVE -->
-    <li class="donPhone1 d-lg-none">
+    <li class="donPhone d-lg-none">
         <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
     </li>
 
@@ -50,8 +50,8 @@
         </li>
 
 
-        <!-- Bouton "Faire un don" à droite, masqué sur les écrans de bureau ""-->
-        <li class="don donPhone">
+        <!-- FAIRE UN DON POUR MENU PRINCIPAL -->
+        <li class="don">
             <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
         </li>
     </ul>
@@ -61,7 +61,7 @@
 <!-- MENU PHONE 2-->
 <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuPhone">
 
-    <!-- POUR FERMER LE MENU -->
+    <!-- POUR FERMER LE MENU : CloseBoutton -->
     <i class="fas fa-xmark close-x"></i>
 
     <div class="donateur2 d-flex phone-hide" id="espace-donateur">
@@ -69,6 +69,11 @@
             <i class="fas fa-circle-user me-2"></i>ESPACE DONATEUR
         </a>
     </div>
+
+    <!-- AREABOUTTON DE RECHERCHE PHONE -->
+    <li class="area-bouton gerade" id="popupForm">
+        <a href=""><input type="text" id="area" placeholder=" Votre recherche"><button class="fas fa-magnifying-glass grandir bouton-area"></button></a>
+    </li>
     
     <li class="nav-item-active">
         <a class="active" aria-current="page" href="/">ACCUEIL</a>
@@ -85,14 +90,6 @@
     <li class="nav-item ligne">
         <a class="brule" href="s-engager">S'ENGAGER</a>
     </li>
-
-    <li class="area-bouton d-lg-none gerade" id="popupForm">
-        <a href=""><input type="text" id="area" placeholder=" Votre recherche"><button class="fas fa-magnifying-glass grandir bouton-area"></button></a>
-    </li>
-
-    <!-- <div class="donPhone2">
-        <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
-    </div> -->
 
 
     <!-- PETIT MENU -->

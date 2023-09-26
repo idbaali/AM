@@ -151,10 +151,11 @@ nav.nav-principal ul li.item-active {
 
 
 /* MENU PHONE 2 */
-
 .menuPhone {
     display: none;
 }
+
+
 
 ul li .ligne {
     line-height: 70px;
@@ -187,12 +188,13 @@ ul li.item-active {
     border-bottom: 4px solid #1cabe2;
 }
 
-.donateur2 {
+/* .donateur2 {
     background-color: #1cabe2;
-    /* display: flex; */
+    display: flex;
     align-items: center;
-    padding: 5px;
+    padding-left: 50%;
     height: 50px;
+    width: 500px;
 }
 
 .donateur2:hover {
@@ -202,9 +204,9 @@ ul li.item-active {
 .donateur2 a {
     color: #fff;
     text-decoration: none;
-}
+} */
 
-.donPhone2 {
+/* .donPhone2 {
     background-color: #ff8d41;
     display: flex;
     align-items: center;
@@ -220,7 +222,7 @@ ul li.item-active {
 .donPhone2 a {
     color: #fff;
     text-decoration: none;
-}
+} */
 
 
 
@@ -264,24 +266,7 @@ nav ul li.don a {
 
 
 
-/* FAIRE UN DON RESPONSIVE */
-nav li.donPhone1 {
-    /* height: 100%; */
-    background-color: #ff8d41;
-    padding-left: 17px;
-    padding-right: 17px;
-    margin-right: -5px;
 
-}
-
-nav li.donPhone1 a {
-    color: #fff;
-
-}
-
-.donPhone1:hover {
-    background-color: #ec7a2e;
-}
 
 /* ------------------------------------------------------------------- */
 
@@ -348,45 +333,6 @@ nav .brule:hover {
     margin-left: 30px;
 } */
 
-
-
-
-
-.donateur2 {
-    background-color: #1cabe2;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    height: 50px;
-}
-
-.donateur2:hover {
-    background-color: #098dc0;
-}
-
-.donateur2 a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.donPhone2 {
-    background-color: #ff8d41;
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-    height: 50px;
-    margin-right: -3%;
-
-}
-
-.donPhone2:hover {
-    background-color: #ec7a2e;
-}
-
-.donPhone2 a {
-    color: #fff;
-    text-decoration: none;
-}
 
 
 
@@ -953,6 +899,17 @@ footer .footband ul li a:hover {
         display: flex;
     }
 
+
+    nav.nav-principal {
+        height: 60px;
+        width: 100%;
+        top: 0;
+        margin: 0px;
+        background-color: #fff;
+        border-top: 1px solid #2222;
+        border-bottom: 1px solid #2222;
+    }
+
     #popupForm {
         display: none;
     }
@@ -977,7 +934,35 @@ footer .footband ul li a:hover {
         cursor: pointer;
         margin-top: 40px;
         padding-left: 20px;
-        top: 0px;
+        top: -92px;
+    }
+
+    /* LOGO RESPONSIVE */
+    nav.nav-principal a .logo {
+        height: 100%;
+        width: auto;
+        margin-left: 20px;
+    }
+
+    /* FAIRE UN DON RESPONSIVE */
+    nav li.donPhone {
+        background-color: #ff8d41;
+        padding-left: 17px;
+        padding-right: 17px;
+        display: flex;
+        text-align: center;
+        padding-top: 20px;
+        margin-left: auto;
+        /* height: auto; */
+    }
+
+    nav li.donPhone a {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .donPhone:hover {
+        background-color: #ec7a2e;
     }
 
     .menuPhone {
@@ -987,105 +972,74 @@ footer .footband ul li a:hover {
         width: 100%;
         z-index: 999;
         background-color: #fff;
-        top: 0;           
+        /* top: 0;            */
+        /* padding-left: 40px; */
     }
-   
-    .gerade {
+
+    /* FAIRE UN DONATEUR RESPONSIVE */
+    .donateur2 {
+        background-color: #1cabe2;
+        display: flex;
+        align-items: center;
+        padding-left: 150px;
+        height: 50px;
+        width: 500px;
+        margin-top: -77px;
+    }
+
+    .donateur2:hover {
+        background-color: #098dc0;
+    }
+
+    .donateur2 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* AREABOUTTON DE RECHERCHE */
+    #area {
+        width: 90%;
+        height: 50px;
         padding-left: 40px;
     }
 
-
-
-    nav.nav-principal {
-        height: 70px;
-        width: 100%;
-        top: 0;
-        margin: 0px;
-        background-color: #fff;
-        border-top: 1px solid #2222;
-        border-bottom: 1px solid #2222;
-    }
-
-    nav.nav-principal a .logo {
-        height: 100%;
-        width: auto;
-        margin-left: 20px;
-    }
-
-    nav.nav-principal a {
-        text-decoration: none;
-        color: #555;
-    }
-
-    nav.nav-principal ul {
-        list-style: none;
-        float: right;
-
-    }
-
-    nav.nav-principal ul li {
-        display: inline-block;
-        margin: 0 20px;
-        line-height: 65px;
-
-    }
-
-    nav.nav-principal ul li a {
-        color: #555;
-    }
-
-    nav.nav-principal ul .ligne:hover {
-        border-bottom: 4px solid #1cabe2;
-    }
-
-    nav.nav-principal ul li .brule:hover {
-        color: #1cabe2;
-    }
-
-    nav.nav-principal ul li a .sucher:hover {
-        color: #1cabe2;
-    }
-
-    nav.nav-principal ul li a.active {
-        color: #1cabe2;
-    }
-
-    nav.nav-principal ul li.item-active {
-        border-bottom: 4px solid #1cabe2;
-    }
-
-    nav ul li.donateur {
-        /* height: 100%; */
+    .bouton-area {
+        width: 10%;
+        height: 50px;
         background-color: #1cabe2;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -30px;
     }
 
-    nav ul li.donateur:hover {
+    .bouton-area:hover {
         background-color: #098dc0;
+    }
+
+    .bouton-area,
+    #area {
+        margin-bottom: 20px;
+        margin-top: 15px;
 
     }
 
-    nav ul li.donateur a {
-        color: #fff;
+
+    /* L'espace entre les éléments du menu */
+    .navbar-nav .nav-item:not(:last-child) {
+        margin-bottom: 5px;
     }
 
-    nav ul li.don {
-        /* height: 100%; */
-        background-color: #ff8d41;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -5px;
+    /* Ligne sous chaque élément du menu */
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #ccc;
     }
 
-    nav ul li.don:hover {
-        background-color: #ec7a2e;
+    /* Espace entre les éléments du menu avec des lignes */
+    .navbar-nav .nav-item:not(:last-child) {
+        margin-bottom: 20px;
     }
 
-    nav ul li.don a {
-        color: #fff;
-    }
+
+
+
+
 
 
 
@@ -1126,28 +1080,7 @@ footer .footband ul li a:hover {
         background-color: #1cabe2;
     }
 
-    nav ul li.donateur {
-        position: fixed;
-        top: 0;
-        right: 0;
-        text-align: center;
-        background-color: #1cabe2;
-        width: 100%;
 
-    }
-
-    nav ul li.donateur:hover {
-        background-color: #098dc0;
-
-    }
-
-    nav ul li.donateur a {
-        color: #fff;
-    }
-
-    nav ul li.don a {
-        display: none;
-    } */
     /* ------------------------------------------------------------------------------------------------------------ */
 
     /* Ajoutez ceci à votre CSS pour le menu hamburger sur les petits écrans */
@@ -1169,75 +1102,6 @@ footer .footband ul li a:hover {
 
 
 
-    .donPhone1 {
-        background-color: #ff8d41;
-        display: flex;
-        text-align: center;
-        padding-top: 20px;
-        margin-left: auto;
-
-    }
-
-    .donPhone1:hover {
-        background-color: #ec7a2e;
-    }
-
-    .donPhone1 {
-        color: #fff;
-    }
-
-    #area {
-        width: 70%;
-        height: 50px;
-    }
-
-    .bouton-area {
-        width: 10%;
-        height: 50px;
-        background-color: #1cabe2;
-    }
-
-    .bouton-area,
-    #area {
-        margin-bottom: 20px;
-    }
-
-    .donateur {
-        background-color: #1cabe2;
-        display: flex;
-        align-items: center;
-        padding: 5px;
-        height: 50px;
-    }
-
-    .donateur:hover {
-        background-color: #098dc0;
-    }
-
-    .donateur a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .donPhone2 {
-        background-color: #ff8d41;
-        display: flex;
-        align-items: center;
-        padding-right: 15px;
-        height: 50px;
-        margin-right: -3%;
-    }
-
-    .donPhone2:hover {
-        background-color: #ec7a2e;
-    }
-
-    .donPhone2 a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-   
 
 
     /* Réduisez l'espace entre les éléments du menu */
