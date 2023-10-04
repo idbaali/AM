@@ -1,6 +1,6 @@
 <!-- MENU PRINCIPAL -->
 
-<div class="content-to-hide">
+<!-- <div class="content-to-hide"> -->
 
     <nav class="nav-principal">
 
@@ -55,7 +55,7 @@
 
     </nav>
 
-</div>
+<!-- </div> -->
 
 
 

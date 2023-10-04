@@ -57,7 +57,7 @@
   </div>
 
 
-  <div class="footband">
+  <div class="row footband">
     <ul>
       <li class="col-xs-12"><a href="">Mentions légales</a></li>
       <li class="col-xs-12"><a href="">@ACTIONMEPHI</a></li>

@@ -83,10 +83,6 @@ header {
 }
 
 /* RESPONSIVE */
-.hautMenuPhone {
-    display: none;
-}
-
 .navbarpetitPhone {
     display: none;
 }
@@ -155,6 +151,10 @@ nav.nav-principal ul li.item-active {
 
 
 /* MENU PHONE RESPONSIVE */
+.hautMenuPhone {
+    display: none;
+}
+
 .menuPhone {
     display: none;
 }
@@ -703,6 +703,7 @@ footer .row ul li a:hover {
 footer .footband {
     background-color: rgb(78, 72, 72);
     font-size: 12px;
+    display: flex;
     text-align: center;
 }
 
@@ -713,7 +714,7 @@ footer .footband ul {
 footer .footband ul li {
     display: inline-block;
     margin-right: 30px;
-    padding: 18px 0 18px 0;
+    padding-top: 15px;
 }
 
 footer .footband ul li a {
@@ -783,9 +784,9 @@ footer .footband ul li a:hover {
     }
 
     /* masquer la section principale */
-    .content-to-hide {
+    /* .content-to-hide {
         display: none;
-    }
+    } */
 
 
 
