@@ -326,7 +326,7 @@ section h6 {
 /*------------NOS ACTIONS */
 
 .p-action {
-    margin: 80px;
+    margin: 0 80px 80px 80px;
 }
 
 .p-action .row .col-md-3 .actioncolor {
@@ -385,7 +385,6 @@ section h6 {
 .p-action .row .col-md-3 a:hover {
     background-color: #ddf2fb
 }
-
 
 
 
@@ -1119,8 +1118,11 @@ footer .footband ul li a:hover {
     .p-benevole {
         background-color: #ddf2fb;
         height: 760px;
-        width: 100%;
-        padding: 25px 0 20px;
+        width: 92%;
+        padding: 0 0 20px;
+        /* border: 1px solid #555; */
+        margin-left: 20px; 
+        margin-bottom: 25px;
     }
 
 
