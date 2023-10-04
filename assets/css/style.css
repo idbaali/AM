@@ -1015,13 +1015,11 @@ footer .footband ul li a:hover {
         text-decoration: none;
         /* font-size: 13px; */
         text-transform: uppercase;
-        /* padding: 15px 30px 15px 30px; */
+        padding: 15px 30px 15px 30px;
         background-color: #1cabe2;
         color: #fff;
         display: flex;
         align-items: center;
-
-
     }
 
     section .actualite1 a:hover {
@@ -1032,6 +1030,14 @@ footer .footband ul li a:hover {
         background-color: #f7f9fa;
         height: 100%;
         width: 100%;
+    }
+
+    section h2 {
+        padding-bottom: 15px;
+    }
+
+    section .cardActualite {
+        padding-bottom: 30px;
     }
 
     /* .dimension {
@@ -1057,6 +1063,15 @@ footer .footband ul li a:hover {
         /* display: flex;
         align-items: center; */
     }
+
+    .p-action .nosAction1 {
+        padding-bottom: 25px;
+    }
+
+    .p-action .nosAction1 a {
+        padding: 10px 22px 10px 22px;
+    }
+
 
     .p-action .row .col-md-3 .actioncolor {
         background-color: #1cabe2;
@@ -1111,7 +1126,7 @@ footer .footband ul li a:hover {
     }
 
 
-    
+
 
     /* -----------BENEVOLE */
 
@@ -1121,7 +1136,7 @@ footer .footband ul li a:hover {
         width: 92%;
         padding: 0 0 20px;
         /* border: 1px solid #555; */
-        margin-left: 20px; 
+        margin-left: 20px;
         margin-bottom: 25px;
     }
 

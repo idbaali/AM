@@ -13,7 +13,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
                                 <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
                                 <img src="../assets/img/cologne1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
                                 <img src="../assets/img/cologne4.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
                                 <img src="../assets/img/cologne2.png" class="card-img-top" alt="...">
                                 <div class="card-body">

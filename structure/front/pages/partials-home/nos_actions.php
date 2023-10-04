@@ -5,7 +5,7 @@
                 <h2>NOS ACTIONS</h2>
             </div>
             <div class="col-md-2 col-sm-12 col-xs-12 nosAction1">
-                <a href="evenements" class="btn btn-outline-info">Voir plus</a>
+                <a href="evenements" class="btn btn-outline-info">EN SAVOIR PLUS</a>
             </div>
         </div>
 
@@ -16,7 +16,7 @@
                         <i class="fa fa-book-open-reader"></i>
                         <h5>Instruction</h5>
                         <p>L’éducation est une dès clés mère afin d’optimiser un meilleur lendemain. Voilà pourquoi il est nécessaire d’entamer cette dernière dès le bas-âge au travers les enfants et ce par le biais de l’école qui est malheureusement pas accessible à tous</p>
-                        <a href="all_actions" class="btn btn-outline-info instruction">En savoir plus</a>
+                        <a href="all_actions" class="btn btn-outline-info instruction">EN savoir plus</a>
                     </div>
                 </div>
             </div>
