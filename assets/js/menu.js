@@ -1,17 +1,23 @@
 // MENU PORTABLE
-let hamburgerBootton = document.querySelector("nav .menuHamburger");
+let hamburgerBootton = document.querySelector(".hautMenuPhone .menuHamburger");
 let phoneMenu2 = document.querySelector(".menuPhone");
-let closeBoutton = document.querySelector(".close-x");
+let closeBoutton = document.querySelector(".close-X");
 // let phoneNavPetit = document.querySelector(".navbarpetitPhone");
 
 
 hamburgerBootton.addEventListener("click", () => {
     phoneMenu2.style.display = "block";
+    hamburgerBootton.style.display = "none";
+    closeBoutton.style.display = "block";
+    // alert("Bonjour");
 });
 
 
 closeBoutton.addEventListener("click", () => {
    phoneMenu2.style.display = "none";
+//    hamburgerBootton.style.display = "block";
+window.location.href = "/";
+
 });
 
 
@@ -28,93 +34,38 @@ closeBoutton.addEventListener("click", () => {
 
 
 
+// const contentToHide = document.querySelector('.content-to-hide');
+// const menuButton = document.getElementById('menuButton');
 
 
+// menuButton.addEventListener('click', () => {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const hamburger = document.getElementById("nav-icon2");
-// const menuPop = document.getElementById("popupForm");
-
-// menuPop.style.display = "block";
-
-// hamburger.addEventListener("click", (event) => {
-//     hamburger.classList.toggle('open');
-//     menuPop.classList.toggle('popupFormClass'); 
-//     if (menuPop.classList.contains("popupFormClass") == true) {
-//         menuPop.style.display = "flex";
-//     }    
-//     else {
-//         menuPop.style.display = "none";
-//     }
-    
-// }) 
-// function redimensionnement() {
-
-//     if (window.matchMedia("(min-width: 600px)").matches) {
-//         /* La largeur minimum de l'affichage est 600 px inclus */
-//         menuPop.style.display = "flex";
+//     if (contentToHide.style.display === 'none' || contentToHide.style.display === '') {
+//         contentToHide.style.display = 'block';
 //     } else {
-//         /* L'affichage est inférieur à 600px de large */
-//         menuPop.style.display = "none";
+//         contentToHide.style.display = 'none';
 //     }
-// }
+// });
 
 
 
 
 
+// // Récupérez le bouton du menu hamburger et le bouton de fermeture du menu
+// var menuHamburger = document.querySelector('.menuHamburger');
+// var closeBtn = document.querySelector('.close-X');
 
+// // Récupérez la section principale de votre site
+// var mainContent = document.getElementById('main-content');
 
+// // Ajoutez un gestionnaire d'événement au bouton du menu hamburger
+// menuHamburger.addEventListener('click', function () {
+//     // Ajoutez une classe pour masquer la section principale
+//     mainContent.classList.add('hide-content');
+// });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// // Ajoutez un gestionnaire d'événement au bouton de fermeture du menu
+// closeBtn.addEventListener('click', function () {
+//     // Supprimez la classe pour afficher à nouveau la section principale
+//     mainContent.classList.remove('hide-content');
+// });

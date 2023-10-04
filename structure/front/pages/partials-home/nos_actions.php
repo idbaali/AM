@@ -5,7 +5,7 @@
                 <h2>NOS ACTIONS</h2>
             </div>
             <div class="col-md-2 col-sm-12 col-xs-12 nosAction1">
-                <!-- <a href="evenements" class="btn btn-outline-info">Voir plus</a> -->
+                <a href="evenements" class="btn btn-outline-info">Voir plus</a>
             </div>
         </div>
 

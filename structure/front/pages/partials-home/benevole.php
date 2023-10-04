@@ -1,6 +1,6 @@
 <div class="p-benevole">
     <section>
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-md-1 p-5">
                 <div class="">
                     <div class="">
@@ -44,6 +44,6 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </section>
 </div>
