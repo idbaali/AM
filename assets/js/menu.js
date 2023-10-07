@@ -1,15 +1,13 @@
 // MENU PORTABLE
-let hamburgerBootton = document.querySelector(".hautMenuPhone .menuHamburger");
-let phoneMenu2 = document.querySelector(".menuPhone");
+let hamburgerBootton = document.querySelector(".menuHamburger");
 let closeBoutton = document.querySelector(".close-X");
-// let phoneNavPetit = document.querySelector(".navbarpetitPhone");
-
+let phoneMenu2 = document.querySelector(".menuPhone");
 
 hamburgerBootton.addEventListener("click", () => {
     phoneMenu2.style.display = "block";
     hamburgerBootton.style.display = "none";
     closeBoutton.style.display = "block";
-    // alert("Bonjour");
+//     // alert("Bonjour");
 });
 
 
@@ -19,6 +17,12 @@ closeBoutton.addEventListener("click", () => {
 window.location.href = "/";
 
 });
+
+
+
+
+
+
 
 
 
