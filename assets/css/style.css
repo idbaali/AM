@@ -165,9 +165,9 @@ nav.nav-principal .close-X {
 }
 
 /* HAUT MENU PHONE RESPONSIVE */
-.hautMenuPhone {
+/* .hautMenuPhone {
     display: none;
-}
+} */
 
 /* MENU PHONE RESPONSIVE */
 .menuPhone {
@@ -259,7 +259,7 @@ nav ul li.don a {
     max-height: none;
 } */
 
-.carousel-inner {
+/* .carousel-inner {
     max-height: none;
 }
 
@@ -268,7 +268,7 @@ nav ul li.don a {
     color: #fff;
     text-align: left;
     padding: 20px;
-}
+} */
 
 
 

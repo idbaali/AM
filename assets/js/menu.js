@@ -3,6 +3,8 @@ let hamburgerBootton = document.querySelector(".menuHamburger");
 let closeBoutton = document.querySelector(".close-X");
 let phoneMenu2 = document.querySelector(".menuPhone");
 
+phoneMenu2.style.display = "none";
+
 hamburgerBootton.addEventListener("click", () => {
     phoneMenu2.style.display = "block";
     hamburgerBootton.style.display = "none";
@@ -17,6 +19,12 @@ closeBoutton.addEventListener("click", () => {
 window.location.href = "/";
 
 });
+
+
+
+
+
+
 
 
 

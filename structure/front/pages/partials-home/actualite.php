@@ -5,7 +5,7 @@
                 <h2>Actualité ACTION MEPHI</h2>
             </div>
             <div class="col-md-3 col-sm-12 col-xs-12 actualite1">
-                <a href="all_news"><i class="fa fa-eye me-2"></i>Voir toutes les actualités</a>
+                <a href="all_news"><i class="fa fa-eye me-2 actualite1"></i>Voir toutes les actualités</a>
             </div>
         </div>
 

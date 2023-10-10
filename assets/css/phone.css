@@ -1,16 +1,11 @@
 /* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
 
-@media (max-width: 992px) {
-
-
-
-
+@media screen and (max-width: 599px) {
 
     /* -------------------------------------HEADER */
     header {
         position: fixed;
         z-index: 999;
-
     }
 
 
@@ -18,22 +13,22 @@
     /*-------------------------------------- PETIT NAV OU AVANT MENU */
 
     .navbarpetit {
+        height: 40px;
+        width: 100%;
         display: flex;
         text-align: center;
         /* flex-direction: column; */
     }
 
-
     .portail-phone {
         background-color: #ddf2fb;
-        /*  height: 60px;
+        height: 40px;
         width: 100%;
-        font-size: 13px; */
+        padding-top: 2px;
     }
 
     .portail-phone:hover {
         background-color: #1cabe2;
-
     }
 
     .droite ul {
@@ -45,7 +40,7 @@
 
 
     /*-------------------------------------- NAV OU MENU PRINCIPAL */
-   
+
 
     /* masquer la section principale */
     /* .content-to-hide {
@@ -83,18 +78,18 @@
     /* CLOSED BOUTTON */
     nav.nav-principal .close-X {
         display: none;
-        font-size: 30px;
+        font-size: 20px;
         color: #555;
         cursor: pointer;
-        padding-top: 10px;
-        padding-left: 20px;
+        padding-top: 18px;
+        padding-left: 25px;
     }
 
     /* LOGO RESPONSIVE */
     nav.nav-principal a .logo {
         height: 65px;
         width: 130px;
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     /* DON PHONE RESPONSIVE */
@@ -104,9 +99,9 @@
         align-items: center;
         position: relative;
         height: auto;
-        width: 150px;
+        width: 160px;
         margin-left: auto;
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     nav.nav-principal .donPhone:hover {
@@ -144,6 +139,7 @@
 
     .menuPhone .donateur2 a {
         color: #fff;
+        text-decoration: none;
     }
 
     /* AREABOUTTON DE RECHERCHE */
@@ -193,47 +189,6 @@
     .p-homePhone {
         margin-top: 80px;
     }
-
-    /* Ajoutez ce code CSS pour enlever l'espace entre les images du carrousel */
-    .carousel-inner {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: hidden;
-    }
-
-    .carousel-item {
-        width: 100%;
-        transition: transform 0.6s ease;
-        display: flex;
-        align-items: center;
-    }
-
-    /* Ajustez la marge négative pour rapprocher les images */
-    .carousel-item:not(.active) {
-        margin-right: -15px;
-        /* Vous pouvez ajuster cette valeur selon vos besoins */
-    }
-
-    /* Ajoutez ce code pour centrer le contenu du carrousel */
-    .carousel-caption {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.5);
-        /* Fond semi-transparent pour le texte */
-    }
-
-
-
-
-    /* .carousel-item {
-        height: 530px;
-    } */
 
 
 
@@ -332,7 +287,6 @@
     .p-action .nosAction1 a {
         padding: 10px 22px 10px 22px;
     }
-
 
     .p-action .row .col-md-3 .actioncolor {
         background-color: #1cabe2;
@@ -724,3 +678,7 @@
 }
 
 /* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
+@media screen and (min-width: 600px) and (max-width: 899px) {}
+
+/* ------------------------STYLES FOR COMPUTER -------------------------------------------------------------- */
+@media screen and (min-with: 991px) and (max-width: 992px) {}

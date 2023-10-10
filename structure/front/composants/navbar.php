@@ -64,8 +64,8 @@
     <ul class="navbar-nav menuPhone1">
 
         <!-- DONATEUR RESPONSIVE OU PHONE-->
-        <div class="donateur2" id="espace-donateur">
-            <a class="espaceDona" href="/espace-donateur">
+        <div class="donateur2">
+            <a class="" href="/espace-donateur">
                 <i class="fas fa-circle-user me-2"></i>ESPACE DONATEUR
             </a>
         </div>
@@ -79,21 +79,21 @@
         </div>
 
         <div class="">
-            <li class="">
-                <a class="" href="/">ACCUEIL</a>
-            </li>
-            <li class="">
-                <a class="" href="/nous-decouvrir">NOUS DÉCOUVRIR</a>
-            </li>
-            <li class="">
-                <a class="" href="/evenements">ÉVÉNEMENTS</a>
-            </li>
-            <li class="">
-                <a class="" href="/nos-domaines">NOS DOMAINS D'ACTIONS</a>
-            </li>
-            <li class="">
-                <a class="" href="/s-engager">S'ENGAGER</a>
-            </li>
+        <li class="nav-item-active">
+            <a class="active" aria-current="page" href="/">ACCUEIL</a>
+        </li>
+        <li class="nav-item ligne">
+            <a class="brule" href="/nous-decouvrir">NOUS DÉCOUVRIR</a>
+        </li>
+        <li class="nav-item ligne">
+            <a class="brule" href="/evenements">ÉVÉNEMENTS</a>
+        </li>
+        <li class="nav-item ligne">
+            <a class="brule" href="/nos-domaines">NOS DOMAINS D'ACTIONS</a>
+        </li>
+        <li class="nav-item ligne">
+            <a class="brule" href="/s-engager">S'ENGAGER</a>
+        </li>
         </div>
     </ul>
 
