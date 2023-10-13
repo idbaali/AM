@@ -49,30 +49,30 @@
     .open {
         transform: translate(0%);
     }
-
+    
     .menuPhone {
         display: none;
         position: fixed;
         top: 15%;
-        left: 0%;
-        right: 0%;
+        left: -100%;
+        /* le menu Masque à gauche */
         width: 100%;
         height: 100%;
         flex-direction: column;
-        /* transform: translate(0%, 12.1%); */
         background-color: white;
-        z-index: 999; 
-        margin: 1px;    
+        z-index: 999;
+        margin: 1px;
+        transition: left 0.3s;
     }
-    
 
+    .menuPhone.open {
+        left: 0;
+        /* Affichage du menu centré */
+    }
+
+    /* MENU PHONE RESPONSIVE plus Donateur & Areabutton RESPONSIVE */
     .menuPhone {
         display: none;
-    }
-   
-
-    #nav-icon2 {
-        top: 0px;
     }
 
 }

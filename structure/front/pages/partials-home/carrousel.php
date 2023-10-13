@@ -56,17 +56,3 @@
     </button>
   </div>
 </div>
-
-<!-- Inclure la bibliothèque jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    // Sélectionnez le carrousel par son ID
-    $('#carouselExampleCaptions').carousel({
-      interval: 5000, // Réglez l'intervalle en millisecondes (dans cet exemple, 5000 ms soit 5 secondes)
-      pause: 'hover' // Mettez 'hover' pour que le défilement automatique soit interrompu au survol de la souris
-    });
-  });
-</script>
-
-  

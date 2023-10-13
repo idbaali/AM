@@ -154,13 +154,13 @@ nav.nav-principal .menuHamburger {
     display: none;
 }
 
-/* CLOSED BOUTTON */
-nav.nav-principal .close-x {
+/* DON PHONE RESPONSIVE */
+.donPhone {
     display: none;
 }
 
-/* DON PHONE RESPONSIVE */
-.donPhone {
+/* MENU PHONE RESPONSIVE */
+.menuPhone {
     display: none;
 }
 
@@ -238,27 +238,6 @@ nav ul li.don a {
     height: 100%;
     width: 100vh;
 }
-
-
-
-/* .carousel {
-    width: 100%;
-    max-height: none;
-} */
-
-/* .carousel-inner {
-    max-height: none;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    text-align: left;
-    padding: 20px;
-} */
-
-
-
 
 
 /*------------- START */
@@ -830,10 +809,10 @@ footer .footband ul li a:hover {
         font-size: 14px;
     }
 
-    /* MENU PHONE RESPONSIVE */
-    nav.nav-principal .menuPhone {
+    /* MENU PHONE RESPONSIVE plus Donateur & Areabutton RESPONSIVE */
+    /* .menuPhone {
         display: none;
-    }
+    } */
 
     /* FAIRE UN DONATEUR RESPONSIVE */
     .menuPhone .donateur2 {
@@ -860,6 +839,7 @@ footer .footband ul li a:hover {
         padding: 33px 0 20px 0;
         margin-left: 30px;
         margin-right: 30px;
+        display: none;
     }
 
     .menuPhone ul.menuPhone1 li {

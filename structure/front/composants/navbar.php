@@ -9,15 +9,6 @@
                 <span></span>
             </button>
         </div>
-        <!-- MENU HAMBURGER -->
-        <!-- <div class="menuHamburger">
-            <i class="fas fa-bars menuHamburger"></i>
-        </div> -->
-
-        <!-- POUR FERMER LE MENU : CloseBoutton -->
-        <!-- <div class="close-x">
-            <i class="fas fa-xmark"></i>
-        </div> -->
 
         <!-- LOGO POUR MENU PRINCIPAL -->
         <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>

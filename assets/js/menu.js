@@ -13,12 +13,10 @@
 //         // L'affichage est supérieur ou égal à 768px de large
 //         menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
 //             // hamburger.classList.remove('none'); // Retire la classe 'open' du hamburger
-
 //     } else {
 //         // L'affichage est inférieur à 768px de large
 //         if (!menuPop.classList.contains("open")) {
 //             menuPop.style.display = "none";
-
 //         }
 //     }
 // }
