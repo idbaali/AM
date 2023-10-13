@@ -1,684 +1,78 @@
-/* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
 
-@media screen and (max-width: 599px) {
-
-    /* -------------------------------------HEADER */
-    header {
-        position: fixed;
-        z-index: 999;
-    }
-
-
-
-    /*-------------------------------------- PETIT NAV OU AVANT MENU */
-
-    .navbarpetit {
-        height: 40px;
-        width: 100%;
-        display: flex;
-        text-align: center;
-        /* flex-direction: column; */
-    }
-
-    .portail-phone {
-        background-color: #ddf2fb;
-        height: 40px;
-        width: 100%;
-        padding-top: 2px;
-    }
-
-    .portail-phone:hover {
-        background-color: #1cabe2;
-    }
-
-    .droite ul {
-        display: none;
-    }
-
-
-
-
-
-    /*-------------------------------------- NAV OU MENU PRINCIPAL */
-
-
-    /* masquer la section principale */
-    /* .content-to-hide {
-        display: none;
-    } */
-
-
-    nav.nav-principal {
-        /* display: none; */
-        display: flex;
-        height: 65px;
-        width: 100%;
-        top: 0;
-        margin: 0px;
-        background-color: #fff;
-        border-top: 1px solid #2222;
-        border-bottom: 1px solid #2222;
-    }
-
-    nav.nav-principal #popupForm {
-        display: none;
-    }
-
-    /* MENU HAMBURGER */
-    nav.nav-principal .menuHamburger {
-        display: block;
-        font-size: 30px;
-        color: #555;
+    #nav-icon2 {
+        width: 20px;
+        height: 20px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
-    }
-
-    /* CLOSED BOUTTON */
-    nav.nav-principal .close-X {
-        display: none;
-        font-size: 20px;
-        color: #555;
-        cursor: pointer;
-        padding-top: 18px;
-        padding-left: 25px;
-    }
-
-    /* LOGO RESPONSIVE */
-    nav.nav-principal a .logo {
-        height: 65px;
-        width: 130px;
-        padding-left: 10px;
-    }
-
-    /* DON PHONE RESPONSIVE */
-    nav.nav-principal .donPhone {
-        background-color: #ff8d41;
+        border: none;
         display: flex;
         align-items: center;
         position: relative;
-        height: auto;
-        width: 160px;
-        margin-left: auto;
-        padding-left: 20px;
     }
 
-    nav.nav-principal .donPhone:hover {
-        background-color: #ec7a2e;
+    #nav-icon2 span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #555;
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0.3s 0.15s ease-out;
     }
 
-    nav.nav-principal .donPhone a {
-        color: #fff;
-        font-size: 14px;
+    #nav-icon2 span:nth-child(1),
+    #nav-icon2 span:nth-child(3) {
+        transition: transform 0.3s ease-out;
     }
 
-    /* MENU PHONE RESPONSIVE */
+    #nav-icon2 span:nth-child(1) {
+        transform: translateY(7px);
+    }
+
+    #nav-icon2 span:nth-child(3) {
+        transform: translateY(-7px);
+    }
+
+    #nav-icon2.open span:nth-child(1) {
+        transform: translate(0) rotate(135deg);
+    }
+
+    #nav-icon2.open span:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0s ease-out;
+    }
+
+    #nav-icon2.open span:nth-child(3) {
+        transform: translate(0) rotate(-135deg);
+    }
+
+    .open {
+        transform: translate(0%);
+    }
+
     .menuPhone {
         display: none;
         position: fixed;
-        height: 100vh;
+        top: 15%;
+        left: 0%;
+        right: 0%;
         width: 100%;
-        background-color: #fff;
-    }
-
-    /* FAIRE UN DONATEUR RESPONSIVE */
-    .menuPhone .donateur2 {
-        background-color: #1cabe2;
-        display: flex;
-        align-items: center;
-        padding-left: 150px;
-        height: 55px;
-        width: 100%;
-        margin-top: 0px;
-    }
-
-    .menuPhone .donateur2:hover {
-        background-color: #098dc0;
-    }
-
-    .menuPhone .donateur2 a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    /* AREABOUTTON DE RECHERCHE */
-    .menuPhone form {
-        padding: 40px 0 20px 0;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .menuPhone ul.menuPhone1 li {
-        margin-left: 30px;
-        margin-right: 30px;
-        padding: 20px 0 20px 0;
-        border-bottom: 1px solid #555;
-    }
-
-    .menuPhone ul.menuPhone1 li:nth-child(5) {
-        border-bottom: none;
-    }
-
-
-    /* NAVBAR PETIT PHONE COMME FOOTER */
-    .menuPhone .navbarpetitPhone {
-        display: block;
-        background-color: #ddf2fb;
-    }
-
-    .menuPhone .navbarpetitPhone ul li {
-        list-style: none;
-        font-size: 13px;
-        margin-left: 30px;
-        margin-top: 6px;
-    }
-
-    .menuPhone .navbarpetitPhone ul li:first-child {
-        margin-top: 20px;
-    }
-
-
-
-
-    /*------------------------------------------------ PAGE HOME */
-
-
-    /*----------- CAROUSEL */
-
-    .p-homePhone {
-        margin-top: 80px;
-    }
-
-
-
-
-    /*------------- START */
-
-    section .slogan-am h2 {
-        padding: 100px 0 100px 0;
-        font-size: 27px;
-        font-family: 'Fjalla One';
-        font-weight: 700;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    section .slogan-am h2 span {
-        font-family: 'Fjalla One';
-        color: #1cabe2;
-    }
-
-    section.p-home {
-        margin-top: 110px;
-    }
-
-    section {
-        margin: 0 20px 0 20px;
-    }
-
-    .custom-btn:hover {
-        background-color: #098dc0;
-        color: #fff;
-    }
-
-
-
-
-    /*--------- ACTUALITE */
-
-    section .actualite1 a {
-        text-decoration: none;
-        /* font-size: 13px; */
-        text-transform: uppercase;
-        padding: 15px 30px 15px 30px;
-        background-color: #1cabe2;
-        color: #fff;
-        display: flex;
-        align-items: center;
-    }
-
-    section .actualite1 a:hover {
-        background-color: #098dc0;
-    }
-
-    .p-actualite {
-        background-color: #f7f9fa;
         height: 100%;
-        width: 100%;
-    }
-
-    section h2 {
-        padding-bottom: 15px;
-    }
-
-    section .cardActualite {
-        padding-bottom: 30px;
-    }
-
-    /* .dimension {
-        height: 100px;
-        width: 100%;
-    } */
-
-    section h6 {
-        background-color: #1cabe2;
-        height: 30px;
-        width: 110px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-
-
-    /*------------NOS ACTIONS */
-
-    .p-action {
-        margin: 0;
-        /* display: flex;
-        align-items: center; */
-    }
-
-    .p-action .nosAction1 {
-        padding-bottom: 25px;
-    }
-
-    .p-action .nosAction1 a {
-        padding: 10px 22px 10px 22px;
-    }
-
-    .p-action .row .col-md-3 .actioncolor {
-        background-color: #1cabe2;
-        height: 370px;
-        width: 100%;
-        margin-bottom: 25px;
-        color: #fff;
-    }
-
-    /* LES SYMBOLES */
-    .p-action .row .col-md-3 i {
-        font-size: 25px;
-        border: 1px solid #fff;
-        padding: 15px;
-        border-radius: 100%;
-        margin: 15px 0 20px 20px;
-    }
-
-    .p-action .row .col-md-3 h5 {
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-
-    .p-action .row .col-md-3 p {
-        margin-left: 20px;
-        font-size: 13px;
-    }
-
-    .p-action .row .col-md-3 a {
-        padding: 15px 10px 15px 10px;
-        margin-top: 0;
-    }
-
-    .p-action .row .col-md-3 a:hover {
-        background-color: #ddf2fb
-    }
-
-    .p-action .row .col-md-3 .instruction {
-        margin-top: 10px;
-    }
-
-    .p-action .row .col-md-3 .medicament {
-        margin-top: 10px;
-    }
-
-    .p-action .row .col-md-3 .hebergement {
-        margin-top: 30px;
-    }
-
-    .p-action .row .col-md-3 .participation {
-        margin-top: 10px;
-    }
-
-
-
-
-    /* -----------BENEVOLE */
-
-    .p-benevole {
-        background-color: #ddf2fb;
-        height: 760px;
-        width: 92%;
-        padding: 0 0 20px;
-        /* border: 1px solid #555; */
-        margin-left: 20px;
-        margin-bottom: 25px;
-    }
-
-
-
-    /* -------------DONATION HOME */
-
-    .p-donation {
-        background-color: #eef3f6;
-        height: 900px;
-        width: 100%;
-    }
-
-    .p-donation h2 {
-        /* margin-right: 50px; */
-        padding: 25px 0 20px;
-    }
-
-    .p-donation .dona-don {
-        color: #fff;
-        background-color: #1cabe2;
-        height: 408px;
-        width: 100%;
-        padding: 70px 50px 50px 50px;
-
-    }
-
-    .p-donation a {
-        /* margin-top: 50px; */
-        text-decoration: none;
-        font-size: 15px;
-        text-transform: uppercase;
-        padding: 15px 30px 15px 30px;
-        background-color: #fff;
-        color: #1cabe2;
-    }
-
-    .p-donation a:hover {
-        background-color: #fff;
-    }
-
-
-    /* -----------------------------------------ESPACE DONATEUR */
-
-
-
-
-
-
-
-
-
-    /*----------------------------------------- ALL NEWS */
-
-    section.p-all-news {
-        margin-top: 95px;
-    }
-
-    .all-news {
-        background-color: #f7f9fa;
-    }
-
-    section.p-all-news .row .col-4 h5 {
-        margin-top: 10px;
-        background-color: #1cabe2;
-        color: #fff;
-        height: 40px;
-        width: 150px;
-        line-height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-
-
-    /*-----------NEWSLETTER */
-
-    .p-newsletter {
-        background-color: #ddf2fb;
-        height: 400px;
-        width: 100%;
-    }
-
-    .p-newsletter .row {
-        margin: 0 20px 0 20px;
-        padding-top: 50px;
-
-    }
-
-    .p-newsletter section ul.r-social li {
-        display: inline-block;
-    }
-
-    .p-newsletter section ul li i {
-        margin-right: 15px;
-        font-size: 16px;
-        border: 1px solid #1cabe2;
-        padding: 15px 17px 15px 17px;
-        border-radius: 100%;
-    }
-
-    .p-newsletter section ul li i:hover {
-        color: #ec7a2e;
-        border: 1px solid #ff8d41;
-    }
-
-    .p-newsletter section p {
-        font-size: 12px;
-        color: #555;
-    }
-
-
-
-    /*----------------------------------------- PAGE CONTANCT */
-
-
-    section h1.contact {
-        text-align: center;
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    section div.container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    section div.container.container-narrow {
-        max-width: 600px;
-    }
-
-
-    section div.sujet_espace {
-        margin-bottom: 20px;
-    }
-
-    section div label.label_form {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    section div.container_select {
-        position: relative;
-    }
-
-    section div.container_select::after {
-        content: '\25BC';
-        font-size: 12px;
-        color: #555;
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-    }
-
-    section div form input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    section div form input[type="submit"] {
-        background-color: #35b5ff;
-        color: white;
-        border: none;
-        padding: 12px 250px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    section div form input[type="submit"]:hover {
-        background-color: #35b5ff
-    }
-
-
-
-    /*--------------------------------------------------- FAQ */
-
-
-    section h1.faq {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    section main div.faq-item {
-        margin-bottom: 20px;
-    }
-
-    section main div.faq-item h2 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    section main div.faq-item dl {
-        margin-top: 10px;
-        padding-left: 20px;
-    }
-
-    section main div.faq-item dl dt {
-        font-weight: bold;
-        margin-top: 10px;
-    }
-
-    section main div.faq-item dl dd {
-        margin-left: 20px;
-        margin-top: 5px;
-    }
-
-    section main div ul {
-        list-style-type: none;
-        margin-left: 20px;
-    }
-
-    section main div ul li {
-        margin-top: 5px;
-    }
-
-
-
-
-    /*------------------------------------------------- FOOTER */
-
-    footer {
-        padding-top: 50px;
-    }
-
-    footer .about-am img {
-        height: 80px;
-        width: 160px;
-    }
-
-    footer div ul {
-        list-style-type: none;
-        padding: 0;
-
-    }
-
-    footer .about-am i {
-        font-size: 20px;
-        color: #1cabe2;
-        margin-right: 10px;
-
-
-    }
-
-    footer .about-am i.fa-phone {
-        transform: rotate(110deg);
-
-    }
-
-    footer .soutenir-am i {
-        font-size: 40px;
-        color: #1cabe2;
-        margin-right: 15px;
-    }
-
-    footer .soutenir-am i:hover {
-        color: #098dc0;
-    }
-
-    footer .soutenir-am p {
-        color: #555
-    }
-
-    footer .row ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: 100;
-        line-height: 2;
-    }
-
-    footer .row ul li a:hover {
-        color: #1cabe2;
-
-    }
-
-
-    /* ------------------------FOOTBAND --------------------------------*/
-
-
-    footer .footband {
-        background-color: rgb(78, 72, 72);
-        font-size: 10px;
-        text-align: center;
-    }
-
-    footer .footband ul {
-        list-style: none;
-        padding: 20px;
-    }
-
-    footer .footband ul li {
-        /* display: inline-block; */
-        /* margin-right: 30px; */
-        padding: 7px 0 7px 0;
-        display: flex;
-        text-align: center;
         flex-direction: column;
-        /* display: inline-block;
-        width: unset; */
+        /* transform: translate(0%, 12.1%); */
+        background-color: white;
+        z-index: 999; 
+        margin: 1px;    
     }
+    
 
-    footer .footband ul li a {
-        text-decoration: none;
-        color: #fff;
+    .menuPhone {
+        display: none;
     }
+   
 
-    footer .footband ul li a:hover {
-        color: #1cabe2;
+    #nav-icon2 {
+        top: 0px;
     }
 
 }
-
-/* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
-@media screen and (min-width: 600px) and (max-width: 899px) {}
-
-/* ------------------------STYLES FOR COMPUTER -------------------------------------------------------------- */
-@media screen and (min-with: 991px) and (max-width: 992px) {}

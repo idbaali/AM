@@ -1,83 +1,157 @@
-// MENU PORTABLE
-let hamburgerBootton = document.querySelector(".menuHamburger");
-let closeBoutton = document.querySelector(".close-X");
-let phoneMenu2 = document.querySelector(".menuPhone");
 
-phoneMenu2.style.display = "none";
+// const hamburger = document.getElementById("nav-icon2");
+// const menuPop = document.querySelector(".menuPhone");
 
-hamburgerBootton.addEventListener("click", () => {
-    phoneMenu2.style.display = "block";
-    hamburgerBootton.style.display = "none";
-    closeBoutton.style.display = "block";
-//     // alert("Bonjour");
-});
+// hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle('open');
+//     menuPop.classList.toggle('open');
+//     menuPop.style.display = menuPop.classList.contains("open") ? "block" : "none";
+// });
 
+// function redimensionnement() {
+//     if (window.matchMedia("(min-width: 768px)").matches) {
+//         // L'affichage est supérieur ou égal à 768px de large
+//         menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
+//             // hamburger.classList.remove('none'); // Retire la classe 'open' du hamburger
 
-closeBoutton.addEventListener("click", () => {
-   phoneMenu2.style.display = "none";
-//    hamburgerBootton.style.display = "block";
-window.location.href = "/";
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const contentToHide = document.querySelector('.content-to-hide');
-// const menuButton = document.getElementById('menuButton');
-
-
-// menuButton.addEventListener('click', () => {
-
-//     if (contentToHide.style.display === 'none' || contentToHide.style.display === '') {
-//         contentToHide.style.display = 'block';
 //     } else {
-//         contentToHide.style.display = 'none';
+//         // L'affichage est inférieur à 768px de large
+//         if (!menuPop.classList.contains("open")) {
+//             menuPop.style.display = "none";
+
+//         }
 //     }
-// });
+// }
+
+// // Écoutez les changements de taille de la fenêtre
+// window.addEventListener('resize', redimensionnement);
+
+// // Appelez redimensionnement au chargement de la page
+// window.addEventListener('load', redimensionnement);
 
 
 
 
 
-// // Récupérez le bouton du menu hamburger et le bouton de fermeture du menu
-// var menuHamburger = document.querySelector('.menuHamburger');
-// var closeBtn = document.querySelector('.close-X');
 
-// // Récupérez la section principale de votre site
-// var mainContent = document.getElementById('main-content');
+const hamburger = document.getElementById("nav-icon2");
+const menuPop = document.querySelector(".menuPhone");
 
-// // Ajoutez un gestionnaire d'événement au bouton du menu hamburger
-// menuHamburger.addEventListener('click', function () {
-//     // Ajoutez une classe pour masquer la section principale
-//     mainContent.classList.add('hide-content');
-// });
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle('open');
+    menuPop.classList.toggle('open');
+    menuPop.style.display = menuPop.classList.contains("open") ? "block" : "none";
+});
 
-// // Ajoutez un gestionnaire d'événement au bouton de fermeture du menu
-// closeBtn.addEventListener('click', function () {
-//     // Supprimez la classe pour afficher à nouveau la section principale
-//     mainContent.classList.remove('hide-content');
-// });
+function redimensionnement() {
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        // L'affichage est supérieur ou égal à 768px de large
+        menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
+    } else {
+        // L'affichage est inférieur à 768px de large
+        if (!menuPop.classList.contains("open")) {
+            menuPop.style.display = "none";
+        }
+    }
+}
+
+// Écoutez les changements de taille de la fenêtre
+window.addEventListener('resize', redimensionnement);
+
+// Appelez redimensionnement au chargement de la page
+window.addEventListener('load', redimensionnement);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const hamburger = document.getElementById("nav-icon2");
+// const phoneMenu = document.querySelector(".menuPhone");
+
+// function togglePhoneMenu() {
+//     hamburger.classList.toggle('open');
+//     phoneMenu.classList.toggle('open');
+//     phoneMenu.style.display = phoneMenu.classList.contains("open") ? "open" : "none";
+// }
+
+// hamburger.addEventListener("click", togglePhoneMenu);
+
+// function redimensionnement() {
+//     if (window.matchMedia("(min-width: 768px)").matches) {
+//         // L'affichage est supérieur ou égal à 768px de large
+//         phoneMenu.style.display = "none"; // Masque le menuPhone en mode bureau
+//         hamburger.classList.remove('none'); // Retire la classe 'open' du hamburger
+//     } else {
+//         // L'affichage est inférieur à 768px de large
+//         if (!phoneMenu.classList.contains("open")) {
+//             phoneMenu.style.display = "none";
+//             hamburger.classList.remove('open'); // Retire la classe 'open' du hamburger
+//         }
+//     }
+// }
+
+// // Écoutez les changements de taille de la fenêtre
+// window.addEventListener('resize', redimensionnement);
+
+// // Appelez redimensionnement au chargement de la page
+// window.addEventListener('load', redimensionnement);
+
+
+
+
+
+
+
