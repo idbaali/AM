@@ -34,21 +34,29 @@
 
 const hamburger = document.getElementById("nav-icon2");
 const menuPop = document.querySelector(".menuPhone");
+let menuPhoneOpen = false;
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle('open');
-    menuPop.classList.toggle('open');
-    menuPop.style.display = menuPop.classList.contains("open") ? "block" : "none";
+    if(!menuPhoneOpen) {
+        hamburger.classList.add('open');
+        menuPhoneOpen = true;
+        menuPop.style.display = "block";
+    } else {
+        hamburger.classList.remove('open');
+        menuPhoneOpen = false;
+        menuPop.style.display = "block";
+    };
 });
 
 function redimensionnement() {
     if (window.matchMedia("(min-width: 768px)").matches) {
         // L'affichage est supérieur ou égal à 768px de large
-        menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
+       // menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
     } else {
         // L'affichage est inférieur à 768px de large
         if (!menuPop.classList.contains("open")) {
-            menuPop.style.display = "none";
+         //   hamburger.classList.remove('open');
+          //  menuPop.style.display = "none";
         }
     }
 }
