@@ -70,12 +70,12 @@ hamburger.addEventListener("click", () => {
         hamburger.classList.add('open');
         menuPop.classList.add('open');
         menuPhoneOpen = true;
-       menuPop.style.display = "block";
+        menuPop.style.display = "block";
     } else {
         hamburger.classList.remove('open');
         menuPop.classList.remove('open');
         menuPhoneOpen = false;
-      menuPop.style.display = "block";
+        menuPop.style.display = "block";
     };
 });
 
