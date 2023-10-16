@@ -51,7 +51,7 @@
     }
     
     .menuPhone {
-        display: none;
+        display: block;
         position: fixed;
         top: 15%;
         left: -100%;
@@ -71,8 +71,4 @@
     }
 
     /* MENU PHONE RESPONSIVE plus Donateur & Areabutton RESPONSIVE */
-    .menuPhone {
-        display: none;
-    }
-
 }

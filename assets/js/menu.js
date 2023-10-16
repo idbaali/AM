@@ -1,4 +1,3 @@
-
 // const hamburger = document.getElementById("nav-icon2");
 // const menuPop = document.querySelector(".menuPhone");
 
@@ -12,7 +11,6 @@
 //     if (window.matchMedia("(min-width: 768px)").matches) {
 //         // L'affichage est supérieur ou égal à 768px de large
 //         menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
-//             // hamburger.classList.remove('none'); // Retire la classe 'open' du hamburger
 //     } else {
 //         // L'affichage est inférieur à 768px de large
 //         if (!menuPop.classList.contains("open")) {
@@ -29,35 +27,36 @@
 
 
 
-
-
-
 const hamburger = document.getElementById("nav-icon2");
 const menuPop = document.querySelector(".menuPhone");
+let menuPhoneOpen = false;
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle('open');
-    menuPop.classList.toggle('open');
-    menuPop.style.display = menuPop.classList.contains("open") ? "block" : "none";
+    if(!menuPhoneOpen) {
+        hamburger.classList.add('open');
+        menuPop.classList.add('open');
+        menuPhoneOpen = true;
+    } else {
+        hamburger.classList.remove('open');
+        menuPop.classList.remove('open');
+        menuPhoneOpen = false;
+    };
 });
 
 function redimensionnement() {
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        // L'affichage est supérieur ou égal à 768px de large
-        menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
-    } else {
-        // L'affichage est inférieur à 768px de large
-        if (!menuPop.classList.contains("open")) {
-            menuPop.style.display = "none";
-        }
-    }
-}
+        menuPop.classList.remove('open');
+       hamburger.classList.remove('open');
+       menuPhoneOpen = false;
+};
 
 // Écoutez les changements de taille de la fenêtre
 window.addEventListener('resize', redimensionnement);
 
 // Appelez redimensionnement au chargement de la page
 window.addEventListener('load', redimensionnement);
+
+
+
 
 
 
