@@ -70,12 +70,10 @@ hamburger.addEventListener("click", () => {
         hamburger.classList.add('open');
         menuPop.classList.add('open');
         menuPhoneOpen = true;
-        menuPop.style.display = "block";
     } else {
         hamburger.classList.remove('open');
         menuPop.classList.remove('open');
         menuPhoneOpen = false;
-        menuPop.style.display = "block";
     };
 });
 
@@ -83,7 +81,6 @@ function redimensionnement() {
         menuPop.classList.remove('open');
        hamburger.classList.remove('open');
        menuPhoneOpen = false;
-       menuPop.style.display = "none";
 };
 
 // Écoutez les changements de taille de la fenêtre
