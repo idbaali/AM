@@ -27,6 +27,35 @@
 // // Appelez redimensionnement au chargement de la page
 // window.addEventListener('load', redimensionnement);
 
+/*
+const hamburger = document.getElementById("nav-icon2");
+const menuPop = document.querySelector(".menuPhone");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle('open');
+    menuPop.classList.toggle('open');
+    menuPop.style.display = menuPop.classList.contains("open") ? "block" : "none";
+});
+
+function redimensionnement() {
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        // L'affichage est supérieur ou égal à 768px de large
+        menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
+    } else {
+        // L'affichage est inférieur à 768px de large
+        if (!menuPop.classList.contains("open")) {
+            menuPop.style.display = "none";
+        }
+    }
+}
+
+// Écoutez les changements de taille de la fenêtre
+window.addEventListener('resize', redimensionnement);
+
+// Appelez redimensionnement au chargement de la page
+window.addEventListener('load', redimensionnement);
+*/
+
 
 
 
@@ -39,27 +68,23 @@ let menuPhoneOpen = false;
 hamburger.addEventListener("click", () => {
     if(!menuPhoneOpen) {
         hamburger.classList.add('open');
+        menuPop.classList.add('open');
         menuPhoneOpen = true;
-        menuPop.style.display = "block";
+       menuPop.style.display = "block";
     } else {
         hamburger.classList.remove('open');
+        menuPop.classList.remove('open');
         menuPhoneOpen = false;
-        menuPop.style.display = "block";
+      menuPop.style.display = "block";
     };
 });
 
 function redimensionnement() {
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        // L'affichage est supérieur ou égal à 768px de large
-       // menuPop.style.display = "none"; // Masque le menuPhone en mode bureau
-    } else {
-        // L'affichage est inférieur à 768px de large
-        if (!menuPop.classList.contains("open")) {
-         //   hamburger.classList.remove('open');
-          //  menuPop.style.display = "none";
-        }
-    }
-}
+        menuPop.classList.remove('open');
+       hamburger.classList.remove('open');
+       menuPhoneOpen = false;
+       menuPop.style.display = "none";
+};
 
 // Écoutez les changements de taille de la fenêtre
 window.addEventListener('resize', redimensionnement);
