@@ -1,61 +1,62 @@
     <!-- MENU PRINCIPAL -->
+    <div id="monElement">
 
-    <nav class="nav-principal">
+        <nav class="nav-principal">
 
-        <div class="menuHamburger">
-            <button type="button" id="nav-icon2" aria-label="Toggle Navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+            <div class="menuHamburger">
+                <button type="button" id="nav-icon2" aria-label="Toggle Navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
-        <!-- LOGO POUR MENU PRINCIPAL -->
-        <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>
+            <!-- LOGO POUR MENU PRINCIPAL -->
+            <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>
 
-        <!-- FAIRE UN DON RESPONSIVE -->
-        <div class="donPhone">
-            <a href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
-        </div>
+            <!-- FAIRE UN DON RESPONSIVE -->
+            <div class="donPhone">
+                <a href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
+            </div>
 
-        <ul id="popupForm">
+            <ul id="popupForm">
 
-            <li class="nav-item-active">
-                <a class="active" aria-current="page" href="/">ACCUEIL</a>
-            </li>
-            <li class="nav-item ligne">
-                <a class="brule" href="/nous-decouvrir">NOUS DÉCOUVRIR</a>
-            </li>
-            <li class="nav-item ligne">
-                <a class="brule" href="/evenements">ÉVÉNEMENTS</a>
-            </li>
-            <li class="nav-item ligne">
-                <a class="brule" href="/nos-domaines">NOS DOMAINS D'ACTIONS</a>
-            </li>
-            <li class="nav-item ligne">
-                <a class="brule" href="/s-engager">S'ENGAGER</a>
-            </li>
+                <li class="nav-item-active">
+                    <a class="active" aria-current="page" href="/">ACCUEIL</a>
+                </li>
+                <li class="nav-item ligne">
+                    <a class="brule" href="/nousDecouvrir">NOUS DÉCOUVRIR</a>
+                </li>
+                <li class="nav-item ligne">
+                    <a class="brule" href="/evenements">ÉVÉNEMENTS</a>
+                </li>
+                <li class="nav-item ligne">
+                    <a class="brule" href="/nosDomainesActions">NOS DOMAINS D'ACTIONS</a>
+                </li>
+                <li class="nav-item ligne">
+                    <a class="brule" href="/s-engager">S'ENGAGER</a>
+                </li>
 
-            <!-- BOUTTON DE RECHERCHE POUR MENU PRINCIPAL-->
-            <li>
-                <a href=""><i class="fas fa-magnifying-glass grandir sucher d-none d-lg-block"></i></a>
-            </li>
+                <!-- BOUTTON DE RECHERCHE POUR MENU PRINCIPAL-->
+                <li>
+                    <a href=""><i class="fas fa-magnifying-glass grandir sucher d-none d-lg-block"></i></a>
+                </li>
 
-            <!-- DONATEUR POUR MENU PRINCIPAL-->
-            <li class="donateur">
-                <a class="" href="/espace-donateur">
-                    <i class="fas fa-circle-user me-2"></i>ESPACE DONATEUR
-                </a>
-            </li>
+                <!-- DONATEUR POUR MENU PRINCIPAL-->
+                <li class="donateur">
+                    <a class="" href="/espace-donateur">
+                        <i class="fas fa-circle-user me-2"></i>ESPACE DONATEUR
+                    </a>
+                </li>
 
 
-            <!-- FAIRE UN DON POUR MENU PRINCIPAL -->
-            <li class="don">
-                <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
-            </li>
-        </ul>
-    </nav>
-
+                <!-- FAIRE UN DON POUR MENU PRINCIPAL -->
+                <li class="don">
+                    <a class="" href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- MENU PHONE OU RESPONSIVE-->
     <div class="menuPhone">
@@ -81,13 +82,13 @@
                     <a class="active" aria-current="page" href="/">ACCUEIL</a>
                 </li>
                 <li class="nav-item ligne">
-                    <a class="brule" href="/nous-decouvrir">NOUS DÉCOUVRIR</a>
+                    <a class="brule" href="/nousDecouvrir">NOUS DÉCOUVRIR</a>
                 </li>
                 <li class="nav-item ligne">
                     <a class="brule" href="/evenements">ÉVÉNEMENTS</a>
                 </li>
                 <li class="nav-item ligne">
-                    <a class="brule" href="/nos-domaines">NOS DOMAINS D'ACTIONS</a>
+                    <a class="brule" href="/nosDomainesActions">NOS DOMAINS D'ACTIONS</a>
                 </li>
                 <li class="nav-item ligne">
                     <a class="brule" href="/s-engager">S'ENGAGER</a>

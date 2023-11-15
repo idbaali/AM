@@ -17,8 +17,17 @@
                 <li><a class="" href="/contact">Contact</a></li>
                 <small>|</small>
                 <li><a class="" href="/faq">FAQ</a></li>
+
+                <?php if (isset($_SESSION['email'])) : ?>
+                    <small>|</small>
+                    <li><a class="" href="/logout">Logout</a></li>
+                    <?php else: ?>
+                    <small>|</small>
+                    <li><a class="" href="/admin/login">Login</a></li>
+                <?php endif; ?>
+            </ul>
+
             </ul>
         </div>
 
     </div>
-    

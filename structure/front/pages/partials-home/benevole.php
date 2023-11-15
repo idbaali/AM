@@ -35,7 +35,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-4 p-5">
+            <div class="col-md-4 p-5 beneMbanda">
                 <div class="">
                     <div class="">
                         <h3>Bandaka : La mobilisation de nos bénévoles en France</h3>

@@ -10,7 +10,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 switch ($page) {
 
 
-        /* MENU PRINCIPAL */
+        /*------------------------------ MENU PRINCIPAL ----------------------------*/
 
 
         /* HOME */
@@ -19,8 +19,14 @@ switch ($page) {
         include 'structure/front/pages/home.php';
         break;
 
+        // TEST
+    case 'test':
+
+        include 'structure/front/pages/test.php';
+        break;
+
         /* DECOUVRIR */
-    case 'decouvrir':
+    case 'nousDecouvrir':
 
         include 'structure/front/pages/nousDecouvrir.php';
         break;
@@ -32,7 +38,7 @@ switch ($page) {
         break;
 
         /* DOMAINS DES ACTIONS */
-    case 'domaines-actions':
+    case 'nosDomainesActions':
 
         include 'structure/front/pages/nosDomainesActions.php';
         break;
@@ -78,6 +84,40 @@ switch ($page) {
         include 'structure/front/pages/dev_benevole.php';
         break;
 
+
+
+
+        /*---------------------------- SOUS MENU OU PETIT NAVBAR --------------------------- */
+
+        /* PORTAIL ACTION MEPHI */
+    case 'portail':
+
+        include 'structure/front/pages/portail.php';
+        break;
+
+        /* S'INSCRIRE A LA NEWSLETTER */
+    case 'newsletter':
+
+        include 'structure/front/pages/newsletter.php';
+        break;
+
+        /* PRESSE */
+    case 'presse':
+
+        include 'structure/front/pages/presse.php';
+        break;
+
+        /* CONTACT */
+    case 'contact':
+
+        include 'structure/front/pages/contact.php';
+        break;
+
+        /* FAQ */
+    case 'faq':
+
+        include 'structure/front/pages/faq.php';
+        break;
 
 
 
@@ -137,47 +177,18 @@ switch ($page) {
 
 
 
-        /*---------------------------- SOUS MENU OU PETIT NAVBAR --------------------------- */
-
-        /* PORTAIL ACTION MEPHI */
-    case 'portail':
-
-        include 'structure/front/pages/portail.php';
-        break;
-
-        /* S'INSCRIRE A LA NEWSLETTER */
-    case 'newsletter':
-
-        include 'structure/front/pages/newsletter.php';
-        break;
-
-        /* PRESSE */
-    case 'presse':
-
-        include 'structure/front/pages/presse.php';
-        break;
-
-        /* CONTACT */
-    case 'contact':
-
-        include 'structure/front/pages/contact.php';
-        break;
-
-        /* FAQ */
-    case 'faq':
-
-        include 'structure/front/pages/faq.php';
-        break;
-
-
-
-
         /* -------------------TRAITEMANT BACK-END------------------------ */
 
         /* NEWSLETTER */
     case 'back-newsletter':
 
         include 'structure/back/pages/back-newsletter.php';
+        break;
+
+        /* LOGOUT */
+    case 'logout':
+
+        include 'structure/back/pages/logout.php';
         break;
 
         /* ADMIN */
@@ -204,4 +215,4 @@ switch ($page) {
         /* 404 NOT FOUND */
 }
 
-include ('structure/front/composants/footer.php');
+include('structure/front/composants/footer.php');

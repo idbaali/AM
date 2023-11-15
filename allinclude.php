@@ -1,15 +1,16 @@
 <?php
-include ('models/connexion.php');
-include ('models/function.php');
-include ('models/newsletter.php');
-include ('structure/front/composants/head.php');
-include ('structure/front/composants/header.php');
-include ('structure/front/composants/navbar.php');
+include('models/connexion.php');
+include('models/function.php');
+include('models/newsletter.php');
+include('models/admin.php');
+include('structure/front/composants/head.php');
+include('structure/front/composants/header.php');
+include('structure/front/composants/navbar.php');
 ?>
 
 
 
-<?php 
+<?php
 // include ('structure/front/composents/home.php');
 // include ('structure/front/composents/contact.php');
 // include ('structure/front/composents/devenirbenevol.php');

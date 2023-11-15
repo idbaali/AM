@@ -18,7 +18,7 @@
                                 <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6 class="card-title text-light">Actualité</h6>
-                                    <p class="card-text">Le commuté de l'association ACTION MEPHI était l'or de la conférence </p>
+                                    <p class="card-text">Le commuté de l'association ACTION MEPHI était l'or de la conférence. Pour l'avancement du projet. </p>
                                     <hr>
                                     <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>

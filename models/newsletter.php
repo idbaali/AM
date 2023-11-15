@@ -22,3 +22,4 @@ if (!function_exists('verify_email')) {
 
     }
 }
+
