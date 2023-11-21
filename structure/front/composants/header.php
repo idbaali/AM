@@ -20,10 +20,14 @@
 
                 <?php if (isset($_SESSION['email'])) : ?>
                     <small>|</small>
-                    <li><a class="" href="/logout">Logout</a></li>
-                    <?php else: ?>
+                    <li>
+                        <a class="log" href="/logout"><img src="../assets/img/admin/<?= $_SESSION['image']; ?>" alt=""></a>
+                    </li>
+                <?php else : ?>
                     <small>|</small>
-                    <li><a class="" href="/admin/login">Login</a></li>
+                    <li>
+                        <a class="log" href="/admin/login"><i class="fas fa-circle-user me-2"></i></a>
+                    </li>
                 <?php endif; ?>
             </ul>
 

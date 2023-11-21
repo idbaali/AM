@@ -22,7 +22,7 @@ if (!function_exists('affiche_admin')) {
         global $connexion;
         $verify_data = $connexion->prepare('SELECT * FROM admin WHERE email = :email AND password = :password'); 
         $verify_data->bindValue(':email', $email, PDO::PARAM_STR);
-        $verify_data->bindValue(':password', $password, PDO::PARAM_STR);
+        $verify_data->bindValue(':password', $password, PDO::PARAM_STR); 
         $verify_data->execute();
         return $verify_data->fetch(PDO::FETCH_ASSOC);
     }

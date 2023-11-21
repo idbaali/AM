@@ -11,6 +11,14 @@
                 </button>
             </div>
 
+            <!-- LOGIN & LOGOUT RESPONSIVE -->
+            <?php if (isset($_SESSION['email'])) : ?>
+                <a class="log" href="/logout"><img src="../assets/img/admin/<?= $_SESSION['image']; ?>" alt=""></a>
+            <?php else : ?> 
+                <a class="log" href="/admin/login"><i class="fas fa-circle-user me-2"></i></a>
+            <?php endif; ?>
+            
+
             <!-- LOGO POUR MENU PRINCIPAL -->
             <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>
 
@@ -26,9 +34,6 @@
                 </li>
                 <li class="nav-item ligne">
                     <a class="brule" href="/nousDecouvrir">NOUS DÉCOUVRIR</a>
-                </li>
-                <li class="nav-item ligne">
-                    <a class="brule" href="/evenements">ÉVÉNEMENTS</a>
                 </li>
                 <li class="nav-item ligne">
                     <a class="brule" href="/nosDomainesActions">NOS DOMAINS D'ACTIONS</a>
@@ -83,9 +88,6 @@
                 </li>
                 <li class="nav-item ligne">
                     <a class="brule" href="/nousDecouvrir">NOUS DÉCOUVRIR</a>
-                </li>
-                <li class="nav-item ligne">
-                    <a class="brule" href="/evenements">ÉVÉNEMENTS</a>
                 </li>
                 <li class="nav-item ligne">
                     <a class="brule" href="/nosDomainesActions">NOS DOMAINS D'ACTIONS</a>

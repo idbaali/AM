@@ -11,5 +11,4 @@
   <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
   <link href="../assets/css/phone.css" rel="stylesheet" type="text/css">
 </head>
-
-<body>
+<body id="barre">

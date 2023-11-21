@@ -3,8 +3,10 @@ const hamburger = document.getElementById("nav-icon2");
 const menuPop = document.querySelector(".menuPhone");
 let menuPhoneOpen = false;
 
+// let barreV = document.getElementById("barre");
+
 hamburger.addEventListener("click", () => {
-    if(!menuPhoneOpen) {
+    if (!menuPhoneOpen) {
         hamburger.classList.add('open');
         menuPop.classList.add('open');
         menuPhoneOpen = true;
@@ -16,9 +18,11 @@ hamburger.addEventListener("click", () => {
 });
 
 function redimensionnement() {
-        menuPop.classList.remove('open');
-       hamburger.classList.remove('open');
-       menuPhoneOpen = false;
+    menuPop.classList.remove('open');
+    hamburger.classList.remove('open');
+    menuPhoneOpen = false;
+
+    // barreV.style.overflowY = "hidden";
 };
 
 // Écoutez les changements de taille de la fenêtre

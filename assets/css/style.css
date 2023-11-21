@@ -88,6 +88,16 @@ body {
     margin-right: 5px;
 }
 
+.droite .log {
+    font-size: 16px;
+}
+
+.droite .log img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 /* RESPONSIVE */
 .navbarpetitPhone {
     display: none;
@@ -126,8 +136,9 @@ nav.nav-principal ul {
 
 nav.nav-principal ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 25px;
     line-height: 70px;
+    font-size: 17px;
 }
 
 nav.nav-principal ul li a {
@@ -156,6 +167,11 @@ nav.nav-principal ul li.item-active {
 
 /* MENU HAMBURGER */
 nav.nav-principal .menuHamburger {
+    display: none;
+}
+
+/* LOGIN & LOGOUT RESPONSIVE */
+nav.nav-principal .log {
     display: none;
 }
 
@@ -201,10 +217,8 @@ ul li.item-active {
 
 nav ul li.donateur {
     background-color: #1cabe2;
-    padding: 0 17px 0 17px;
-    /* padding-left: 17px;
-    padding-right: 15px; */
-    margin-right: -25px;
+    padding: 0 20px 0 20px;
+    margin-right: -29px;
 }
 
 nav ul li.donateur:hover {
@@ -217,9 +231,7 @@ nav ul li.donateur a {
 
 nav ul li.don {
     background-color: #ff8d41;
-    padding: 0 17px 0 17px;
-    /* padding-left: 17px;
-    padding-right: 17px; */
+    padding: 0 20px 0 20px;
     margin-right: -5px;
 }
 
@@ -612,7 +624,9 @@ section.p-login form {
     border-radius: 6px;
 }
 
-
+.p-admin {
+    padding-top: 112px;
+}
 
 
 
@@ -622,6 +636,10 @@ section.p-login form {
 
 footer {
     padding-top: 50px;
+}
+
+footer .about-am {
+    padding-bottom: 12px;
 }
 
 footer .about-am img {
@@ -648,10 +666,14 @@ footer .about-am i.fa-phone {
 
 }
 
+footer .soutenir-am {
+    margin-bottom: -17px;
+}
+
 footer .soutenir-am i {
     font-size: 40px;
     color: #1cabe2;
-    margin-right: 15px;
+    margin-right: 15px;     
 }
 
 footer .soutenir-am i:hover {
@@ -666,7 +688,7 @@ footer .row ul li a {
     text-decoration: none;
     color: #555;
     font-weight: 100;
-    line-height: 2;
+    line-height: 1;
 }
 
 footer .row ul li a:hover {
@@ -759,10 +781,6 @@ footer .footband ul li a:hover {
         border-bottom: 1px solid #2222;
     }
 
-    nav.nav-principal #popupForm {
-        display: none;
-    }
-
     /* MENU HAMBURGER */
     nav.nav-principal .menuHamburger {
         display: block;
@@ -772,11 +790,32 @@ footer .footband ul li a:hover {
         padding-top: 22px;
     }
 
+    /* LOGIN & LOGOUT RESPONSIVE */
+    nav.nav-principal .log {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        color: #555;
+        max-width: 50px;
+    }
+
+    nav.nav-principal .log:hover {
+        color: #35b5ff;
+    }
+
+    nav.nav-principal .log img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+
     /* LOGO RESPONSIVE */
     nav.nav-principal a .logo {
         height: 65px;
         width: 130px;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     /* DON PHONE RESPONSIVE */
@@ -800,10 +839,10 @@ footer .footband ul li a:hover {
         font-size: 14px;
     }
 
-    /* MENU PHONE RESPONSIVE plus Donateur & Areabutton RESPONSIVE */
-    /* .menuPhone {
+    /*  MENU PRINCIPAL CACHE */
+    nav.nav-principal #popupForm {
         display: none;
-    } */
+    }
 
     /* DONATEUR RESPONSIVE */
     .menuPhone .donateur2 {
@@ -836,12 +875,13 @@ footer .footband ul li a:hover {
     .menuPhone ul.menuPhone1 li {
         margin-left: 30px;
         margin-right: 30px;
-        padding: 20px 0 20px 0;
+        padding: 22px 0 22px 0;
         border-bottom: 1px solid #555;
     }
 
-    .menuPhone ul.menuPhone1 li:nth-child(5) {
+    .menuPhone ul.menuPhone1 li:last-child {
         border-bottom: none;
+        margin-bottom: 10px;
     }
 
 
@@ -853,17 +893,17 @@ footer .footband ul li a:hover {
 
     .menuPhone .navbarpetitPhone ul li {
         list-style: none;
-        font-size: 13px;
+        font-size: 14px;
         margin-left: 30px;
         margin-top: 10px;
     }
 
     .menuPhone .navbarpetitPhone ul li:first-child {
-        margin-top: 20px;
+        padding-top: 20px;
     }
 
     .menuPhone .navbarpetitPhone ul li:last-child {
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
 
 
@@ -875,6 +915,8 @@ footer .footband ul li a:hover {
     .p-homePhone {
         margin-top: 80px;
     }
+
+
 
 
 
@@ -1321,7 +1363,7 @@ footer .footband ul li a:hover {
 
 /* ------------------------STYLES FOR TABLETTE -------------------------------------------------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
 
     /* -------------------------------------HEADER */
@@ -1376,10 +1418,6 @@ footer .footband ul li a:hover {
         border-bottom: 1px solid #2222;
     }
 
-    nav.nav-principal #popupForm {
-        display: none;
-    }
-
     /* MENU HAMBURGER */
     nav.nav-principal .menuHamburger {
         display: block;
@@ -1389,11 +1427,31 @@ footer .footband ul li a:hover {
         padding-top: 22px;
     }
 
+    /* LOGIN & LOGOUT RESPONSIVE */
+    nav.nav-principal .log {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-left: 80px;
+        font-size: 20px;
+        color: #555;
+    }
+
+    nav.nav-principal .log:hover {
+        color: #35b5ff;
+    }
+
+    nav.nav-principal .log img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
     /* LOGO RESPONSIVE */
     nav.nav-principal a .logo {
         height: 65px;
-        width: 130px;
-        padding-left: 10px;
+        width: 150px;
+        padding-left: 50px;
     }
 
     /* DON PHONE RESPONSIVE */
@@ -1417,18 +1475,18 @@ footer .footband ul li a:hover {
         font-size: 14px;
     }
 
-    /* MENU PHONE RESPONSIVE plus Donateur & Areabutton RESPONSIVE */
-    /* .menuPhone {
-    display: none;
-} */
+    /*  MENU PRINCIPAL CACHE */
+    nav.nav-principal #popupForm {
+        display: none;
+    }
 
     /* DONATEUR RESPONSIVE */
     .menuPhone .donateur2 {
         background-color: #1cabe2;
         display: flex;
         align-items: center;
-        padding-left: 43%;
-        height: 55px;
+        padding-left: 36%;
+        height: 57px;
         width: 100%;
         font-size: 13px;
     }
@@ -1612,20 +1670,23 @@ footer .footband ul li a:hover {
         padding-bottom: 25px;
     }
 
-    /* .p-action .nosAction1 a {
-    padding-left: 20px;
-    padding-right: 20px;
-} */
-
-
 
     .p-action .row .col-md-3 .actioncolor {
+        background-color: #1cabe2;
+        height: 500px;
+        width: 500px;
+        margin-bottom: 25px;
+        color: #fff;
+    }
+
+
+    /* .p-action .row .col-md-3 .actioncolor {
         background-color: #1cabe2;
         height: 100%;
         width: 100%;
         margin-bottom: 25px;
         color: #fff;
-    }
+    } */
 
     .p-action .row .col-md-3 i {
         font-size: 25px;
@@ -1662,34 +1723,6 @@ footer .footband ul li a:hover {
 
 
 
-
-    /* LES SYMBOLES */
-    /* .p-action .row .col-md-3 i {
-    font-size: 25px;
-    border: 1px solid #fff;
-    padding: 15px;
-    border-radius: 100%;
-    margin: 15px 0 20px 20px;
-}
-
-.p-action .row .col-md-3 h5 {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.p-action .row .col-md-3 p {
-    margin-left: 20px;
-    font-size: 13px;
-}
-
-.p-action .row .col-md-3 a {
-    padding: 15px 10px 15px 10px;
-    margin-top: 0;
-}
-
-.p-action .row .col-md-3 a:hover {
-    background-color: #ddf2fb
-} */
 
     .p-action .row .col-md-3 .instruction {
         margin-top: 10px;
@@ -2052,25 +2085,14 @@ footer .footband ul li a:hover {
 
 }
 
+
 /* ------------------------STYLES FOR COMPUTER -------------------------------------------------------------- */
 
-@media screen and (min-width: 1024px) and (max-width: 1067px) {
-
-
-    /* -------------------------------------HEADER */
-    header {
-        position: fixed;
-        z-index: 999;
-
-    }
-
-
-
-    /*-------------------------------------- PETIT NAV OU AVANT MENU */
+@media screen and (min-width: 991px) and (max-width: 1023px) {
 
     .navbarpetit {
         display: grid;
-        grid-template-columns: 16% 47% 37%;
+        grid-template-columns: 16% 46% 38%;
         height: 35px;
         width: 100%;
         line-height: 35px;
@@ -2151,7 +2173,7 @@ footer .footband ul li a:hover {
 
     nav.nav-principal a .logo {
         height: 70px;
-        width: 70px;
+        width: 100px;
         margin-left: 10px;
         border-bottom: 1px solid #2222;
     }
@@ -2168,9 +2190,9 @@ footer .footband ul li a:hover {
 
     nav.nav-principal ul li {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 10px;
         line-height: 70px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     nav.nav-principal ul li a {
@@ -2245,9 +2267,9 @@ footer .footband ul li a:hover {
     nav ul li.donateur {
         /* height: 100%; */
         background-color: #1cabe2;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
     }
 
     nav ul li.donateur:hover {
@@ -2262,8 +2284,8 @@ footer .footband ul li a:hover {
     nav ul li.don {
         /* height: 100%; */
         background-color: #ff8d41;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-right: -5px;
     }
 
@@ -2275,7 +2297,228 @@ footer .footband ul li a:hover {
         color: #fff;
     }
 
+}
 
+@media screen and (min-width: 1024px) and (max-width: 1067px) {
+
+
+    /* -------------------------------------HEADER */
+    header {
+        position: fixed;
+        z-index: 999;
+
+    }
+
+
+
+    /*-------------------------------------- PETIT NAV OU AVANT MENU */
+
+    .navbarpetit {
+        display: grid;
+        grid-template-columns: 16% 48% 36%;
+        height: 35px;
+        width: 100%;
+        line-height: 35px;
+        background-color: #fff;
+    }
+
+    .portail {
+        height: 35px;
+        width: 100%;
+        font-size: 11px;
+        background-color: #ddf2fb;
+        padding-left: 15px;
+    }
+
+    .portail .farbe {
+        color: #555;
+    }
+
+    .portail:hover {
+        background-color: #1cabe2;
+    }
+
+    .portail a {
+        text-decoration: none;
+    }
+
+    .portail a:hover {
+        color: #fff;
+    }
+
+    .droite ul {
+        list-style: none;
+    }
+
+    .droite ul li {
+        display: inline-block;
+    }
+
+    .droite ul li a {
+        font-size: 10px;
+        font-style: normal;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .droite a {
+        color: #222;
+        text-decoration: none;
+    }
+
+    .droite a:hover {
+        color: #35b5ff;
+    }
+
+    .droite small {
+        color: gray;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* RESPONSIVE */
+    .navbarpetitPhone {
+        display: none;
+    }
+
+
+
+    /*-------------------------------------- NAV OU MENU PRINCIPAL */
+
+    nav.nav-principal {
+        height: 70px;
+        width: 100%;
+        top: 0;
+        margin: 0px;
+        background-color: #fff;
+        border-top: 1px solid #2222;
+        border-bottom: 1px solid #2222;
+    }
+
+    nav.nav-principal a .logo {
+        height: 70px;
+        width: 100px;
+        margin-left: 10px;
+        border-bottom: 1px solid #2222;
+    }
+
+    nav.nav-principal a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    nav.nav-principal ul {
+        list-style: none;
+        float: right;
+    }
+
+    nav.nav-principal ul li {
+        display: inline-block;
+        margin: 0 13px;
+        line-height: 70px;
+        font-size: 12px;
+    }
+
+    nav.nav-principal ul li a {
+        color: #555;
+    }
+
+    nav.nav-principal ul .ligne:hover {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    nav.nav-principal ul li .brule:hover {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li a .sucher:hover {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li a.active {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li.item-active {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    /* MENU HAMBURGER */
+    nav.nav-principal .menuHamburger {
+        display: none;
+    }
+
+    /* DON PHONE RESPONSIVE */
+    .donPhone {
+        display: none;
+    }
+
+    /* MENU PHONE RESPONSIVE */
+    .menuPhone {
+        display: none;
+    }
+
+    ul li .ligne {
+        line-height: 70px;
+        margin: 0 20px;
+    }
+
+    ul li a {
+        color: #555;
+        text-decoration: none;
+    }
+
+    ul .ligne:hover {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    ul li .brule:hover {
+        color: #1cabe2;
+    }
+
+    ul li a .sucher:hover {
+        color: #1cabe2;
+    }
+
+    ul li a.active {
+        color: #1cabe2;
+    }
+
+    ul li.item-active {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    nav ul li.donateur {
+        /* height: 100%; */
+        background-color: #1cabe2;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
+    }
+
+    nav ul li.donateur:hover {
+        background-color: #098dc0;
+
+    }
+
+    nav ul li.donateur a {
+        color: #fff;
+    }
+
+    nav ul li.don {
+        /* height: 100%; */
+        background-color: #ff8d41;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -5px;
+    }
+
+    nav ul li.don:hover {
+        background-color: #ec7a2e;
+    }
+
+    nav ul li.don a {
+        color: #fff;
+    }
 
 
 
@@ -3639,7 +3882,6 @@ width: unset; */
 
 }
 
-
 @media screen and (min-width: 1108px) and (max-width: 1120px) {
 
     /* -------------------------------------HEADER */
@@ -3655,7 +3897,7 @@ width: unset; */
 
     .navbarpetit {
         display: grid;
-        grid-template-columns: 16% 49% 35%;
+        grid-template-columns: 16% 50% 34%;
         height: 35px;
         width: 100%;
         line-height: 35px;
@@ -3736,7 +3978,7 @@ width: unset; */
 
     nav.nav-principal a .logo {
         height: 70px;
-        width: 70px;
+        width: 110px;
         margin-left: 10px;
         border-bottom: 1px solid #2222;
     }
@@ -3753,7 +3995,7 @@ width: unset; */
 
     nav.nav-principal ul li {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 14px;
         line-height: 70px;
         font-size: 13px;
     }
@@ -3830,9 +4072,9 @@ width: unset; */
     nav ul li.donateur {
         /* height: 100%; */
         background-color: #1cabe2;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
     }
 
     nav ul li.donateur:hover {
@@ -3847,8 +4089,8 @@ width: unset; */
     nav ul li.don {
         /* height: 100%; */
         background-color: #ff8d41;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-right: -5px;
     }
 
@@ -4432,7 +4674,6 @@ width: unset; */
 
 }
 
-
 @media screen and (min-width: 1120px) and (max-width: 1163px) {
 
     /* -------------------------------------HEADER */
@@ -4448,7 +4689,7 @@ width: unset; */
 
     .navbarpetit {
         display: grid;
-        grid-template-columns: 16% 49% 35%;
+        grid-template-columns: 13% 53% 34%;
         height: 35px;
         width: 100%;
         line-height: 35px;
@@ -4529,7 +4770,7 @@ width: unset; */
 
     nav.nav-principal a .logo {
         height: 70px;
-        width: 100px;
+        width: 110px;
         margin-left: 10px;
         border-bottom: 1px solid #2222;
     }
@@ -4546,7 +4787,7 @@ width: unset; */
 
     nav.nav-principal ul li {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 14px;
         line-height: 70px;
         font-size: 13px;
     }
@@ -4623,9 +4864,9 @@ width: unset; */
     nav ul li.donateur {
         /* height: 100%; */
         background-color: #1cabe2;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
     }
 
     nav ul li.donateur:hover {
@@ -4640,8 +4881,8 @@ width: unset; */
     nav ul li.don {
         /* height: 100%; */
         background-color: #ff8d41;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-right: -5px;
     }
 
@@ -4656,12 +4897,11 @@ width: unset; */
 
 
 
-
     /*------------------------------------------------ PAGE HOME */
 
 }
 
-@media screen and (min-width: 1163px) and (max-width: 1347px) {
+@media screen and (min-width: 1163px) and (max-width: 1208px) {
 
     /* -------------------------------------HEADER */
     header {
@@ -4676,7 +4916,7 @@ width: unset; */
 
     .navbarpetit {
         display: grid;
-        grid-template-columns: 13% 54% 33%;
+        grid-template-columns: 13% 55% 32%;
         height: 35px;
         width: 100%;
         line-height: 35px;
@@ -4757,7 +4997,7 @@ width: unset; */
 
     nav.nav-principal a .logo {
         height: 70px;
-        width: 80px;
+        width: 120px;
         margin-left: 10px;
         border-bottom: 1px solid #2222;
     }
@@ -4774,9 +5014,9 @@ width: unset; */
 
     nav.nav-principal ul li {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 15px;
         line-height: 70px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     nav.nav-principal ul li a {
@@ -4851,9 +5091,9 @@ width: unset; */
     nav ul li.donateur {
         /* height: 100%; */
         background-color: #1cabe2;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
     }
 
     nav ul li.donateur:hover {
@@ -4868,8 +5108,8 @@ width: unset; */
     nav ul li.don {
         /* height: 100%; */
         background-color: #ff8d41;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-right: -5px;
     }
 
@@ -4881,6 +5121,232 @@ width: unset; */
         color: #fff;
     }
 
+
+
+
+    /*------------------------------------------------ PAGE HOME */
+
+}
+
+@media screen and (min-width: 1208px) and (max-width: 1347px) {
+
+    /* -------------------------------------HEADER */
+    header {
+        position: fixed;
+        z-index: 999;
+
+    }
+
+
+
+    /*-------------------------------------- PETIT NAV OU AVANT MENU */
+
+    .navbarpetit {
+        display: grid;
+        grid-template-columns: 13% 56% 31%;
+        height: 35px;
+        width: 100%;
+        line-height: 35px;
+        background-color: #fff;
+    }
+
+    .portail {
+        height: 35px;
+        width: 100%;
+        font-size: 11px;
+        background-color: #ddf2fb;
+        padding-left: 15px;
+    }
+
+    .portail .farbe {
+        color: #555;
+    }
+
+    .portail:hover {
+        background-color: #1cabe2;
+    }
+
+    .portail a {
+        text-decoration: none;
+    }
+
+    .portail a:hover {
+        color: #fff;
+    }
+
+    .droite ul {
+        list-style: none;
+    }
+
+    .droite ul li {
+        display: inline-block;
+    }
+
+    .droite ul li a {
+        font-size: 10px;
+        font-style: normal;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .droite a {
+        color: #222;
+        text-decoration: none;
+    }
+
+    .droite a:hover {
+        color: #35b5ff;
+    }
+
+    .droite small {
+        color: gray;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* RESPONSIVE */
+    .navbarpetitPhone {
+        display: none;
+    }
+
+
+
+    /*-------------------------------------- NAV OU MENU PRINCIPAL */
+
+    nav.nav-principal {
+        height: 70px;
+        width: 100%;
+        top: 0;
+        margin: 0px;
+        background-color: #fff;
+        border-top: 1px solid #2222;
+        border-bottom: 1px solid #2222;
+    }
+
+    nav.nav-principal a .logo {
+        height: 70px;
+        width: 120px;
+        margin-left: 10px;
+        border-bottom: 1px solid #2222;
+    }
+
+    nav.nav-principal a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    nav.nav-principal ul {
+        list-style: none;
+        float: right;
+    }
+
+    nav.nav-principal ul li {
+        display: inline-block;
+        margin: 0 15px;
+        line-height: 70px;
+        font-size: 14px;
+    }
+
+    nav.nav-principal ul li a {
+        color: #555;
+    }
+
+    nav.nav-principal ul .ligne:hover {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    nav.nav-principal ul li .brule:hover {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li a .sucher:hover {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li a.active {
+        color: #1cabe2;
+    }
+
+    nav.nav-principal ul li.item-active {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    /* MENU HAMBURGER */
+    nav.nav-principal .menuHamburger {
+        display: none;
+    }
+
+    /* DON PHONE RESPONSIVE */
+    .donPhone {
+        display: none;
+    }
+
+    /* MENU PHONE RESPONSIVE */
+    .menuPhone {
+        display: none;
+    }
+
+    ul li .ligne {
+        line-height: 70px;
+        margin: 0 20px;
+    }
+
+    ul li a {
+        color: #555;
+        text-decoration: none;
+    }
+
+    ul .ligne:hover {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    ul li .brule:hover {
+        color: #1cabe2;
+    }
+
+    ul li a .sucher:hover {
+        color: #1cabe2;
+    }
+
+    ul li a.active {
+        color: #1cabe2;
+    }
+
+    ul li.item-active {
+        border-bottom: 4px solid #1cabe2;
+    }
+
+    nav ul li.donateur {
+        /* height: 100%; */
+        background-color: #1cabe2;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
+    }
+
+    nav ul li.donateur:hover {
+        background-color: #098dc0;
+
+    }
+
+    nav ul li.donateur a {
+        color: #fff;
+    }
+
+    nav ul li.don {
+        /* height: 100%; */
+        background-color: #ff8d41;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -5px;
+    }
+
+    nav ul li.don:hover {
+        background-color: #ec7a2e;
+    }
+
+    nav ul li.don a {
+        color: #fff;
+    }
 
 
 
@@ -4896,7 +5362,7 @@ width: unset; */
 
     .navbarpetit {
         display: grid;
-        grid-template-columns: 12% 55% 33%;
+        grid-template-columns: 12% 57% 31%;
         height: 35px;
         width: 100%;
         line-height: 35px;
@@ -4977,7 +5443,7 @@ width: unset; */
 
     nav.nav-principal a .logo {
         height: 70px;
-        width: 130px;
+        width: 135px;
         margin-left: 10px;
         border-bottom: 1px solid #2222;
     }
@@ -4994,9 +5460,9 @@ width: unset; */
 
     nav.nav-principal ul li {
         display: inline-block;
-        margin: 0 10px;
+        margin: 0 20px;
         line-height: 70px;
-        /* font-size: 15px; */
+        font-size: 16px;
     }
 
     nav.nav-principal ul li a {
@@ -5071,9 +5537,9 @@ width: unset; */
     nav ul li.donateur {
         /* height: 100%; */
         background-color: #1cabe2;
-        padding-left: 17px;
-        padding-right: 17px;
-        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: -27px;
     }
 
     nav ul li.donateur:hover {
@@ -5088,8 +5554,8 @@ width: unset; */
     nav ul li.don {
         /* height: 100%; */
         background-color: #ff8d41;
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-right: -5px;
     }
 

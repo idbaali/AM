@@ -1,4 +1,11 @@
 <?php
+
+unset($_SESSION["email"]);
+unset($_SESSION["fname"]);
+unset($_SESSION["lname"]);
+redirect("/");
+
+
 session_start();
 
 
@@ -12,5 +19,6 @@ redirect("/");
 // session_destroy();
 // header("Location: /");
 // exit();
+
 
 ?>

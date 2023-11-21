@@ -19,12 +19,6 @@ switch ($page) {
         include 'structure/front/pages/home.php';
         break;
 
-        // TEST
-    case 'test':
-
-        include 'structure/front/pages/test.php';
-        break;
-
         /* DECOUVRIR */
     case 'nousDecouvrir':
 
@@ -122,64 +116,9 @@ switch ($page) {
 
 
 
-        /*------------------------- MENU DEROULANT---------------------------*/
-
-        /* Aide aux enfants handicapées */
-    case 'aide-enfants':
-
-        include 'structure/front/pages/enfants.php';
-        break;
-
-        /* Aide aux personnes adult handicapées */
-    case 'aide-adults':
-
-        include 'structure/front/pages/adults.php';
-        break;
-
-        /* Aide aux orphelins */
-    case 'aide-orphelins':
-
-        include 'structure/front/pages/orphilins.php';
-        break;
-
-
-        /* Devenir donateur */
-    case 'devenir-donateur':
-
-        include 'structure/front/pages/dev_donateur.php';
-        break;
-
-        /* Devenir membre */
-    case 'devenir-membre':
-
-        include 'structure/front/pages/dev_membre.php';
-        break;
-
-        /* Devenir formateur */
-    case 'devenir-formateur':
-
-        include 'structure/front/pages/dev_formateur.php';
-        break;
-
-        /* Formation de la musique */
-    case 'formation-musique':
-
-        include 'structure/front/pages/formation.php';
-        break;
-
-        /* Faire un stage */
-    case 'faire-stage':
-
-        include 'structure/front/pages/stage.php';
-        break;
-
-
-
-
-
         /* -------------------TRAITEMANT BACK-END------------------------ */
 
-        /* NEWSLETTER */
+        /* BACK-NEWSLETTER */
     case 'back-newsletter':
 
         include 'structure/back/pages/back-newsletter.php';
@@ -200,9 +139,26 @@ switch ($page) {
         /* LOGIN */
     case 'admin/login':
 
-        include 'structure/back/pages/admin/login.php';
+        include 'structure/back/pages/login.php';
         break;
 
+        /* BACK ACTUALITES */
+    case 'admin/actualites':
+
+        include 'structure/back/pages/actuaLit.php';
+        break;
+
+        /* BACK DEVENIR BENEVOLE */
+    case 'admin/devBen':
+
+        include 'structure/back/pages/devBen.php';
+        break;
+
+        /* BACK NOS ACTIONS */
+    case 'admin/nosAct':
+
+        include 'structure/back/pages/nosAct.php';
+        break;
 
 
 

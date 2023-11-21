@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 23, 2023 at 01:06 PM
+-- Generation Time: Nov 21, 2023 at 03:20 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -40,6 +40,30 @@ CREATE TABLE `actualites` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int NOT NULL,
+  `first_name` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `last_name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Creation_admin` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `role` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `first_name`, `last_name`, `email`, `password`, `image`, `Creation_admin`, `role`) VALUES
+(1, 'Ike david', 'BAALI', 'ikebaalidavid@live.de', '56b467204ff2f871332935f8cb34ca8eceaa8ada', 'ike3.jpg', '2023-10-17 11:49:14', 'admin');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `angagement`
 --
 
@@ -47,9 +71,9 @@ CREATE TABLE `angagement` (
   `id` int NOT NULL,
   `first_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email_angagement` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image_angagement` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description_angagement` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `music_teacher` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_admin` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -62,9 +86,9 @@ CREATE TABLE `angagement` (
 
 CREATE TABLE `carrousel` (
   `id` int NOT NULL,
-  `title` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `categorie` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+  `carrousel_title` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `categorie_carrousel` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description_carrousel` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -77,46 +101,11 @@ CREATE TABLE `espace_donateur` (
   `id` int NOT NULL,
   `first_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email_donateur` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image_donateur` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description_donateur` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_admin` int NOT NULL,
   `date_donateur` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `espace_membre`
---
-
-CREATE TABLE `espace_membre` (
-  `id` int NOT NULL,
-  `first_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `last_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `id_admin` int NOT NULL,
-  `date_membre` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `event`
---
-
-CREATE TABLE `event` (
-  `id` int NOT NULL,
-  `event_title` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `event_place` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `categorie` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `statut` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `new_title` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `id_admin` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -130,8 +119,8 @@ CREATE TABLE `make_donation` (
   `id_user` int NOT NULL,
   `first_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `donation_email` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `donation_phone` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `donation_date` datetime NOT NULL,
   `donation_price` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -143,10 +132,19 @@ CREATE TABLE `make_donation` (
 --
 
 CREATE TABLE `newsletter` (
-  `id_newsletter` int NOT NULL,
+  `id` int NOT NULL,
   `email_newsletter` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `newsletter_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `newsletter`
+--
+
+INSERT INTO `newsletter` (`id`, `email_newsletter`, `newsletter_date`) VALUES
+(1, 'ikebaalidavid@live.nl', '2023-09-19 16:48:44'),
+(15, 'ikebaalidavid@live.de', '2023-10-30 23:24:08'),
+(16, 'matundu_s@yahoo.fr', '2023-11-15 14:05:48');
 
 -- --------------------------------------------------------
 
@@ -163,6 +161,34 @@ CREATE TABLE `our_action` (
   `action_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int NOT NULL,
+  `user_name` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `first_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `last_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `verification_email` tinyint(1) NOT NULL,
+  `verification_date` datetime NOT NULL,
+  `is_admin` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `password`, `phone`, `email`, `verification_email`, `verification_date`, `is_admin`) VALUES
+(1, 'Fallone', 'Fallone', 'Lobito', 'Action2023', '+33751146754', 'fallonelobito@actionmephi.fr', 1, '2023-09-24 20:08:58', 0),
+(2, 'Mirose', 'Mirose', 'Olela', 'Action2023', '+33768488008', 'miroseolela@actionmephi.fr', 1, '2023-09-24 20:08:58', 0),
+(3, 'Billy', 'Billy', 'Olela', 'Action2023', '+33788879340', 'billyolela@actionmephi.fr', 1, '2023-09-24 20:08:58', 1);
+
 --
 -- Indexes for dumped tables
 --
@@ -171,6 +197,12 @@ CREATE TABLE `our_action` (
 -- Indexes for table `actualites`
 --
 ALTER TABLE `actualites`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -192,12 +224,6 @@ ALTER TABLE `espace_donateur`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `espace_membre`
---
-ALTER TABLE `espace_membre`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `make_donation`
 --
 ALTER TABLE `make_donation`
@@ -207,12 +233,18 @@ ALTER TABLE `make_donation`
 -- Indexes for table `newsletter`
 --
 ALTER TABLE `newsletter`
-  ADD PRIMARY KEY (`id_newsletter`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `our_action`
 --
 ALTER TABLE `our_action`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -224,6 +256,12 @@ ALTER TABLE `our_action`
 --
 ALTER TABLE `actualites`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `angagement`
@@ -244,12 +282,6 @@ ALTER TABLE `espace_donateur`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `espace_membre`
---
-ALTER TABLE `espace_membre`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `make_donation`
 --
 ALTER TABLE `make_donation`
@@ -259,13 +291,19 @@ ALTER TABLE `make_donation`
 -- AUTO_INCREMENT for table `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id_newsletter` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `our_action`
 --
 ALTER TABLE `our_action`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

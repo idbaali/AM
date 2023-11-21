@@ -63,7 +63,7 @@
         z-index: 999;
         margin: 1px;
         transition: left 0.3s; /* Animation de déplacement */
-        overflow-y: auto; /* Activer la barre de défilement vertical */
+        /* overflow-y: auto; Activer la barre de défilement vertical */
     }
 
     .menuPhone.open {

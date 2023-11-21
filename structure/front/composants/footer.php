@@ -1,5 +1,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="assets/js/menu.js"></script>
+<script src="../assets/js/admin.js"></script>
 </body>
 
 <footer>
@@ -11,7 +12,7 @@
             <img src="../assets/img/amlogo.png" alt="">
             <p><i class="fa-sharp fa fa-location-dot"></i>35 Boulevard Anatole france <br> 93330 Saint Dénis FRANCE
             </p>
-            <p><i class="fa fa-phone"></i>Tel : +33 (0) 6 62 86 32 84</p>
+            <p><i class="fa fa-phone"></i>Tel : +33 (0) 1 49 17 57 60</p>
             <p><i class="fa fa-envelope"></i>Mail : info@actionmephi.fr</p>
           </div>
         </div>
@@ -27,7 +28,7 @@
               <i class="fa fa-wallet"></i>
             </div>
             <p class="footaide">Votre aide nous serait précieuse afin <br> de concrétiser les projets à venir. <br>
-              Aider les personnes handicapées <br> et leurs enfants insi que les orphelins en Afrique.
+              Aider les personnes handicapées <br> et les orphelins en Afrique.
             </p>
           </div>
         </div>
