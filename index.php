@@ -25,12 +25,6 @@ switch ($page) {
         include 'structure/front/pages/nousDecouvrir.php';
         break;
 
-        /* EVENEMENTS */
-    case 'evenements':
-
-        include 'structure/front/pages/evenements.php';
-        break;
-
         /* DOMAINS DES ACTIONS */
     case 'nosDomainesActions':
 
@@ -55,6 +49,23 @@ switch ($page) {
         include 'structure/front/pages/faire_don.php';
         break;
 
+        /* INSCRIPTION */
+    case 'inscription':
+
+        include 'structure/front/pages/inscription.php';
+        break;
+
+        /* FORGOT PASSWORD */
+    case 'forgot_password.php':
+
+        include 'structure/front/pages/forgot_password.php';
+        break;
+
+        /* RESET PASSWORD */
+    case 'reset_password.php':
+
+        include 'structure/front/pages/reset_password.php';
+        break;
 
 
         /*---------------------------- PAGES INTERNE --------------------------- */
@@ -158,6 +169,24 @@ switch ($page) {
     case 'admin/nosAct':
 
         include 'structure/back/pages/nosAct.php';
+        break;
+
+        /* USERS */
+    case 'admin/users':
+
+        include 'structure/back/pages/users.php';
+        break;
+
+        /* CONNEXION USERS */
+    case 'admin/connexionUsers':
+
+        include 'structure/back/pages/connexionUsers.php';
+        break;
+
+        /* RESET PASSWORD */
+    case 'reset_password.php':
+
+        include 'structure/back/pages/reset_password.php';
         break;
 
 

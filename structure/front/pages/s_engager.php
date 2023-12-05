@@ -1,29 +1,21 @@
 <section class="p-home">
     <h1>S'ENGAGER</h1>
-    <p class="text-dark">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo sequi fugit mollitia neque dolorem impedit reiciendis doloribus enim nihil esse tempore quos officiis cumque, deleniti voluptatibus perferendis consectetur maiores! Doloremque?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit cupiditate. Dolores voluptas accusantium molestiae amet mollitia excepturi nulla debitis nostrum ipsam enim? Dicta, ipsum corporis accusantium laudantium ipsam ea!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste deleniti neque id voluptas iure accusamus ipsam aspernatur quam. Expedita ex impedit hic atque deserunt distinctio quisquam quis, dolorem commodi.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugit praesentium aut provident excepturi inventore consequuntur accusantium nam ipsum? Quam vel perspiciatis earum quis consequatur. Nemo doloremque vitae voluptatum ut.
-
-
-
-    <p class="text-dark">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo sequi fugit mollitia neque dolorem impedit reiciendis doloribus enim nihil esse tempore quos officiis cumque, deleniti voluptatibus perferendis consectetur maiores! Doloremque?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit cupiditate. Dolores voluptas accusantium molestiae amet mollitia excepturi nulla debitis nostrum ipsam enim? Dicta, ipsum corporis accusantium laudantium ipsam ea!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste deleniti neque id voluptas iure accusamus ipsam aspernatur quam. Expedita ex impedit hic atque deserunt distinctio quisquam quis, dolorem commodi.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugit praesentium aut provident excepturi inventore consequuntur accusantium nam ipsum? Quam vel perspiciatis earum quis consequatur. Nemo doloremque vitae voluptatum ut.
-    </p>
+Lorem ipsum, dolor s
+it amet consectetur adipisicing elit. Saepe, quia ab earum dicta explicabo corrupti! Reprehenderit quo facere quia error, doloremque quibusdam corporis vero rerum incidunt iusto. Cumque, consequatur quos.
+Eveniet quo saepe corrupti necessitatibus ratione, fugiat accusantium voluptatum vero voluptate nemo ea dolore animi architecto aut dolor temporibus debitis obcaecati quam voluptas iusto veniam expedita. Quod laudantium laboriosam corporis?
+Possimus, eligendi impedit quo dolorum maiores beatae! Sint corrupti voluptates, nesciunt saepe optio tenetur assumenda tempora cupiditate animi, modi vitae pariatur, ratione officia debitis aperiam iusto atque officiis porro? Ex!
 
 
 
 
-    <p class="text-dark">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo sequi fugit mollitia neque dolorem impedit reiciendis doloribus enim nihil esse tempore quos officiis cumque, deleniti voluptatibus perferendis consectetur maiores! Doloremque?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit cupiditate. Dolores voluptas accusantium molestiae amet mollitia excepturi nulla debitis nostrum ipsam enim? Dicta, ipsum corporis accusantium laudantium ipsam ea!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iste deleniti neque id voluptas iure accusamus ipsam aspernatur quam. Expedita ex impedit hic atque deserunt distinctio quisquam quis, dolorem commodi.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugit praesentium aut provident excepturi inventore consequuntur accusantium nam ipsum? Quam vel perspiciatis earum quis consequatur. Nemo doloremque vitae voluptatum ut.
-    </p>
+
+
+
+
+
+
+
+
 
 
 

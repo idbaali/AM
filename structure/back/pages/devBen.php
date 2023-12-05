@@ -1,6 +1,7 @@
 <?php
 require_once('nav_admin.php');
 ?>
+
 <section class="p-login">
   <div class="row">
     <div class="col-md-2 col-sm-2 col-lg-2"></div>
@@ -9,6 +10,42 @@ require_once('nav_admin.php');
       <form method="POST" action="">
 
         <?php
+        if (isset($_POST['envoyer'])) {
+          $email = htmlspecialchars(trim($_POST['email']));
+          $password = htmlspecialchars(trim($_POST['password']));
+
+          if (!empty($email) and !empty($password)) {
+            $password_crypt = sha1($password);
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+              if ((verify_admin($email, $password_crypt)) > 0) {
+                $admin = affiche_admin($email, $password_crypt);
+
+                // var_dump($admin["image"]);
+                // die();
+
+                // CREATION THE SESSIONS
+                $_SESSION['email'] = $admin["email"];
+                $_SESSION['fname'] = $admin["first_name"];
+                $_SESSION['lname'] = $admin["last_name"];
+                $_SESSION['image'] = $admin["image"];
+
+                // echo $_SESSION['lname'];
+                redirect("/admin/admin");
+
+                echo $_SESSION['lname'];
+              } else {
+                echo 'Identifiant ou mot de passe incorrect';
+              }
+            } else {
+              echo $email . ' invalide';
+            }
+          } else {
+            echo 'Remplir tous les champs svp !';
+            // setFlash('Identifiant ou mot de passe incorrect', 'danger');
+            // header('Location:/'); 
+            // redirect("/admin/login");
+          }
+        }
 
         ?>
 

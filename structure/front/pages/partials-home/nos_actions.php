@@ -1,4 +1,7 @@
 <div class="p-action">
+<?php
+    $nosActions = getAllActions();
+    ?>
     <section>
         <div class="row mb-2 pt-5">
             <div class="col-md-10 col-sm-12 col-xs-12">
@@ -10,17 +13,20 @@
         </div>
 
         <div class="row">
+        <?php foreach($nosActions as $nosAction): ?>
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="card actioncolor">
                     <div class="card-body">
                         <i class="fa fa-book-open-reader"></i>
-                        <h5>Instruction</h5>
-                        <p>L’éducation est une dès clés mère afin d’optimiser un meilleur lendemain. Voilà pourquoi il est nécessaire d’entamer cette dernière dès le bas-âge au travers les enfants et ce par le biais de l’école qui est malheureusement pas accessible à tous</p>
+                        <h5><?= $nosAction['action_title']?></h5>
+                        <p><?= $nosAction['description_action']?></p>
                         <a href="all_actions" class="btn btn-outline-info instruction">EN savoir plus</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12 col-xs-12">
+            <?php endforeach;?>
+
+            <!-- <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="card actioncolor">
                     <div class="card-body">
                         <i class="fa fa-suitcase-medical"></i>
@@ -51,7 +57,7 @@
                         <a href="all_actions" class="btn btn-outline-info participation">En savoir plus</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </div>

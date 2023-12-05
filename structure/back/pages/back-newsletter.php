@@ -19,7 +19,7 @@ if (isset($_POST['btn-newsletter'])) {
                     redirect("/");
                 }
                 // header('Location:/'); 
-                redirect("/"); 
+                redirect("/");
             }
         } else {
             setFlash('Votre e-mail n\'est pas valide : ' . $email, 'danger');

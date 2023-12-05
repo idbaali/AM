@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col-md-2 col-sm-12 col-xs-12"></div>
         <div class="col-md-8 col-sm-12 col-xs-12 slogan-am">
-            <h2 class=""> <span>ACTION MEPHI</span> est une Association a pour but non- lucratif de :
-                Venir en aide aux personnes vivant avec <span>un handicap</span> et leurs <span>enfants</span>, aux <span>orphelins</span>, et contre la
-                <span>discrimination</span> ici notamment aussi en <span>Afrique</span>.
+            <h2 class=""> <span>ACTION MEPHI</span> est une Association à but non-lucratif. Elle a pour but de
+                venir en aide aux personnes vivant avec <span>un handicap</span> et leurs <span>enfants</span>. Elle s'occupe des <span>orphelins</span>, et lutte contre les
+                <span>discriminations</span> ici en europe et en <span>Afrique</span>.
             </h2>
         </div>
         <div class="col-md-3 col-sm-12 col-xs-12"></div>

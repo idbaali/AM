@@ -8,7 +8,6 @@
     text-decoration: none;
 }
 
-
 header {
     position: fixed;
     top: 0;
@@ -17,15 +16,13 @@ header {
     z-index: 999;
 }
 
-
 body {
     overflow-x: hidden;
-    /* overflow-y: hidden; */
 }
 
 
 /*-------------------------------------- PETIT NAV OU AVANT MENU */
-
+/* Styles pour la barre de navigation */
 .navbarpetit {
     display: grid;
     grid-template-columns: 12% 60% 28%;
@@ -34,7 +31,7 @@ body {
     line-height: 35px;
     background-color: #fff;
 }
-
+/* Styles pour le portail */
 .portail {
     height: 35px;
     width: 100%;
@@ -67,6 +64,7 @@ body {
     display: inline-block;
 }
 
+/* Styles pour les liens dans la section droite */
 .droite ul li a {
     font-size: 12px;
     font-style: normal;
@@ -92,6 +90,7 @@ body {
     font-size: 16px;
 }
 
+/* Styles pour les images de profil */
 .droite .log img {
     width: 30px;
     height: 30px;
@@ -103,7 +102,7 @@ body {
     display: none;
 }
 
-
+/* ... autres styles ... */
 
 /*-------------------------------------- NAV OU MENU PRINCIPAL */
 
@@ -405,7 +404,7 @@ section h6 {
 /* -------------DONATION HOME */
 
 .p-donation {
-    background-color: #eef3f6;
+    background-color: #f6eeee;
     height: 600px;
     width: 100%;
 }
@@ -413,6 +412,11 @@ section h6 {
 .p-donation h2 {
     /* margin-right: 50px; */
     padding: 60px 0 10px;
+}
+
+.p-donation img {
+    height: 20%;
+    width: 100%;
 }
 
 .p-donation .dona-don {
@@ -432,7 +436,7 @@ section h6 {
     padding: 15px 30px 15px 30px;
     background-color: #fff;
     color: #1cabe2;
-    margin-top: 35px;
+    /* margin-top: 35px; */
 }
 
 .p-donation a:hover {
@@ -443,6 +447,20 @@ section h6 {
 /* -----------------------------------------ESPACE DONATEUR */
 
 
+section.p-login .monPasse{
+    display: flex;
+    justify-content: right;
+    margin-top: -40px;
+}
+
+section.p-login .inscription {
+   padding-top: 10px;
+  
+}
+
+/* .p-admin {
+    padding-top: 112px;
+} */
 
 
 
@@ -631,7 +649,6 @@ section.p-login form {
 
 
 
-
 /*------------------------------------------------- FOOTER */
 
 footer {
@@ -673,7 +690,7 @@ footer .soutenir-am {
 footer .soutenir-am i {
     font-size: 40px;
     color: #1cabe2;
-    margin-right: 15px;     
+    margin-right: 15px;
 }
 
 footer .soutenir-am i:hover {
@@ -726,8 +743,7 @@ footer .footband ul li a:hover {
 
 /* ------------------------STYLES FOR SMATPHONE -------------------------------------------------------------- */
 
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
 
     /* -------------------------------------HEADER */
     header {
@@ -735,7 +751,6 @@ footer .footband ul li a:hover {
         z-index: 999;
 
     }
-
 
     /*-------------------------------------- PETIT NAV OU AVANT MENU */
 
@@ -1131,10 +1146,10 @@ footer .footband ul li a:hover {
         text-decoration: none;
         font-size: 15px;
         text-transform: uppercase;
-        padding: 15px 30px 15px 30px;
+        padding: 10px 25px 10px 25px;
         background-color: #fff;
         color: #1cabe2;
-        margin-top: 1px;
+        margin-top: -1px;
     }
 
     .p-donation a:hover {
@@ -1911,184 +1926,101 @@ footer .footband ul li a:hover {
 
     /*------------------------------------------------- FOOTER */
 
-    footer {
-        padding-top: 50px;
-    }
+    
+footer {
+    padding-top: 50px;
+}
 
-    footer .about-am img {
-        height: 80px;
-        width: 160px;
-    }
+footer .about-am {
+    padding-bottom: 12px;
+}
 
-    footer div ul {
-        list-style-type: none;
-        padding: 0;
+footer .about-am img {
+    height: 80px;
+    width: 160px;
+}
 
-    }
+footer div ul {
+    list-style-type: none;
+    padding: 0;
 
-    footer .about-am i {
-        font-size: 20px;
-        color: #1cabe2;
-        margin-right: 10px;
-    }
+}
 
-    footer .about-am i.fa-phone {
-        transform: rotate(110deg);
-
-    }
-
-    footer .soutenir-am i {
-        font-size: 40px;
-        color: #1cabe2;
-        margin-right: 15px;
-    }
-
-    footer .soutenir-am i:hover {
-        color: #098dc0;
-    }
-
-    footer .soutenir-am p {
-        color: #555
-    }
-
-    footer .row ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: 100;
-        line-height: 2;
-    }
-
-    footer .row ul li a:hover {
-        color: #1cabe2;
-
-    }
+footer .about-am i {
+    font-size: 20px;
+    color: #1cabe2;
+    margin-right: 10px;
 
 
-    /* ------------------------FOOTBAND --------------------------------*/
+}
 
+footer .about-am i.fa-phone {
+    transform: rotate(110deg);
 
-    footer .footband {
-        background-color: rgb(78, 72, 72);
-        font-size: 10px;
-        text-align: center;
-    }
+}
 
-    footer .footband ul {
-        list-style: none;
-        padding: 20px;
-    }
+footer .soutenir-am {
+    margin-bottom: -17px;
+}
 
-    footer .footband ul li {
-        /* display: inline-block; */
-        /* margin-right: 30px; */
-        padding: 7px 0 7px 0;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        /* display: inline-block;
-    width: unset; */
-    }
+footer .soutenir-am i {
+    font-size: 40px;
+    color: #1cabe2;
+    margin-right: 15px;
+}
 
-    footer .footband ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
+footer .soutenir-am i:hover {
+    color: #098dc0;
+}
 
-    footer .footband ul li a:hover {
-        color: #1cabe2;
-    }
+footer .soutenir-am p {
+    color: #555
+}
 
+footer .row ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 100;
+    line-height: 1;
+}
 
+footer .row ul li a:hover {
+    color: #1cabe2;
 
-    /*------------------------------------------------- FOOTER */
+}
 
-    footer {
-        padding-top: 50px;
-    }
+footer .footband {
+    background-color: rgb(78, 72, 72);
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+}
 
-    footer .about-am img {
-        height: 80px;
-        width: 160px;
-    }
+footer .footband ul {
+    list-style: none;
+}
 
-    footer div ul {
-        list-style-type: none;
-        padding: 0;
+footer .footband ul li {
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 15px;
+}
 
-    }
+footer .footband ul li a {
+    text-decoration: none;
+    color: #fff;
+}
 
-    footer .about-am i {
-        font-size: 20px;
-        color: #1cabe2;
-        margin-right: 10px;
-
-
-    }
-
-    footer .about-am i.fa-phone {
-        transform: rotate(110deg);
-
-    }
-
-    footer .soutenir-am i {
-        font-size: 40px;
-        color: #1cabe2;
-        margin-right: 15px;
-    }
-
-    footer .soutenir-am i:hover {
-        color: #098dc0;
-    }
-
-    footer .soutenir-am p {
-        color: #555
-    }
-
-    footer .row ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: 100;
-        line-height: 2;
-    }
-
-    footer .row ul li a:hover {
-        color: #1cabe2;
-
-    }
-
-    footer .footband {
-        background-color: rgb(78, 72, 72);
-        font-size: 12px;
-        display: flex;
-        text-align: center;
-    }
-
-    footer .footband ul {
-        list-style: none;
-    }
-
-    footer .footband ul li {
-        display: inline-block;
-        margin-right: 30px;
-        padding-top: 15px;
-    }
-
-    footer .footband ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer .footband ul li a:hover {
-        color: #1cabe2;
-    }
-
+footer .footband ul li a:hover {
+    color: #1cabe2;
+}
 
 }
 
 
 /* ------------------------STYLES FOR COMPUTER -------------------------------------------------------------- */
 
-@media screen and (min-width: 991px) and (max-width: 1023px) {
+@media screen and (min-width: 991px) and (max-width: 1024px) {
 
     .navbarpetit {
         display: grid;
@@ -3007,87 +2939,6 @@ footer .footband ul li a:hover {
 
     /*------------------------------------------------- FOOTER */
 
-    footer {
-        padding-top: 50px;
-    }
-
-    footer .about-am img {
-        height: 80px;
-        width: 160px;
-    }
-
-    footer div ul {
-        list-style-type: none;
-        padding: 0;
-
-    }
-
-    footer .about-am i {
-        font-size: 20px;
-        color: #1cabe2;
-        margin-right: 10px;
-
-
-    }
-
-    footer .about-am i.fa-phone {
-        transform: rotate(110deg);
-
-    }
-
-    footer .soutenir-am i {
-        font-size: 40px;
-        color: #1cabe2;
-        margin-right: 15px;
-    }
-
-    footer .soutenir-am i:hover {
-        color: #098dc0;
-    }
-
-    footer .soutenir-am p {
-        color: #555
-    }
-
-    footer .row ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: 100;
-        line-height: 2;
-    }
-
-    footer .row ul li a:hover {
-        color: #1cabe2;
-
-    }
-
-    footer .footband {
-        background-color: rgb(78, 72, 72);
-        font-size: 12px;
-        display: flex;
-        text-align: center;
-    }
-
-    footer .footband ul {
-        list-style: none;
-    }
-
-    footer .footband ul li {
-        display: inline-block;
-        margin-right: 30px;
-        padding-top: 15px;
-    }
-
-    footer .footband ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer .footband ul li a:hover {
-        color: #1cabe2;
-    }
-
-
 }
 
 @media screen and (min-width: 1067px) and (max-width: 1108px) {
@@ -3799,87 +3650,6 @@ width: unset; */
 
     /*------------------------------------------------- FOOTER */
 
-    footer {
-        padding-top: 50px;
-    }
-
-    footer .about-am img {
-        height: 80px;
-        width: 160px;
-    }
-
-    footer div ul {
-        list-style-type: none;
-        padding: 0;
-
-    }
-
-    footer .about-am i {
-        font-size: 20px;
-        color: #1cabe2;
-        margin-right: 10px;
-
-
-    }
-
-    footer .about-am i.fa-phone {
-        transform: rotate(110deg);
-
-    }
-
-    footer .soutenir-am i {
-        font-size: 40px;
-        color: #1cabe2;
-        margin-right: 15px;
-    }
-
-    footer .soutenir-am i:hover {
-        color: #098dc0;
-    }
-
-    footer .soutenir-am p {
-        color: #555
-    }
-
-    footer .row ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: 100;
-        line-height: 2;
-    }
-
-    footer .row ul li a:hover {
-        color: #1cabe2;
-
-    }
-
-    footer .footband {
-        background-color: rgb(78, 72, 72);
-        font-size: 12px;
-        display: flex;
-        text-align: center;
-    }
-
-    footer .footband ul {
-        list-style: none;
-    }
-
-    footer .footband ul li {
-        display: inline-block;
-        margin-right: 30px;
-        padding-top: 15px;
-    }
-
-    footer .footband ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer .footband ul li a:hover {
-        color: #1cabe2;
-    }
-
-
 }
 
 @media screen and (min-width: 1108px) and (max-width: 1120px) {
@@ -4587,91 +4357,6 @@ width: unset; */
         color: #1cabe2;
     }
 
-
-
-    /*------------------------------------------------- FOOTER */
-
-    footer {
-        padding-top: 50px;
-    }
-
-    footer .about-am img {
-        height: 80px;
-        width: 160px;
-    }
-
-    footer div ul {
-        list-style-type: none;
-        padding: 0;
-
-    }
-
-    footer .about-am i {
-        font-size: 20px;
-        color: #1cabe2;
-        margin-right: 10px;
-
-
-    }
-
-    footer .about-am i.fa-phone {
-        transform: rotate(110deg);
-
-    }
-
-    footer .soutenir-am i {
-        font-size: 40px;
-        color: #1cabe2;
-        margin-right: 15px;
-    }
-
-    footer .soutenir-am i:hover {
-        color: #098dc0;
-    }
-
-    footer .soutenir-am p {
-        color: #555
-    }
-
-    footer .row ul li a {
-        text-decoration: none;
-        color: #555;
-        font-weight: 100;
-        line-height: 2;
-    }
-
-    footer .row ul li a:hover {
-        color: #1cabe2;
-
-    }
-
-    footer .footband {
-        background-color: rgb(78, 72, 72);
-        font-size: 12px;
-        display: flex;
-        text-align: center;
-    }
-
-    footer .footband ul {
-        list-style: none;
-    }
-
-    footer .footband ul li {
-        display: inline-block;
-        margin-right: 30px;
-        padding-top: 15px;
-    }
-
-    footer .footband ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer .footband ul li a:hover {
-        color: #1cabe2;
-    }
-
-
 }
 
 @media screen and (min-width: 1120px) and (max-width: 1163px) {
@@ -5121,10 +4806,6 @@ width: unset; */
         color: #fff;
     }
 
-
-
-
-    /*------------------------------------------------ PAGE HOME */
 
 }
 
@@ -5955,8 +5636,14 @@ width: unset; */
 
     /*------------------------------------------------- FOOTER */
 
+    
+
     footer {
         padding-top: 50px;
+    }
+
+    footer .about-am {
+        padding-bottom: 12px;
     }
 
     footer .about-am img {
@@ -5983,6 +5670,10 @@ width: unset; */
 
     }
 
+    footer .soutenir-am {
+        margin-bottom: -17px;
+    }
+
     footer .soutenir-am i {
         font-size: 40px;
         color: #1cabe2;
@@ -6001,7 +5692,7 @@ width: unset; */
         text-decoration: none;
         color: #555;
         font-weight: 100;
-        line-height: 2;
+        line-height: 1;
     }
 
     footer .row ul li a:hover {

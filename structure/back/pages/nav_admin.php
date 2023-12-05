@@ -22,7 +22,7 @@
             <a class="nav-link" href="/admin/nosAct">Nos Actions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/admin/devBen">Dévénir Bénévole</a>
+            <a class="nav-link" href="/admin/devBen">Devenir Bénévole</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

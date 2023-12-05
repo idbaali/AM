@@ -1,4 +1,7 @@
 <div class="p-actualite">
+    <?php
+    $actualites = getAllActualites();
+    ?>
     <section class="">
         <div class="row mb-5 pt-5">
             <div class="col-md-9 col-sm-12 col-xs-12">
@@ -13,18 +16,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
+                        <?php foreach($actualites as $actualite): ?>
                         <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
                                 <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h6 class="card-title text-light">Actualité</h6>
-                                    <p class="card-text">Le commuté de l'association ACTION MEPHI était l'or de la conférence. Pour l'avancement du projet. </p>
+                                    <h6 class="card-title text-light"><?= $actualite['actualite_categorie']?></h6>
+                                    <p class="card-text"><?= substr($actualite['description_actualite'],0,100)?></p>
                                     <hr>
-                                    <small>Publié le 03/07/2023 à 15:00 | Paris</small>
+                                    <small><?= $actualite['actualite_date']?> | <?= $actualite['actualite_city']?> | <?= $actualite['actualite_country']?></small>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
+                        <?php endforeach;?>
+
+                        <!-- <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
                                 <img src="../assets/img/cologne1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -56,7 +62,7 @@
                                     <small>Publié le 03/07/2023 à 15:00 | Paris</small>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>

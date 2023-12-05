@@ -14,17 +14,18 @@
             <!-- LOGIN & LOGOUT RESPONSIVE -->
             <?php if (isset($_SESSION['email'])) : ?>
                 <a class="log" href="/logout"><img src="../assets/img/admin/<?= $_SESSION['image']; ?>" alt=""></a>
-            <?php else : ?> 
+            <?php else : ?>
                 <a class="log" href="/admin/login"><i class="fas fa-circle-user me-2"></i></a>
             <?php endif; ?>
-            
 
-            <!-- LOGO POUR MENU PRINCIPAL -->
+
+            <!-- LOGO POUR MENU PRINCIPAL & RESPONSIVE -->
             <a class="" href="/"><img class="logo" src="../assets/img/amlogo.png" alt="Action Mephi"></a>
 
             <!-- FAIRE UN DON RESPONSIVE -->
             <div class="donPhone">
-                <a href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank"><i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
+                <a href="https://paypal.me/actionMephi?country.x=FR&locale.x=fr_FR" target="_blank">
+                    <i class="fa fa-heart me-2"></i>FAIRE UN DON</a>
             </div>
 
             <ul id="popupForm">
@@ -74,7 +75,7 @@
                 </a>
             </div>
 
-            <!-- BOUTTON DE RECHERCHE PHONE -->
+            <!-- BOUTTON DE RECHERCHE RESPONSIVE OU PHONE -->
             <div class="">
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Votre recherche" aria-label="Search">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 21, 2023 at 03:20 PM
+-- Generation Time: Dec 04, 2023 at 07:55 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -30,12 +30,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `actualites` (
   `id` int NOT NULL,
   `actuatite_title` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `actualite_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `actualite_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'image.png',
   `description_actualite` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `actualite_country` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `actualite_city` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `actualite_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `actualite_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `actualite_categorie` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `actualites`
+--
+
+INSERT INTO `actualites` (`id`, `actuatite_title`, `actualite_image`, `description_actualite`, `actualite_country`, `actualite_city`, `actualite_date`, `actualite_categorie`) VALUES
+(2, 'Le Président de la République, Félix Antoine Tshisekedi a pensé aux personne vivant avec handicap.', 'image.png', 'Le Président de la République, Félix Antoine Tshisekedi lance la campagne de vulgarisation de la loi organique n°22/003 du 3 Mai 2022 portant protection et promotion des droits de la personne vivant avec handicap, ce samedi 4 novembre à l’hôtel Hilton dans la commune de la Gombe, ( Kinshasa).\r\n\r\nAu cours de cette cérémonie, le chef de l’État va également procéder au vernissage du premier dictionnaire de la langue des signes.\r\n\r\nUn échantillon représentatif d’une centaine des personnes vivant avec handicap notamment les personnes atteintes de l’albinisme, personnes à mobilité réduite, les malvoyants, les malentendants, les personnes atteintes de nanisme, les autochtones, (…). participe à Cette cérémonie symbolique pour un pays qui compte plus au moins 18% des handicapés parmi population congolaise, ( dernières statistiques des experts), sans compter des victimes des conflits Armés et des catastrophes naturelles.', 'RD Congo', 'Kinshasa', '2023-12-03 23:40:53', 'communique');
 
 -- --------------------------------------------------------
 
@@ -155,10 +163,24 @@ INSERT INTO `newsletter` (`id`, `email_newsletter`, `newsletter_date`) VALUES
 CREATE TABLE `our_action` (
   `id` int NOT NULL,
   `action_title` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `action_categorie` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description_action` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `action_image` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `action_image` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'image.png',
   `action_country` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `action_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reset_password`
+--
+
+CREATE TABLE `reset_password` (
+  `id` int NOT NULL,
+  `user_id` int NOT NULL,
+  `reset_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `expire_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -172,11 +194,11 @@ CREATE TABLE `users` (
   `user_name` varchar(120) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `first_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
   `verification_email` tinyint(1) NOT NULL,
-  `verification_date` datetime NOT NULL,
+  `verification_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `is_admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -242,6 +264,13 @@ ALTER TABLE `our_action`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `reset_password`
+--
+ALTER TABLE `reset_password`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `userManager` (`user_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -255,7 +284,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `actualites`
 --
 ALTER TABLE `actualites`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `admin`
@@ -300,10 +329,26 @@ ALTER TABLE `our_action`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `reset_password`
+--
+ALTER TABLE `reset_password`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `reset_password`
+--
+ALTER TABLE `reset_password`
+  ADD CONSTRAINT `userManager` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

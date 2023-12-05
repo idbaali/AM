@@ -12,5 +12,4 @@ include 'partials-home/benevole.php';
 include 'partials-home/donation.php';
 
 include 'partials-home/newsletter.php';
-
 ?>

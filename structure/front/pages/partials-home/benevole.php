@@ -38,7 +38,7 @@
             <div class="col-md-4 p-5 beneMbanda">
                 <div class="">
                     <div class="">
-                        <h3>Bandaka : La mobilisation de nos bénévoles en France</h3>
+                        <h3>Mbandaka : La mobilisation de nos bénévoles en France</h3>
                         <p>Pour Mbandaka, nous vous proposons un tour d'horizon des initiatives mises en place en 2023 par nos bénévoles</p>
                         <a href="dev_benevole" class="btn btn-outline-info">En savoir plus</a>
                     </div>

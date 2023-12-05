@@ -1,8 +1,11 @@
 <?php
 // FILTER AUTORISATION FOR SESSION EMAIL
-if (isset($_SESSION['email'])) {
+if(isset($_SESSION['email'])) { 
   redirect('/admin/admin');
 }
+?> 
+<?php
+// require_once('nav_admin.php');
 ?>
 <section class="p-login">
 
@@ -28,14 +31,17 @@ if (isset($_SESSION['email'])) {
 
           // echo $_SESSION['lname'];
           redirect("/admin/admin");
-          // setFlash('Identification réussie avec succès!!!', 'success');
 
           echo $_SESSION['lname'];
+
+
+
+          
         } else {
-          echo 'Identifiant ou mot de passe incorrect';
+      echo 'Identifiant ou mot de passe incorrect';
         }
       } else {
-        echo $email . ' invalide';
+        echo $email.' invalide';
       }
     } else {
       echo 'Remplir tous les champs svp !';
@@ -65,7 +71,7 @@ if (isset($_SESSION['email'])) {
         </div>
         <button type="submit" class="btn btn-primary" name="envoyer" value="envoyer">Valider</button>
       </form>
-    
-      <div class="col-md-3 col-sm-3 col-lg-3"></div>
     </div>
+    <div class="col-md-3 col-sm-3 col-lg-3"></div>
+  </div>
 </section>
