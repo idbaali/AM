@@ -12,4 +12,7 @@ include 'partials-home/benevole.php';
 include 'partials-home/donation.php';
 
 include 'partials-home/newsletter.php';
-?>
+
+include('models/connexion.php');
+
+include('models/description.php');

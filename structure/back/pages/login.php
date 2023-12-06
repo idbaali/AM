@@ -17,8 +17,14 @@ if (isset($_SESSION['email'])) {
         if ((verify_admin($email, $password_crypt)) > 0) {
           $admin = affiche_admin($email, $password_crypt);
 
-          // var_dump($admin["image"]);
-          // die();
+          // setFlash('Identification réussie avec succès!!!', 'success');
+  ?>
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Felicitation!</strong> Inscription enregistré avec succès.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <?php
+
 
           // CREATION THE SESSIONS
           $_SESSION['email'] = $admin["email"];
@@ -28,20 +34,30 @@ if (isset($_SESSION['email'])) {
 
           // echo $_SESSION['lname'];
           redirect("/admin/admin");
-          // setFlash('Identification réussie avec succès!!!', 'success');
+
+
 
           echo $_SESSION['lname'];
         } else {
-          echo 'Identifiant ou mot de passe incorrect';
+
+        ?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Echec!</strong> Identifiant ou mot de passe incorrect !.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+      <?php
+
         }
       } else {
         echo $email . ' invalide';
       }
     } else {
-      echo 'Remplir tous les champs svp !';
-      // setFlash('Identifiant ou mot de passe incorrect', 'danger');
-      // header('Location:/'); 
-      // redirect("/admin/login");
+      ?>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  <?php
     }
   }
 
@@ -65,7 +81,7 @@ if (isset($_SESSION['email'])) {
         </div>
         <button type="submit" class="btn btn-primary" name="envoyer" value="envoyer">Valider</button>
       </form>
-    
+
       <div class="col-md-3 col-sm-3 col-lg-3"></div>
     </div>
 </section>

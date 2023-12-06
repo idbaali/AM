@@ -18,8 +18,8 @@
                 <div class="card actioncolor">
                     <div class="card-body">
                         <i class="fa fa-book-open-reader"></i>
-                        <h5><?= $nosAction['action_title']?></h5>
-                        <p><?= $nosAction['description_action']?></p>
+                        <h5><?= $nosAction['title']?></h5>
+                        <p><?= $nosAction['description']?></p>
                         <a href="all_actions" class="btn btn-outline-info instruction">EN savoir plus</a>
                     </div>
                 </div>

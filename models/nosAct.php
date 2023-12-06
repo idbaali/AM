@@ -4,7 +4,7 @@ if (!function_exists('insert_actionActions')) {
     function insert_actionActions($title, $categorie, $country, $city, $description)
     {
         global $connexion;
-        $insert_data = $connexion->prepare('INSERT INTO our_action (action_title, description_action, action_country, action_city, action_categorie) VALUES (:title, :description, :country, :city, :categorie)');
+        $insert_data = $connexion->prepare('INSERT INTO our_action (title, description, country, city, categorie) VALUES (:title, :description, :country, :city, :categorie)');
         $insert_data->bindValue(':title',$title, PDO::PARAM_STR);
         $insert_data->bindValue(':description',$description, PDO::PARAM_STR);
         $insert_data->bindValue(':country',$country, PDO::PARAM_STR);

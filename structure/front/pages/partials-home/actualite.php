@@ -16,19 +16,24 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
-                        <?php foreach($actualites as $actualite): ?>
-                        <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
-                            <div class="card">
-                                <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6 class="card-title text-light"><?= $actualite['actualite_categorie']?></h6>
-                                    <p class="card-text"><?= substr($actualite['description_actualite'],0,100)?></p>
-                                    <hr>
-                                    <small><?= $actualite['actualite_date']?> | <?= $actualite['actualite_city']?> | <?= $actualite['actualite_country']?></small>
+                        <?php foreach ($actualites as $actualite) : ?>
+                            <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
+                                <div class="card">
+                                    <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-light"><?= $actualite['categorie_name'] ?></h6>
+                                        <p class="card-text">
+                                            <a href="/description.php?id=<?= $actualite['id'] ?>">
+                                                <?= substr($actualite['title'], 0, 100) ?>
+                                            </a>
+                                        </p>
+                                        <hr>
+                                        <small><?= $actualite['date'] ?> | <?= $actualite['city'] ?> | <?= $actualite['country'] ?></small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <?php endforeach;?>
+                        <?php endforeach; ?>
+
 
                         <!-- <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                             <div class="card">
@@ -66,22 +71,7 @@
 
                     </div>
                 </div>
-                <!-- <div class="carousel-item">
-                    <img src="../assets/img/cologne4.jpg" class="dimension" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/img/cologne7.png" class="dimension" alt="...">
-                </div> -->
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
         </div>
-
     </section>
 </div>

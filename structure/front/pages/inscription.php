@@ -3,53 +3,56 @@
         <div class="col-md-3 col-sm-3 col-lg-3"></div>
         <div class="col-md-6 col-sm-6 col-lg-6">
 
-        <?php
-        if (isset($_POST['inscription'])) {
-          $nom = htmlspecialchars(trim($_POST["nom"]));
-          // $image_actualite = $_FILES['actualiteImage'];
-          $prenom = htmlspecialchars(trim($_POST["prenom"]));
-          $email = htmlspecialchars(trim($_POST["email"]));
-          $password = htmlspecialchars(trim($_POST["password"]));
-          $confirmPassword = htmlspecialchars(trim($_POST["confirmPassword"]));
-          $password_vrais = sha1($password);
+            <?php
+            if (isset($_POST['inscription'])) {
+                $first_name = htmlspecialchars(trim($_POST["first_name"]));
+                // $image_actualite = $_FILES['actualiteImage'];
+                $last_name = htmlspecialchars(trim($_POST["last_name"]));
+                $email = htmlspecialchars(trim($_POST["email"]));
+                $password = htmlspecialchars(trim($_POST["password"]));
+                $confirmPassword = htmlspecialchars(trim($_POST["confirmPassword"]));
+                $password_vrais = sha1($password);
 
-          // VERIFICATION INPUT VIDE
-          if (empty($nom) || empty($prenom) || empty($email) || empty($password) || empty($confirmPassword)) {
-        ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-              <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php
-          } elseif($password != $confirmPassword) {
+                // VERIFICATION INPUT VIDE
+                if (empty($first_name) || empty($last_name) || empty($email) || empty($password) || empty($confirmPassword)) {
             ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-              <strong>Echec!</strong>  Les deux mot de passe n'est pas indentique !.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php
+                } elseif ($password != $confirmPassword) {
+                ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Echec!</strong> Les deux mot de passe n'est pas indentique !.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <?php
 
-          }  else {
-            // ENREGISTREMENT DANS LA BDD
-            $donateur = insert_donateur($nom, $prenom, $email, $password_vrais);
-            if ($donateur) {
-            ?>
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Felicitation!</strong> Inscription enregistré avec succès.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
+                } else {
+
+                    // Sécurité : Utilisation de password_hash pour hacher le mot de passe ICI--------------
+                    // $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+                    // ENREGISTREMENT DANS LA BDD
+                    $donateur = insert_donateur($first_name, $last_name, $email, $password_vrais);
+                    if ($donateur) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Felicitation!</strong> Inscription enregistré avec succès.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php
+                    } else {
+                    ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Echec!</strong> echéc d enregistrement !.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
             <?php
-            } else {
-            ?>
-              <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Echec!</strong> echéc d enregistrement !.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-        <?php
+                    }
+                }
             }
-          }
-        }
-        ?>
+            ?>
 
 
 
@@ -58,11 +61,11 @@
             <form action="" method="POST" class="inscriptionForm">
                 <div class="mb-3">
                     <label for="nom" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="nom" name="nom">
+                    <input type="text" class="form-control" id="nom" name="first_name">
                 </div>
                 <div class="mb-3">
                     <label for="prenom" class="form-label">Prénom</label>
-                    <input type="text" class="form-control" id="prenom" name="prenom">
+                    <input type="text" class="form-control" id="prenom" name="last_name">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Adresse Email</label>

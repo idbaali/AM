@@ -7,6 +7,8 @@ include('models/users.php');
 include('models/actuaLit.php');
 include('models/nosAct.php');
 include('models/inscription.php');
+include('models/description.php');
+include('models/autoload.php');
 include('structure/front/composants/head.php');
 include('structure/front/composants/header.php');
 include('structure/front/composants/navbar.php');

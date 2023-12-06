@@ -56,15 +56,15 @@ switch ($page) {
         break;
 
         /* FORGOT PASSWORD */
-    case 'forgot_password.php':
+    case 'forgot_password':
 
         include 'structure/front/pages/forgot_password.php';
         break;
 
-        /* RESET PASSWORD */
-    case 'reset_password.php':
+        /* DESCRIPTION */
+    case 'description':
 
-        include 'structure/front/pages/reset_password.php';
+        include 'structure/front/pages/description.php';
         break;
 
 
@@ -184,10 +184,18 @@ switch ($page) {
         break;
 
         /* RESET PASSWORD */
-    case 'reset_password.php':
+    case 'reset_password':
 
         include 'structure/back/pages/reset_password.php';
         break;
+
+           /* DESCRIPTION */
+    case 'description':
+
+        include 'structure/back/pages/descrption.php';
+        break;
+
+   
 
 
 

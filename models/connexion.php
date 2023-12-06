@@ -2,10 +2,10 @@
 // Paramètres de connexion à la base de données
 $host = "localhost";
 $username = "root";
-$dbname = "am";
+$dbname = "actionmephi";
 $password = "";
 
-// Créer une connexion à la base de données avec PDO (PHP Data Objects)
+//une connexion à la base de données avec PDO (PHP Data Objects)
 try {
     $connexion = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
@@ -14,7 +14,8 @@ try {
     
     // echo "Connected successfully";
 } catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+    // echo "Connection failed: " . $e->getMessage();
+    echo "Erreur : " . $e->getMessage();
 }
 
 ?>
