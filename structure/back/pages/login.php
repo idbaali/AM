@@ -33,6 +33,7 @@ if (isset($_SESSION['email'])) {
           $_SESSION['image'] = $admin["image"];
 
           // echo $_SESSION['lname'];
+          // Redirection après connexion réussie
           redirect("/admin/admin");
 
 

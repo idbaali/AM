@@ -1,10 +1,11 @@
 <?php
 // FONCTION POUR INSERER DES INSCRIPTIONS
-if (!function_exists('insert_donateur')) {
-    function insert_donateur($first_name, $last_name, $email, $password_vrais)
+if (!function_exists('insert_inscription')) {
+    function insert_inscription($first_name, $last_name, $email, $password_vrais)
     {
         global $connexion;
-        $insert_data = $connexion->prepare('INSERT INTO espace_donateur (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)');
+        $tableName = 'espace_donateur'; // Assurez-vous de définir le bon nom de table
+        $insert_data = $connexion->prepare("INSERT INTO $tableName (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)");
         $insert_data->bindValue(':first_name', $first_name, PDO::PARAM_STR);
         $insert_data->bindValue(':last_name', $last_name, PDO::PARAM_STR);
         $insert_data->bindValue(':email', $email, PDO::PARAM_STR);
@@ -13,3 +14,4 @@ if (!function_exists('insert_donateur')) {
     }
 }
 ?>
+

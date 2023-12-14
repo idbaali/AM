@@ -2,7 +2,7 @@
 // Paramètres de connexion à la base de données
 $host = "localhost";
 $username = "root";
-$dbname = "actionmephi";
+$dbname = "am";
 $password = "";
 
 //une connexion à la base de données avec PDO (PHP Data Objects)
@@ -13,9 +13,11 @@ try {
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // echo "Connected successfully";
+    
 } catch(PDOException $e) {
-    // echo "Connection failed: " . $e->getMessage();
-    echo "Erreur : " . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
+
+    // echo "Erreur : " . $e->getMessage();
 }
 
 ?>

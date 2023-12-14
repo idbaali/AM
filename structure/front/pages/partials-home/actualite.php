@@ -19,16 +19,14 @@
                         <?php foreach ($actualites as $actualite) : ?>
                             <div class="col-md-3 col-sm-12 col-xs-12 cardActualite">
                                 <div class="card">
-                                    <img src="../assets/img/cologne7.png" class="card-img-top" alt="...">
+                                <img src="../assets/img/actualites/<?= $actualite['image']?>" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h6 class="card-title text-light"><?= $actualite['categorie_name'] ?></h6>
+                                        <h6 class="card-title text-light"><?= $actualite['categorie'] ?></h6>
                                         <p class="card-text">
-                                            <a href="/description.php?id=<?= $actualite['id'] ?>">
-                                                <?= substr($actualite['title'], 0, 100) ?>
-                                            </a>
+                                        <?= substr($actualite['title'], 0, 200) ?>
                                         </p>
                                         <hr>
-                                        <small><?= $actualite['date'] ?> | <?= $actualite['city'] ?> | <?= $actualite['country'] ?></small>
+                                        <small><?= date('d/m/Y', strtotime($actualite['date']))?> | <?= $actualite['city']?> | <?= $actualite['country']?></small>
                                     </div>
                                 </div>
                             </div>

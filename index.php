@@ -10,7 +10,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 switch ($page) {
 
 
-        /*------------------------------ MENU PRINCIPAL ----------------------------*/
+    /*------------------------------ MENU PRINCIPAL ----------------------------*/
 
 
         /* HOME */
@@ -61,11 +61,11 @@ switch ($page) {
         include 'structure/front/pages/forgot_password.php';
         break;
 
-        /* DESCRIPTION */
-    case 'description':
+        /* CONFIRMATION */
+    case 'confirmation':
 
-        include 'structure/front/pages/description.php';
-        break;
+    include 'structure/front/pages/confirmation.php';
+    break;
 
 
         /*---------------------------- PAGES INTERNE --------------------------- */
@@ -189,11 +189,6 @@ switch ($page) {
         include 'structure/back/pages/reset_password.php';
         break;
 
-           /* DESCRIPTION */
-    case 'description':
-
-        include 'structure/back/pages/descrption.php';
-        break;
 
    
 

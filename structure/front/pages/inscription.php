@@ -3,57 +3,65 @@
         <div class="col-md-3 col-sm-3 col-lg-3"></div>
         <div class="col-md-6 col-sm-6 col-lg-6">
 
-            <?php
-            if (isset($_POST['inscription'])) {
-                $first_name = htmlspecialchars(trim($_POST["first_name"]));
-                // $image_actualite = $_FILES['actualiteImage'];
-                $last_name = htmlspecialchars(trim($_POST["last_name"]));
-                $email = htmlspecialchars(trim($_POST["email"]));
-                $password = htmlspecialchars(trim($_POST["password"]));
-                $confirmPassword = htmlspecialchars(trim($_POST["confirmPassword"]));
-                $password_vrais = sha1($password);
+<?php
 
-                // VERIFICATION INPUT VIDE
-                if (empty($first_name) || empty($last_name) || empty($email) || empty($password) || empty($confirmPassword)) {
-            ?>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                <?php
-                } elseif ($password != $confirmPassword) {
-                ?>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>Echec!</strong> Les deux mot de passe n'est pas indentique !.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                    <?php
+function sendConfirmationEmail($to) {
+    $subject = 'Confirmation d\'inscription';
+    $message = 'Félicitations ! Votre inscription a été enregistrée avec succès. Veuillez consulter votre e-mail, parfois vous pouvez le trouver dans votre dossier de spam.';
+    $headers = 'From: ikebaalidavid@live.de' . "\r\n" .
+        'Reply-To: ikebaalidavid@yahoo.fr' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
 
+    mail($to, $subject, $message, $headers);
+}
+
+if (isset($_POST['inscription'])) {
+
+        $first_name = htmlspecialchars(trim($_POST["first_name"]));
+        $last_name = htmlspecialchars(trim($_POST["last_name"]));
+        $email = htmlspecialchars(trim($_POST["email"]));
+        $password = htmlspecialchars(trim($_POST["password"]));
+        $confirmPassword = htmlspecialchars(trim($_POST["confirmPassword"]));
+
+        if (empty($first_name) || empty($last_name) || empty($email) || empty($password) || empty($confirmPassword)) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>';
+        } elseif ($password != $confirmPassword) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Echec!</strong> Les deux mots de passe ne sont pas identiques !.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>';
+        } else {
+            // Move password hashing here
+            $password_hashed = password_hash($password, PASSWORD_DEFAULT);
+
+            if (user_exists($email)) {
+                echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Echec!</strong> L\'utilisateur avec cet email existe déjà !.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>';
+            } else {
+                // ENREGISTREMENT DANS LA BDD
+                $user = insert_inscription($first_name, $last_name, $email, $password_hashed);
+
+                if ($user) {
+                    sendConfirmationEmail($email);
+                                                            // Redirect
+                    echo '<script>window.location.href = "/confirmation";</script>';
+                    exit();
                 } else {
-
-                    // Sécurité : Utilisation de password_hash pour hacher le mot de passe ICI--------------
-                    // $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-                    // ENREGISTREMENT DANS LA BDD
-                    $donateur = insert_donateur($first_name, $last_name, $email, $password_vrais);
-                    if ($donateur) {
-                    ?>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <strong>Felicitation!</strong> Inscription enregistré avec succès.
+                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Echec!</strong> Échec de l\'enregistrement !.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    <?php
-                    } else {
-                    ?>
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>Echec!</strong> echéc d enregistrement !.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-            <?php
-                    }
+                          </div>';
                 }
             }
-            ?>
+        }
 
+}
+?>
 
 
             <h2>Inscription</h2>
@@ -87,6 +95,8 @@
                     </div>
                 </div>
 
+                <input type="hidden" name="csrf_token" value="">
+
                 <button type="submit" class="btn btn-primary" name="inscription">S'inscrire</button>
             </form>
         </div>
@@ -94,3 +104,6 @@
         <div class="col-md-3 col-sm-3 col-lg-3"></div>
     </div>
 </section>
+
+</body>
+</html>

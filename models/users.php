@@ -1,19 +1,31 @@
 <?php
-// function check_login($user_data, $password) {
-//     global $conn;
-//     $edit = $conn->prepare('select * FROM users WHERE email = :user_data OR User_name = :user_data');
-//     $edit->bindValue(':user_data', $user_data, PDO::PARAM_STR);
-//     $edit->execute();
-//     $user = $edit->fetch();
-//     if ($edit->rowCount() && $password == $user['Password']) {
-//         $_SESSION['User'] = ["userId" => $user["ID"],"userName" => $user["User_name"],"isAdmin" => $user["Is_admin"]];
-//         header('Location: /admin/home');
-//     } else {
-//         header('Location: /login');
-//     }
+// FONCTION POUR INSERER DES UTILISATEURS
+if (!function_exists('insert_user')) {
+    function insert_user($first_name, $last_name, $email, $password)
+    {
+        global $connexion;
+        $tableName = 'users'; // Assurez-vous de définir le bon nom de table
+        $insert_data = $connexion->prepare("INSERT INTO $tableName (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)");
+        $insert_data->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+        $insert_data->bindValue(':last_name', $last_name, PDO::PARAM_STR);
+        $insert_data->bindValue(':email', $email, PDO::PARAM_STR);
+        $insert_data->bindValue(':password', $password, PDO::PARAM_STR);
+        return $insert_data->execute();
+    }
+}
 
-//     exit();
-// }
+// FONCTION POUR VÉRIFIER L'EXISTENCE D'UN UTILISATEUR PAR EMAIL
+
+if (!function_exists('user_exists')) {
+    function user_exists($email)
+    {
+        global $connexion;
+        $tableName = 'users'; // Assurez-vous de définir le bon nom de table
+        $check_user = $connexion->prepare('SELECT COUNT(*) FROM ' . $tableName . ' WHERE email = :email');
+        $check_user->bindValue(':email', $email, PDO::PARAM_STR);
+        $check_user->execute();
+        return $check_user->fetchColumn() > 0;
+    }
+}
 ?>
-
 

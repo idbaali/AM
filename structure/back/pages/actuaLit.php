@@ -6,43 +6,100 @@ require_once('nav_admin.php');
     <div class="col-md-2 col-sm-2 col-lg-2"></div>
     <div class="col-md-8 col-sm-8 col-lg-8">
 
-      <form method="POST" action="" class="formActualite">
+      <form method="POST" action="" class="formActualite" enctype="multipart/form-data">
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           $title_actualite = htmlspecialchars(trim($_POST["title"]));
-          // $image_actualite = $_FILES['actualiteImage'];
           $city_actualite = htmlspecialchars(trim($_POST["city"]));
           $country_actualite = htmlspecialchars(trim($_POST["country"]));
           $description_actualite = htmlspecialchars(trim($_POST["description"]));
           $categorie_actuatite = htmlspecialchars(trim($_POST["categorie"]));
 
+          //input image file 
+          $image_actualite = $_FILES['actualiteImage']['name'];
+          $image_actualiteSize = $_FILES['actualiteImage']['size'];
+          $image_actualiteTmp = $_FILES['actualiteImage']['tmp_name'];
+          $image_actualiteError = $_FILES['actualiteImage']['error'];
+          $image_actualiteType = $_FILES['actualiteImage']['type'];
+          // chaimin sauvegarde
+
+        
+          $destinationFichier = "assets/img/actualites/".$image_actualite;
+            //-------------------------------------------
+            //on verifie l'extension du fichier
+            //---------------------------------------------
+            $extensions = ['.png','.jpg','.jpeg','.gif','.PNG','.JPG','.JPEG','.GIF'];
+            $ext = strchr($image_actualite, '.');
+          
+          // var_dump($ext);
+          // die(); 
+
           // VERIFICATION INPUT VIDE
-          if (empty($title_actualite) || empty($city_actualite) || empty($country_actualite) || empty($description_actualite) || empty($categorie_actuatite)) {
-        ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-              <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php
-          } else {
-            // ENREGISTREMENT DANS LA BDD
-            $actualites = insert_actualites($title_actualite, $categorie_actuatite, $country_actualite, $city_actualite, $description_actualite);
-            if ($actualites) {
+          if (empty($title_actualite) || empty($image_actualite) || empty($city_actualite) || empty($country_actualite) || empty($description_actualite) || empty($categorie_actuatite)) {
             ?>
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Felicitation!</strong> Les actualites enregistré avec succès.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <strong>Echec!</strong> Veuillez remplir tous les champs requis svp !.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
             <?php
-            } else {
-            ?>
-              <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Echec!</strong> echéc d enregistrement !.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-        <?php
-            }
+
+            //traitement image
+
           }
+
+            elseif($image_actualiteError != 0){
+              
+                ?>
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Echec!</strong> envoie du fichier dans le serveur impossible. Réessayer !.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                <?php
+            }
+            elseif($image_actualiteSize > 2000000){
+                ?>
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Echec!</strong> La taille du fichier est trop grande, compressez le svp!.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                <?php
+            }
+
+            else if(!in_array($ext,$extensions)){
+
+              ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <strong>Echec!</strong> L'extension du fichier n'est pas autorisé; merci de le changer svp!.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              <?php
+
+            }else{
+                //fin traitement image
+
+                //deplacer le fichier dans le dossier img/actualites 
+                move_uploaded_file($image_actualiteTmp,$destinationFichier);
+                
+                  
+                // ENREGISTREMENT DANS LA BDD
+                $actualites = insert_actualites($title_actualite, $image_actualite, $categorie_actuatite, $country_actualite, $city_actualite, $description_actualite);
+                if ($actualites) {
+                  ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                      <strong>Felicitation!</strong> Les actualites enregistré avec succès.
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                  <?php
+                } else {
+                  ?>
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Echec!</strong> echéc d enregistrement !.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                  <?php
+                }
+                  
+            }
         }
         ?>
 
